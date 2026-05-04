@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Local editor state
+.obsidian/
+
+# Historical source documents awaiting explicit corpus decision
+/Document*/
+
+# Runtime and generated local artifacts
+.maui/logs/*
+!.maui/logs/README.md
