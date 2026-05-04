@@ -3,17 +3,44 @@
 ## Identificacao
 
 - ID: `2026-05-04-handoff-sessao-maui`
-- Tarefa: `P0.0.4 Gerar handoff da sessao Maui`
+- Tipo: `handoff-current`
+- Projeto: `Maui`
+- Versao Maui: `v1.0`
 - Data: `2026-05-04`
-- Estado: `pronto para proxima sessao`
+- Estado: `normalizado para proxima sessao`
+- Ultima normalizacao: `P0.0.5 Normalizar handoff da sessao Maui`
+
+## Como usar este handoff
+
+Este arquivo e o pacote de contexto primario para a proxima sessao Maui.
+
+Antes de executar nova tarefa:
+
+- Ler este arquivo.
+- Verificar `git status --short`.
+- Verificar `vault-maui/panel/status.md`.
+- Verificar se `.saara/` existe; se existir, preservar e nao usar como estado tecnico do Maui.
+- Criar Exec Report ao final de qualquer execucao.
+- Criar commit proprio quando a execucao alterar arquivos versionados.
 
 ## Resumo executivo
 
-O projeto Maui foi inicializado como corpus cognitivo multipapel, procedural, portatil e instanciavel por diferentes modelos de IA. A fundacao fisica minima foi criada em `vault-maui/`, o estado tecnico Maui foi criado em `.maui/`, e o repositorio Git local foi inicializado na branch `main`.
+Maui foi inicializado como corpus cognitivo multipapel, procedural, portatil e instanciavel por diferentes modelos de IA.
 
-Nao houve implementacao de funcionalidades, schemas, scripts, MCP, plugins, automacoes, UI, busca vetorial, operator packs completos ou migracao de documentos grandes. A sessao ate aqui foi estritamente documental e filesystem.
+A fundacao fisica minima existe em `vault-maui/`. O estado tecnico Maui existe em `.maui/`. O repositorio Git local esta inicializado na branch `main`.
 
-## O que foi feito
+Esta fase ainda e P0 documental. Nao houve implementacao de funcionalidades, schemas, scripts Python, MCP, plugins, automacoes, UI, busca vetorial, operator packs completos ou migracao de documentos grandes.
+
+## Estado Git atual
+
+- Branch: `main`
+- Status antes da P0.0.5: limpo
+- Commits conhecidos antes do commit da P0.0.5:
+  - `2c1d84e docs: add session handoff`
+  - `2ec74eb docs: sync post-foundation git state`
+  - `854ed39 chore: initialize maui repository`
+
+## Execucoes concluidas
 
 ### P0.0 Fundacao Documental
 
@@ -31,24 +58,20 @@ Nao houve implementacao de funcionalidades, schemas, scripts, MCP, plugins, auto
   - `vault-maui/exec-requests/templates/exec-request-template.md`
   - `vault-maui/exec-reports/templates/exec-report-template.md`
   - `vault-maui/exec-reports/templates/review-report-template.md`
-- Criado painel file-based:
-  - `vault-maui/panel/README.md`
-  - `vault-maui/panel/status.md`
-  - `vault-maui/panel/decisions/index.md`
-  - `vault-maui/panel/reviews/index.md`
-- Exec Report criado:
+- Criado painel file-based em `vault-maui/panel/`.
+- Exec Report:
   - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-fundacao-documental.md`
 
 ### P0.0.1 Inicializacao do repositorio Git
 
 - Inicializado repositorio Git local em `main`.
 - Criado `.gitignore` minimo.
-- Criado commit inicial:
+- Criado commit:
   - `854ed39 chore: initialize maui repository`
 - Mantidos fora do versionamento:
   - `.obsidian/`
   - `Documentação/`
-- Exec Report criado:
+- Exec Report:
   - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-1-inicializacao-git.md`
 
 ### P0.0.2 Sincronizacao documental pos-fundacao e Git
@@ -60,18 +83,28 @@ Nao houve implementacao de funcionalidades, schemas, scripts, MCP, plugins, auto
 - Criado `.maui/git.md`.
 - Criado commit:
   - `2ec74eb docs: sync post-foundation git state`
-- Exec Report criado:
+- Exec Report:
   - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-2-sincronizacao-documental-pos-fundacao-git.md`
 
-## Estado Git antes desta tarefa
+### P0.0.4 Gerar handoff da sessao Maui
 
-- Branch: `main`
-- Status antes do handoff: limpo
-- Historico conhecido:
-  - `2ec74eb docs: sync post-foundation git state`
-  - `854ed39 chore: initialize maui repository`
+- Criado handoff da sessao em `vault-maui/context-packages/current/2026-05-04-handoff-sessao-maui.md`.
+- Atualizado `vault-maui/panel/status.md`.
+- Criado commit:
+  - `2c1d84e docs: add session handoff`
+- Exec Report:
+  - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-4-handoff-sessao-maui.md`
 
-## Decisoes arquiteturais e operacionais
+### P0.0.5 Normalizar handoff da sessao Maui
+
+- Normalizado este handoff para representar o estado atual da sessao, incluindo a propria P0.0.4.
+- Atualizado `vault-maui/panel/status.md`.
+- Commit:
+  - `docs: normalize session handoff`
+- Exec Report:
+  - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-5-normalizar-handoff-sessao-maui.md`
+
+## Decisoes registradas
 
 - `vault-maui/` e a raiz canonica do corpus Maui.
 - `.maui/` e o estado tecnico do Maui.
@@ -88,36 +121,35 @@ Nao houve implementacao de funcionalidades, schemas, scripts, MCP, plugins, auto
 
 ## Estado de preservacao
 
-- `.saara/` nao existia no workspace durante as execucoes realizadas.
+- `.saara/` nao existia no workspace durante as execucoes realizadas ate a P0.0.5.
 - Nenhum arquivo ou diretorio Saara foi removido, movido, editado ou usado como estado tecnico do Maui.
-- `Documentação/` foi preservada sem alteracoes.
-- `.obsidian/` foi preservada sem alteracoes.
+- `Documentação/` foi preservada sem alteracoes e segue fora do corpus Maui.
+- `.obsidian/` foi preservada sem alteracoes e segue fora do versionamento Maui.
 
-## O que lembrar na proxima sessao
+## Restricoes ativas
 
-- Este projeto ainda esta em fase P0 documental.
-- Nao assumir que documentos grandes em `Documentação/` ja fazem parte do corpus Maui.
 - Nao migrar documentos Saara ou arquitetura sem Exec Request especifico.
-- Nao implementar scripts, schemas, MCP, plugins, automacoes ou UI sem tarefa explicita.
-- Antes de qualquer alteracao, verificar `git status --short`.
-- Ao final de qualquer execucao, criar Exec Report e commit proprio quando a tarefa alterar arquivos versionados.
-- Se `.saara/` aparecer em sessao futura, preservar e nao usar como estado Maui.
+- Nao incorporar `Documentação/` ao corpus Maui sem decisao explicita.
+- Nao implementar schemas sem tarefa futura especifica.
+- Nao implementar scripts Python sem tarefa futura especifica.
+- Nao implementar MCP, plugins, automacoes, UI, busca vetorial ou operator packs completos sem tarefa futura especifica.
+- Nao usar `.saara/` como estado tecnico do Maui.
 
 ## Pendencias
 
 - Definir politica formal de versionamento e convencao de commits.
 - Decidir se `Documentação/` sera migrada, preservada fora do Git ou incorporada ao corpus Maui.
-- Definir schemas apenas em tarefa futura.
-- Definir `hash_config` tecnico em tarefa futura.
-- Definir scripts, MCP, plugins, automacoes e validacoes em tarefas futuras.
-- Definir operator packs completos em tarefa futura.
+- Definir schemas.
+- Definir `hash_config` tecnico.
+- Definir scripts, MCP, plugins, automacoes e validacoes.
+- Definir operator packs completos.
 - Criar processo de Review Report para execucoes submetidas.
 
 ## Proxima tarefa recomendada
 
 Recomendada: `P0.0.3 Revisao da fundacao documental e Git`.
 
-Motivo: antes de avancar para schemas, scripts ou automacoes, uma revisao formal deve validar se a fundacao fisica, os Exec Reports, o estado Git, o `.gitignore`, o painel e as decisoes registradas estao coerentes e suficientes para o desenvolvimento multi-IA.
+Motivo: antes de avancar para schemas, scripts ou automacoes, uma revisao formal deve validar a fundacao fisica, os Exec Reports, o estado Git, o `.gitignore`, o painel, o handoff e as decisoes registradas.
 
 ## Arquivos de referencia
 
@@ -130,4 +162,5 @@ Motivo: antes de avancar para schemas, scripts ou automacoes, uma revisao formal
 - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-fundacao-documental.md`
 - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-1-inicializacao-git.md`
 - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-2-sincronizacao-documental-pos-fundacao-git.md`
-
+- `vault-maui/exec-reports/submitted/2026-05-04-p0-0-4-handoff-sessao-maui.md`
+- `vault-maui/exec-reports/submitted/2026-05-04-p0-0-5-normalizar-handoff-sessao-maui.md`
