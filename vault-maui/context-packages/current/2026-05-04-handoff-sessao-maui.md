@@ -119,6 +119,21 @@ Esta fase ainda e P0 documental. Nao houve implementacao de funcionalidades, sch
 - `Documentação/` permanece fora do corpus Maui ate decisao explicita futura.
 - `.obsidian/` permanece fora do versionamento Maui.
 
+## Regras operacionais — interação Saara ↔ Executor de Codificação
+
+**REGRA 1 — Marcação de prompts executáveis**
+
+Todo bloco que deva ser copiado e executado por um executor de codificação precisa estar identificado com o cabeçalho explícito "PROMPT PARA EXECUTOR DE CODIFICAÇÃO". Comandos internos a um prompt não devem ser confundidos com comandos sugeridos ao usuário fora do prompt. Esta regra aplica-se a Codex, Claude Code e quaisquer executores futuros.
+
+**REGRA 2 — Processamento turno-a-turno de retornos do executor**
+
+Após cada retorno do executor de codificação, a instância Saara deve:
+1. Analisar apenas o último resultado executado.
+2. Classificar como: aceito | aceito com ressalva | precisa correção.
+3. Indicar somente o próximo passo imediato.
+4. Gerar no máximo um prompt para o executor por vez.
+5. Não extrapolar várias etapas futuras nem propor normalizações não solicitadas se o resultado atual for suficiente.
+
 ## Estado de preservacao
 
 - `.saara/` nao existia no workspace durante as execucoes realizadas ate a P0.0.5.
