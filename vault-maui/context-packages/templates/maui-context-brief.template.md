@@ -58,6 +58,8 @@ Apontar handoffs que devem ser considerados pelo próximo executor.
 
 Listar memórias operacionais ou contextuais que sejam materialmente necessárias para a continuidade.
 
+Ao criar um Context Brief, consultar memórias relevantes e priorizar memórias com `deve_ser_considerado_em_context_brief: true` quando o escopo, tags ou tarefa relacionada forem compatíveis. Essas memórias não devem ser copiadas integralmente por padrão; devem ser sintetizadas nas seções de decisões, pendências, riscos e próximo passo.
+
 - Memória:
 - Aplicação:
 - Fonte:

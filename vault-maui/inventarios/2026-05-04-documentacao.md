@@ -721,3 +721,24 @@ Decisão arquivo a arquivo será feita pela instância Saara em conjunto com o u
 ### Decisão pendente
 
 A aplicação das ações propostas depende de aprovação explícita do usuário. Até aprovação, nenhum arquivo em `Documentação/` deve ser alterado, movido ou removido.
+
+## Fechamento da Tarefa 2 — saneamento inicial de Documentação/
+
+- Data: 2026-05-05
+- Status: concluído
+- Nota de governança: `Documentação/` estava fora do tracking git por design e as movimentações foram feitas com preservação validada.
+
+| Arquivo original | Destino final | Resultado | Commit |
+| --- | --- | --- | --- |
+| `Documentação/spec-tecnica-atualizacao-saara-maui-v2.md` | `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md` | movido para core | `4c63dbff803df726178318e0daa71ab749c60b02` |
+| `Documentação/spec-tecnica-atualizacao-saara-maui.md` | `vault-maui/context-packages/archive/spec-tecnica-atualizacao-saara-maui-v1.md` | arquivado | `4c63dbff803df726178318e0daa71ab749c60b02` |
+| `Documentação/pacote_documental_maui_multi_ia_v_1_0.md` | `vault-maui/context-packages/archive/pacote-documental-maui-multi-ia-v1-0.md` | arquivado | `4c63dbff803df726178318e0daa71ab749c60b02` |
+| `Documentação/pacote documental maui multi IA.md` | `vault-maui/context-packages/archive/pacote-documental-maui-multi-ia-draft.md` | arquivado | `4c63dbff803df726178318e0daa71ab749c60b02` |
+| `Documentação/Arquitetura novo Saara - Maui` | `vault-maui/context-packages/archive/arquitetura-novo-saara-maui-draft.md` | arquivado | `4c63dbff803df726178318e0daa71ab749c60b02` |
+| `Documentação/arquitetura_maui_v_0_2.md` | `vault-maui/00_core/arquitetura-maui-v0-2.md` | promovido ao core com frontmatter corrigido | `f1f50dbc85d082556385dafbd75340cf6edcb8cc` |
+| `Documentação/roadmap_desenvolvimento_maui_v_1_0.md` | `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | promovido ao core com frontmatter corrigido e nota de reconciliação | `28cfffe0f6e0bc386737f4db4c6307cf0555c50c` |
+| `Documentação/spec_funcionalidades_maui_unificada_v_0_1.md` | `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` | promovido ao core com frontmatter corrigido e nota de reconciliação | `cef5e65fd10faf3d2e1995b351468163a72868e3` |
+
+- Pendência da Tarefa 2: nenhuma pendência esperada em `Documentação/`.
+- Próximo passo desbloqueado: retomar P0.1.5 — plano de adaptação Saara→Maui, considerando os documentos agora promovidos ao core.
+- P0.1.11 permanece não executado por decisão do usuário.
