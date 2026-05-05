@@ -1,0 +1,41 @@
+schema_name: common-frontmatter
+schema_version: 1.0
+description: >
+  Frontmatter base herdado por documentos do corpus Maui. Define os
+  campos mínimos comuns a qualquer documento normativo, operacional
+  ou de coordenação.
+fields:
+  titulo:
+    type: string
+    required: true
+    description: Título legível do documento.
+  versao:
+    type: string
+    required: true
+    description: Versão semver do documento (ex 1.0, 2.3.1).
+    pattern: "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+  status:
+    type: enum
+    required: true
+    description: Estado de vida do documento no corpus.
+    enum: [proposta, ativo, depreciado, arquivado]
+  data_criacao:
+    type: date
+    required: true
+    description: Data de criação no formato YYYY-MM-DD.
+  idioma:
+    type: string
+    required: true
+    description: Código de idioma ISO (ex pt-BR, en-US).
+  tipo:
+    type: string
+    required: true
+    description: >
+      Categoria do documento (ex regra_operacional, exec_request,
+      exec_report, handoff_sessao, especificacao, etc).
+  escopo:
+    type: string
+    required: true
+    description: >
+      Escopo lógico ao qual o documento pertence (ex projeto_maui,
+      projeto_saara).

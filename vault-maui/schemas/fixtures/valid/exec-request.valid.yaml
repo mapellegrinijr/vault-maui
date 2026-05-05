@@ -1,0 +1,29 @@
+# Fixture válida para exec-request
+titulo: Tarefa fictícia de exemplo
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: exec_request
+escopo: projeto_maui
+tarefa_id: P9.9-Z
+tarefa_titulo: Tarefa de exemplo fictício
+objetivo: Demonstrar a estrutura de um exec-request válido no dialeto Maui.
+contexto: Branch main limpa, working tree sem alterações, .saara/ inexistente.
+pre_checagens:
+  - "git rev-parse --abbrev-ref HEAD → deve retornar main"
+  - "git status --short → deve estar vazio"
+  - "ls .saara/ 2>/dev/null → não deve existir"
+acoes:
+  - etapa: 1
+    descricao: Criar arquivo de exemplo
+    arquivo_alvo: vault-maui/exemplos/exemplo.md
+    validacao_previa: verificar se o arquivo já existe
+validacao_final:
+  - "git status --short → deve estar limpo após commit"
+  - "git log --oneline -3"
+  - "ls vault-maui/exemplos/exemplo.md"
+restricoes:
+  - Não tocar .saara/
+  - Não criar scripts ou automações
+  - Não alterar arquivos fora do escopo da tarefa

@@ -1,0 +1,44 @@
+schema_name: exec-request
+schema_version: 1.0
+description: >
+  Solicitação formal de execução enviada por instância Saara a
+  executor de codificação. Estrutura padroniza objetivo, escopo,
+  ações, validações e restrições. Herda common-frontmatter.
+fields:
+  tarefa_id:
+    type: string
+    required: true
+    description: Identificador da tarefa (ex P0.1-A).
+    pattern: "^P[0-9]+(\\.[0-9]+)*-[A-Z]$"
+  tarefa_titulo:
+    type: string
+    required: true
+    description: Título curto da tarefa.
+  objetivo:
+    type: string
+    required: true
+    description: O que a tarefa pretende alcançar.
+  contexto:
+    type: string
+    required: true
+    description: Estado esperado antes de iniciar.
+  pre_checagens:
+    type: array
+    required: true
+    description: Lista de checagens a executar antes de qualquer ação.
+    items_type: string
+  acoes:
+    type: array
+    required: true
+    description: Lista de etapas a executar com validação prévia.
+    items_type: object
+  validacao_final:
+    type: array
+    required: true
+    description: Comandos e verificações a reportar ao final.
+    items_type: string
+  restricoes:
+    type: array
+    required: true
+    description: O que a tarefa não pode tocar ou alterar.
+    items_type: string

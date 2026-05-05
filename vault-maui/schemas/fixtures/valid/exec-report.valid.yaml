@@ -1,0 +1,30 @@
+# Fixture válida para exec-report
+titulo: Exec Report P9.9-Z — Tarefa fictícia de exemplo
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: exec_report
+escopo: projeto_maui
+tarefa_id: P9.9-Z
+data_execucao: 2026-05-04
+executor: Claude Code
+arquivos_tocados:
+  - arquivo: vault-maui/exemplos/exemplo.md
+    acao: criado
+    skip: false
+etapas:
+  - numero: 1
+    descricao: Criar arquivo de exemplo
+    status: executada
+    motivo_skip: null
+divergencias: []
+validacao_git:
+  git_status: limpo
+  git_log: "abc1234 feat: exemplo ficticio"
+classificacao_sugerida: aceito
+confirmacoes_integridade:
+  - ".saara/ continua inexistente e intocada"
+  - "Nenhum script criado"
+  - "Nenhum MCP server criado"
+  - "Nenhuma automação criada"

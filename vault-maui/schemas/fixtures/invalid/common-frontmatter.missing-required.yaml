@@ -1,0 +1,7 @@
+# Fixture inválida: campo 'idioma' ausente (required)
+titulo: Documento sem idioma
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+tipo: especificacao
+escopo: projeto_maui

@@ -1,0 +1,8 @@
+# Fixture válida para common-frontmatter
+titulo: Documento exemplo
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: especificacao
+escopo: projeto_maui

@@ -1,0 +1,8 @@
+# Fixture inválida: 'status' com valor 'draft' (fora do enum [proposta, ativo, depreciado, arquivado])
+titulo: Documento com status inválido
+versao: "1.0"
+status: draft
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: especificacao
+escopo: projeto_maui

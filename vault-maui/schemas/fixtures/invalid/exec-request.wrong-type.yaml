@@ -1,0 +1,20 @@
+# Fixture inválida: 'pre_checagens' como string em vez de array (type: array)
+titulo: Exec request com tipo errado em pre_checagens
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: exec_request
+escopo: projeto_maui
+tarefa_id: P9.9-Z
+tarefa_titulo: Tarefa com pre_checagens no tipo errado
+objetivo: Testar violação de tipo em pre_checagens.
+contexto: Working tree limpo.
+pre_checagens: "git status --short"
+acoes:
+  - etapa: 1
+    descricao: Ação fictícia
+validacao_final:
+  - "git status --short"
+restricoes:
+  - Não tocar .saara/

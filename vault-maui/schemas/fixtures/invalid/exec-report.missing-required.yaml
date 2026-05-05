@@ -1,0 +1,22 @@
+# Fixture inválida: campo 'executor' ausente (required)
+titulo: Exec Report sem executor
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: exec_report
+escopo: projeto_maui
+tarefa_id: P9.9-Z
+data_execucao: 2026-05-04
+arquivos_tocados:
+  - arquivo: vault-maui/exemplos/exemplo.md
+    acao: criado
+etapas:
+  - numero: 1
+    status: executada
+validacao_git:
+  git_status: limpo
+  git_log: "abc1234 feat: exemplo"
+classificacao_sugerida: aceito
+confirmacoes_integridade:
+  - ".saara/ intocada"

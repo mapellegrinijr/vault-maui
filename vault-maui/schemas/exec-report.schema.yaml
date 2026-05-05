@@ -1,0 +1,58 @@
+schema_name: exec-report
+schema_version: 1.0
+description: >
+  Relatório de execução produzido por executor de codificação após
+  processar um exec-request. Padroniza identificação, etapas
+  executadas, divergências, validações e classificação. Herda
+  common-frontmatter.
+fields:
+  tarefa_id:
+    type: string
+    required: true
+    description: >
+      Identificador da tarefa executada (deve casar com
+      exec-request correspondente).
+    pattern: "^P[0-9]+(\\.[0-9]+)*-[A-Z]$"
+  data_execucao:
+    type: date
+    required: true
+    description: Data da execução no formato YYYY-MM-DD.
+  executor:
+    type: string
+    required: true
+    description: Identificador do executor (ex Claude Code, Codex).
+  arquivos_tocados:
+    type: array
+    required: true
+    description: Lista de arquivos modificados, criados ou pulados.
+    items_type: object
+  etapas:
+    type: array
+    required: true
+    description: >
+      Lista de etapas com status (executada ou skip) e
+      motivo quando skip.
+    items_type: object
+  divergencias:
+    type: array
+    required: false
+    description: >
+      Divergências entre estado esperado e real, e como
+      foram tratadas.
+    items_type: string
+  validacao_git:
+    type: object
+    required: true
+    description: Saída de git status e git log no momento do report.
+  classificacao_sugerida:
+    type: enum
+    required: true
+    description: Classificação proposta pelo executor.
+    enum: [aceito, aceito_com_ressalva, precisa_correcao]
+  confirmacoes_integridade:
+    type: array
+    required: true
+    description: >
+      Confirmações de que .saara, schemas, scripts, MCP,
+      automações e arquivos fora do escopo não foram tocados.
+    items_type: string

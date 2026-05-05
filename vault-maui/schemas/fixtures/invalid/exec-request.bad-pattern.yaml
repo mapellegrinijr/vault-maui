@@ -1,0 +1,21 @@
+# Fixture inválida: 'tarefa_id' com valor 'X1.2.3' (não casa com pattern ^P[0-9]+(\.[0-9]+)*-[A-Z]$)
+titulo: Exec request com tarefa_id inválida
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: exec_request
+escopo: projeto_maui
+tarefa_id: X1.2.3
+tarefa_titulo: Tarefa com identificador malformado
+objetivo: Testar violação de pattern em tarefa_id.
+contexto: Working tree limpo.
+pre_checagens:
+  - "git status --short"
+acoes:
+  - etapa: 1
+    descricao: Ação fictícia
+validacao_final:
+  - "git status --short"
+restricoes:
+  - Não tocar .saara/
