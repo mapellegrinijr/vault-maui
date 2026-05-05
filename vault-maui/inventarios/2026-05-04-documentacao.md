@@ -632,3 +632,92 @@ Este inventário foi gerado por executor de codificação (Claude Code) a pedido
 ## Próximo passo
 
 Decisão arquivo a arquivo será feita pela instância Saara em conjunto com o usuário (Tarefa 2). Este inventário é insumo, não recomendação.
+
+## P0.1.8 — Proposta de classificação arquivo a arquivo
+
+### Nota de governança
+
+- Esta é uma proposta de classificação gerada após o inventário P0.1.6.
+- Nenhum arquivo de `Documentação/` foi alterado.
+- A execução das ações propostas depende de aprovação explícita do usuário.
+
+### Tabela resumo
+
+| Arquivo | Classificação proposta | Destino proposto | Risco | Observação curta |
+| --- | --- | --- | --- | --- |
+| `Documentação/spec-tecnica-atualizacao-saara-maui-v2.md` | `mover_para_vault` | `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md` | `baixo` | Versão 0.2 mais atual; substituir v1 em conjunto. |
+| `Documentação/arquitetura_maui_v_0_2.md` | `atualizar` | `vault-maui/00_core/arquitetura-maui-v0-2.md` | `baixo` | Arquitetura relevante; corrigir frontmatter antes de mover. |
+| `Documentação/spec-tecnica-atualizacao-saara-maui.md` | `arquivar` | `vault-maui/context-packages/archive/spec-tecnica-atualizacao-saara-maui-v1.md` | `baixo` | Versão 0.1 supersedida pela v2. |
+| `Documentação/pacote_documental_maui_multi_ia_v_1_0.md` | `arquivar` | `vault-maui/context-packages/archive/pacote-documental-maui-multi-ia-v1-0.md` | `baixo` | Pacote histórico após migração dos documentos autônomos. |
+| `Documentação/pacote documental maui multi IA.md` | `arquivar` | `vault-maui/context-packages/archive/pacote-documental-maui-multi-ia-draft.md` | `baixo` | Rascunho supersedido pelo pacote v1.0. |
+| `Documentação/roadmap_desenvolvimento_maui_v_1_0.md` | `atualizar` | `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | `médio` | Roadmap relevante; alinhar status das fases antes de mover. |
+| `Documentação/spec_funcionalidades_maui_unificada_v_0_1.md` | `atualizar` | `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` | `médio` | Especificação relevante; comparar com decisões posteriores. |
+| `Documentação/Arquitetura novo Saara - Maui` | `arquivar` | `vault-maui/context-packages/archive/arquitetura-novo-saara-maui-draft.md` | `baixo` | Rascunho inicial supersedido pela arquitetura v0.2. |
+
+### 1. `Documentação/spec-tecnica-atualizacao-saara-maui-v2.md`
+
+- `classificacao_proposta`: `mover_para_vault`
+- `destino_proposto`: `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md`
+- `risco`: `baixo`
+- `justificativa`: Frontmatter válido, versão 0.2, substitui a v1 e é o documento mais atual sobre migração Saara→Maui.
+- `dependencias`: Decisão sobre v1 deve ser tomada em conjunto; recomendado arquivar v1 na mesma operação.
+
+### 2. `Documentação/arquitetura_maui_v_0_2.md`
+
+- `classificacao_proposta`: `atualizar`
+- `destino_proposto`: `vault-maui/00_core/arquitetura-maui-v0-2.md`
+- `risco`: `baixo`
+- `justificativa`: Conteúdo arquitetural relevante e atual, mas frontmatter inválido precisa de correção cirúrgica antes de mover ao vault.
+- `dependencias`: Nenhuma.
+
+### 3. `Documentação/spec-tecnica-atualizacao-saara-maui.md`
+
+- `classificacao_proposta`: `arquivar`
+- `destino_proposto`: `vault-maui/context-packages/archive/spec-tecnica-atualizacao-saara-maui-v1.md`
+- `risco`: `baixo`
+- `justificativa`: Versão 0.1 substituída pela v2; manter apenas como histórico rastreável.
+- `dependencias`: Confirmar que v2 será movida para o vault.
+
+### 4. `Documentação/pacote_documental_maui_multi_ia_v_1_0.md`
+
+- `classificacao_proposta`: `arquivar`
+- `destino_proposto`: `vault-maui/context-packages/archive/pacote-documental-maui-multi-ia-v1-0.md`
+- `risco`: `baixo`
+- `justificativa`: Pacote empacotador sem frontmatter, útil como registro histórico após migração dos documentos autônomos.
+- `dependencias`: Arquivar apenas após conclusão da migração dos demais arquivos relevantes.
+
+### 5. `Documentação/pacote documental maui multi IA.md`
+
+- `classificacao_proposta`: `arquivar`
+- `destino_proposto`: `vault-maui/context-packages/archive/pacote-documental-maui-multi-ia-draft.md`
+- `risco`: `baixo`
+- `justificativa`: Rascunho anterior do pacote documental, sem frontmatter e supersedido pelo pacote v1.0.
+- `dependencias`: Nenhuma relevante.
+
+### 6. `Documentação/roadmap_desenvolvimento_maui_v_1_0.md`
+
+- `classificacao_proposta`: `atualizar`
+- `destino_proposto`: `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `risco`: `médio`
+- `justificativa`: Roadmap relevante, mas frontmatter inválido e status das fases precisa refletir progresso real já registrado nos handoffs.
+- `dependencias`: Verificar alinhamento com o estado atual do projeto antes de mover para vault.
+
+### 7. `Documentação/spec_funcionalidades_maui_unificada_v_0_1.md`
+
+- `classificacao_proposta`: `atualizar`
+- `destino_proposto`: `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md`
+- `risco`: `médio`
+- `justificativa`: Especificação funcional relevante, mas frontmatter inválido e possível desalinhamento com decisões posteriores de schemas/handoffs.
+- `dependencias`: Comparar com `arquitetura_maui_v_0_2.md` antes de promover ao vault.
+
+### 8. `Documentação/Arquitetura novo Saara - Maui`
+
+- `classificacao_proposta`: `arquivar`
+- `destino_proposto`: `vault-maui/context-packages/archive/arquitetura-novo-saara-maui-draft.md`
+- `risco`: `baixo`
+- `justificativa`: Rascunho inicial sem extensão e sem frontmatter, supersedido por `arquitetura_maui_v_0_2.md`.
+- `dependencias`: Arquivar em conjunto com a promoção/correção da arquitetura v0.2.
+
+### Decisão pendente
+
+A aplicação das ações propostas depende de aprovação explícita do usuário. Até aprovação, nenhum arquivo em `Documentação/` deve ser alterado, movido ou removido.
