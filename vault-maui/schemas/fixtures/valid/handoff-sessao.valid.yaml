@@ -1,0 +1,41 @@
+# Fixture válida para handoff-sessao
+titulo: Handoff de sessão Maui — fase P9.9 (fictício)
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: handoff_sessao
+escopo: projeto_maui
+origem_instancia: saara_chatgpt
+destino_esperado: saara_claude_app
+fase_atual: P9.9
+proxima_acao: Executar tarefa P9.9-Z conforme exec-request correspondente.
+decisoes_fechadas:
+  - vault-maui/ é a raiz canônica do corpus Maui.
+  - .maui/ é o estado técnico do Maui.
+  - .saara/ pertence ao Saara e deve ser preservado quando existir.
+  - Maui inicia como v1.0 com versionamento separado do Saara.
+regras_operacionais:
+  - "REGRA 1: Todo bloco a ser executado por executor de codificação deve ter cabeçalho 'PROMPT PARA EXECUTOR DE CODIFICAÇÃO'."
+  - "REGRA 2: Após cada retorno do executor, analisar apenas o último resultado, classificar e indicar somente o próximo passo imediato."
+estado_repositorio:
+  branch: main
+  ultimo_commit: abc1234
+  working_tree_limpo: true
+arquivos_recentes:
+  - arquivo: vault-maui/schemas/exec-request.schema.yaml
+    descricao: Schema de exec-request criado em P0.1-A.
+  - arquivo: vault-maui/schemas/exec-report.schema.yaml
+    descricao: Schema de exec-report criado em P0.1-A.
+pendencias:
+  - Criar validador local (P0.2).
+  - Definir política formal de versionamento e convenção de commits.
+f_i_h:
+  fatos:
+    - Repositório Git inicializado em main com cinco commits registrados.
+    - Schemas de coordenação P0.1-A criados e commitados (commit 8ef5151).
+    - .saara/ inexistente durante todas as execuções realizadas.
+  inferencias:
+    - O corpus está pronto para receber schemas de revisão e handoff.
+  hipoteses:
+    - P0.2 pode ser implementada sem dependências adicionais além dos schemas já criados.

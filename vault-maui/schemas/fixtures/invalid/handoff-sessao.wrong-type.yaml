@@ -1,0 +1,23 @@
+# Fixture inválida: 'estado_repositorio.working_tree_limpo' como string "yes" em vez de boolean (type: boolean)
+titulo: Handoff com tipo errado em working_tree_limpo
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: handoff_sessao
+escopo: projeto_maui
+origem_instancia: saara_chatgpt
+destino_esperado: saara_claude_app
+fase_atual: P9.9
+proxima_acao: Executar próxima tarefa.
+decisoes_fechadas:
+  - vault-maui/ é a raiz canônica do corpus Maui.
+regras_operacionais:
+  - "REGRA 1: Marcar prompts executáveis com cabeçalho explícito."
+estado_repositorio:
+  branch: main
+  ultimo_commit: abc1234
+  working_tree_limpo: "yes"
+f_i_h:
+  fatos:
+    - Repositório inicializado em main.

@@ -1,0 +1,22 @@
+# Fixture válida para review-report
+titulo: Review Report P9.9-Z — Revisão fictícia por par Saara
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: review_report
+escopo: projeto_maui
+tarefa_id: P9.9-Z
+exec_report_path: vault-maui/exec-reports/submitted/2026-05-04-p9-9-z-tarefa-ficticia.md
+data_revisao: 2026-05-04
+revisor: saara_instancia_par_01
+papel_revisor: saara_par
+observacoes:
+  - Exec report estruturalmente correto e conforme o dialeto Maui.
+  - Todas as etapas foram documentadas com status explícito.
+  - Classificação original (aceito) está alinhada com o conteúdo reportado.
+divergencias_apontadas:
+  - Nome do arquivo fictício no exec-report não segue convenção de nomenclatura padronizada.
+classificacao_revisao: ratificado_com_ressalva
+acoes_recomendadas:
+  - Padronizar nomes de arquivos fictícios nas próximas fixtures para facilitar rastreabilidade.

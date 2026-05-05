@@ -6,11 +6,11 @@
 - Estado Saara: `.saara/` preservado quando existir
 - Git: inicializado em `main`
 - Commit inicial: `chore: initialize maui repository`
-- Fase atual: schemas de coordenação criados (P0.1-A)
+- Fase atual: schemas review-report e handoff-sessao criados (P0.1-B)
 
 ## Ultima execucao registrada
 
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-a-schemas-coordenacao.md`
+- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-b-schemas-review-handoff.md`
 
 ## Handoff atual
 
@@ -25,3 +25,4 @@
 - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-5-normalizar-handoff-sessao-maui.md`
 - `vault-maui/exec-reports/submitted/2026-05-04-p0-0-5-regras-operacionais.md`
 - `vault-maui/exec-reports/submitted/2026-05-04-p0-1-a-schemas-coordenacao.md`
+- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-b-schemas-review-handoff.md`

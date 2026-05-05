@@ -1,0 +1,57 @@
+schema_name: review-report
+schema_version: 1.0
+description: >
+  Relatório de revisão produzido por uma instância Saara (par ou
+  curadora) ou por revisor humano sobre um exec-report previamente
+  submetido. Distingue revisão de auto-classificação. Herda
+  common-frontmatter.
+fields:
+  tarefa_id:
+    type: string
+    required: true
+    description: Identificador da tarefa originalmente executada.
+    pattern: "^P[0-9]+(\\.[0-9]+)*-[A-Z]$"
+  exec_report_path:
+    type: string
+    required: true
+    description: >
+      Caminho relativo (a partir da raiz do repo) do exec-report
+      sendo revisado. Necessário para desambiguar quando há
+      re-execuções da mesma tarefa.
+  data_revisao:
+    type: date
+    required: true
+    description: Data da revisão no formato YYYY-MM-DD.
+  revisor:
+    type: string
+    required: true
+    description: Identificador do revisor (instância ou pessoa).
+  papel_revisor:
+    type: enum
+    required: true
+    description: Papel do revisor no fluxo de curadoria.
+    enum: [saara_par, saara_curador, humano]
+  observacoes:
+    type: array
+    required: true
+    description: Observações registradas durante a revisão.
+    items_type: string
+  divergencias_apontadas:
+    type: array
+    required: false
+    description: >
+      Divergências entre o exec-report revisado e o estado real
+      observado pelo revisor.
+    items_type: string
+  classificacao_revisao:
+    type: enum
+    required: true
+    description: Classificação resultante da revisão.
+    enum: [ratificado, ratificado_com_ressalva, contestado, rejeitado]
+  acoes_recomendadas:
+    type: array
+    required: false
+    description: >
+      Ações sugeridas pelo revisor (ex: re-execução parcial,
+      retificação documental).
+    items_type: string

@@ -1,0 +1,15 @@
+# Fixture inválida: campo 'exec_report_path' ausente (required)
+titulo: Review Report sem exec_report_path
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: review_report
+escopo: projeto_maui
+tarefa_id: P9.9-Z
+data_revisao: 2026-05-04
+revisor: saara_instancia_par_01
+papel_revisor: saara_par
+observacoes:
+  - Revisão fictícia com campo obrigatório ausente.
+classificacao_revisao: ratificado

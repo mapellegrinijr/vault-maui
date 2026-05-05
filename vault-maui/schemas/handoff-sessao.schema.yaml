@@ -1,0 +1,96 @@
+schema_name: handoff-sessao
+schema_version: 1.0
+description: >
+  Pacote de continuidade entre instâncias Saara. Permite que uma
+  nova instância retome trabalho preservando decisões fechadas,
+  regras operacionais, estado do repositório e próximo passo
+  imediato. Herda common-frontmatter.
+fields:
+  origem_instancia:
+    type: string
+    required: true
+    description: >
+      Identificador da instância Saara que gerou o handoff
+      (ex saara_chatgpt, saara_claude_app).
+  destino_esperado:
+    type: string
+    required: true
+    description: >
+      Tipo de instância destinatária esperada (ex saara_claude_app,
+      saara_qualquer).
+  fase_atual:
+    type: string
+    required: true
+    description: Fase atual do roadmap (ex P0.1).
+  proxima_acao:
+    type: string
+    required: true
+    description: Próximo passo imediato a ser executado.
+  decisoes_fechadas:
+    type: array
+    required: true
+    description: >
+      Lista de decisões já tomadas que não devem ser reabertas sem
+      comando explícito do usuário.
+    items_type: string
+  regras_operacionais:
+    type: array
+    required: true
+    description: >
+      Regras herdadas que governam a operação da instância
+      destinatária (ex: marcação de prompts executáveis).
+    items_type: string
+  estado_repositorio:
+    type: object
+    required: true
+    description: >
+      Estado do repositório no momento do handoff (branch, último
+      commit conhecido, status do working tree).
+    fields:
+      branch:
+        type: string
+        required: true
+        description: Nome da branch ativa.
+      ultimo_commit:
+        type: string
+        required: true
+        description: Hash curto do último commit conhecido.
+      working_tree_limpo:
+        type: boolean
+        required: true
+        description: True se o working tree estava limpo no handoff.
+  arquivos_recentes:
+    type: array
+    required: false
+    description: >
+      Arquivos relevantes tocados nas últimas execuções, com
+      caminho e descrição curta.
+    items_type: object
+  pendencias:
+    type: array
+    required: false
+    description: O que ficou em aberto e precisa ser endereçado.
+    items_type: string
+  f_i_h:
+    type: object
+    required: true
+    description: >
+      Distinção entre Fatos, Inferências e Hipóteses para evitar
+      drift de confiança entre instâncias.
+    fields:
+      fatos:
+        type: array
+        required: true
+        description: >
+          Itens verificados ou reportados pela instância de origem.
+        items_type: string
+      inferencias:
+        type: array
+        required: false
+        description: Conclusões derivadas pela instância de origem.
+        items_type: string
+      hipoteses:
+        type: array
+        required: false
+        description: Suposições não confirmadas.
+        items_type: string

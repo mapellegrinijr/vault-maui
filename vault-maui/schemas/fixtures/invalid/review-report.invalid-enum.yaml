@@ -1,0 +1,16 @@
+# Fixture inválida: 'papel_revisor' com valor 'saara_externo' (fora do enum [saara_par, saara_curador, humano])
+titulo: Review Report com papel_revisor inválido
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: review_report
+escopo: projeto_maui
+tarefa_id: P9.9-Z
+exec_report_path: vault-maui/exec-reports/submitted/2026-05-04-p9-9-z-tarefa-ficticia.md
+data_revisao: 2026-05-04
+revisor: saara_instancia_externa
+papel_revisor: saara_externo
+observacoes:
+  - Revisão fictícia para testar violação de enum.
+classificacao_revisao: ratificado

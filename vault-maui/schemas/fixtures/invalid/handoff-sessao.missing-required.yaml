@@ -1,0 +1,22 @@
+# Fixture inválida: campo 'fase_atual' ausente (required)
+titulo: Handoff sem fase_atual
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-04
+idioma: pt-BR
+tipo: handoff_sessao
+escopo: projeto_maui
+origem_instancia: saara_chatgpt
+destino_esperado: saara_claude_app
+proxima_acao: Executar próxima tarefa.
+decisoes_fechadas:
+  - vault-maui/ é a raiz canônica do corpus Maui.
+regras_operacionais:
+  - "REGRA 1: Marcar prompts executáveis com cabeçalho explícito."
+estado_repositorio:
+  branch: main
+  ultimo_commit: abc1234
+  working_tree_limpo: true
+f_i_h:
+  fatos:
+    - Repositório inicializado em main.
