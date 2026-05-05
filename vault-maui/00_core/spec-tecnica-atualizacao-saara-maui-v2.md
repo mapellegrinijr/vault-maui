@@ -145,7 +145,7 @@ Qualquer ferramenta de IA com filesystem ou interface conversacional deve conseg
 ```
 ┌────────────────────────────────────────────────────────────┐
 │ Camada 1 — COGNITIVA (Saara v7.1.1 herdada)                │
-│ 00_core/ · 01_manifest/ · adendos/ · insights/ · memoria/  │
+│ 00_core/ · 01_manifest/ · adendos/ · insights/ · memorias/ │
 └────────────────────────────────────────────────────────────┘
 ┌────────────────────────────────────────────────────────────┐
 │ Camada 2 — PROCEDURAL                                       │
@@ -257,7 +257,7 @@ vault-maui/
 │   ├── maui-quality-layer.md          # NOVO v0.2: schemas, evals, automations
 │   └── maui-open-standards-policy.md  # NOVO v0.2: como Maui adere a padrões abertos
 │
-├── memoria/                           # Memórias episódicas
+├── memorias/                          # Memórias episódicas
 │
 ├── adendos/                           # Evoluções incrementais
 │
@@ -570,7 +570,7 @@ status: ativo
 |---|---|---|
 | `maui-block-corpus-write` | PreToolUse | Bloqueia edição em `00_core/`, `01_manifest/` sem gate explícito |
 | `maui-load-context` | SessionStart | Carrega context package atual + reflexes ativos |
-| `maui-validate-frontmatter` | PostToolUse | Valida frontmatter após escrita em `memoria/`, `adendos/` |
+| `maui-validate-frontmatter` | PostToolUse | Valida frontmatter após escrita em `memorias/`, `adendos/` |
 | `maui-backup-session` | PreCompact | Salva transcrição antes de compactação |
 | `maui-capture-on-stop` | Stop | Sugere captura se gatilhos disparam |
 | `maui-warn-shared-modules` | PreToolUse | Avisa (não bloqueia) edição em módulos sensíveis |
@@ -1092,7 +1092,7 @@ maui mcp-launch all --transport http
 | 14 | Schemas | `schemas/*.schema.yaml` | JSON Schema | upgrade |
 | 15 | Evals | `evals/{skills,prompts,regression}/` | Promptfoo-style | NOVO |
 | 16 | Automations | `automations/*.yaml` | Codex Automations-style | NOVO |
-| 17 | Memória | `memoria/**/*.md` (herdada Saara) | — (próprio) | preservado |
+| 17 | Memória | `memorias/**/*.md` (herdada Saara) | — (próprio) | preservado |
 | 18 | Adendos | `adendos/*.md` (herdado Saara) | — (próprio) | preservado |
 | 19 | Insights | `insights/*.md` (herdado Saara) | — (próprio) | preservado |
 | 20 | Configurações | `00_core/` + `01_manifest/` (herdadas) | — (próprio) | preservado |
@@ -1182,7 +1182,7 @@ Regra preservada: nem toda função técnica colapsa em Agent Engineering.
 
 | Aspecto | Saara v7.1.1 | Maui v0.2 |
 |---|---|---|
-| Estrutura | `memoria/YYYY-MM/*.md` | preservado |
+| Estrutura | `memorias/YYYY-MM/*.md` | preservado |
 | Frontmatter | YAML | preservado + schema validado |
 | Captura | Manual / Capture Layer | Manual + skill `maui-memory-create` + hook `Stop` |
 | Indexação | `.saara/memory.db` | `.maui/memory.db` (mesma função) |

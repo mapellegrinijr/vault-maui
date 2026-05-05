@@ -119,7 +119,7 @@ Isolate → separar escopos, papéis, confidencialidade e ferramentas
 ```text
 ┌────────────────────────────────────────────────────────────┐
 │ Camada 1 — Cognitiva                                       │
-│ 00_core/ · 01_manifest/ · memoria/ · adendos/ · insights/ │
+│ 00_core/ · 01_manifest/ · memorias/ · adendos/ · insights/ │
 └────────────────────────────────────────────────────────────┘
 ┌────────────────────────────────────────────────────────────┐
 │ Camada 2 — Procedural                                      │
@@ -363,7 +363,7 @@ operator-packs/
 vault-maui/
 ├── 00_core/                      # Normativo herdado/evoluído
 ├── 01_manifest/                  # Definição de produto e arquitetura
-├── memoria/                      # Memórias operacionais e episódicas
+├── memorias/                     # Memórias operacionais e episódicas
 ├── adendos/                      # Evoluções incrementais aprovadas
 ├── insights/                     # Padrões consolidados
 ├── skills/                       # Capacidades executáveis por agentes
@@ -859,7 +859,7 @@ Tornar o Maui materializável como diretório versionado, mesmo antes de qualque
 vault-maui/
 ├── 00_core/
 ├── 01_manifest/
-├── memoria/
+├── memorias/
 ├── adendos/
 ├── insights/
 ├── skills/
@@ -1210,7 +1210,7 @@ Permitir que o Maui aprenda e mantenha rastreabilidade desde o piloto inicial, s
 ### Artefatos prioritários
 
 ```text
-memoria/YYYY/MM/YYYY-MM-DD-decisao-adocao-piloto-maui.md
+memorias/YYYY/MM/YYYY-MM-DD-decisao-adocao-piloto-maui.md
 procedures/procedimento-captura-explicita.md
 panel/dashboard.md
 panel/decisions/

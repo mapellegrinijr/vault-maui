@@ -15,7 +15,7 @@
 
 ## Handoff atual
 
-- `vault-maui/context-packages/current/2026-05-04-handoff-sessao-claude-pos-inventario.md`
+- `vault-maui/handoffs/2026-05-04-handoff-sessao-claude-pos-inventario.md`
 
 ## Execucoes registradas
 

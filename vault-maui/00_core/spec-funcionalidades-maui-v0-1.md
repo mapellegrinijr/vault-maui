@@ -360,7 +360,7 @@ Operações:
 
 ### 4.3.3 `maui_memory_search.py`
 
-Responsabilidade: busca local simples em `memoria/`, `insights/` e `adendos/`.
+Responsabilidade: busca local simples em `memorias/`, `insights/` e `adendos/`.
 
 P0 pode ser lexical. Busca vetorial é P1.
 
@@ -1555,7 +1555,7 @@ Capturar quando houver:
 ## 17.4 Estrutura de memória
 
 ```text
-memoria/YYYY/MM/YYYY-MM-DD-slug.md
+memorias/YYYY/MM/YYYY-MM-DD-slug.md
 ```
 
 Frontmatter:
@@ -1827,7 +1827,7 @@ Deve incluir, no mínimo:
 ```text
 00_core/
 01_manifest/
-memoria/                 # conforme política de hash por camada
+memorias/                # conforme política de hash por camada
 adendos/
 insights/
 skills/
@@ -1872,7 +1872,7 @@ Política recomendada:
 | `spec-parametrizacao.json` | criar parametrização Maui separada, sem substituir Saara |
 | `.saara/` | preservar para Saara; não usar como estado Maui |
 | `.maui/` | criar para estado técnico Maui |
-| roadmaps/handoffs Saara | migrar seletivamente para `01_manifest/`, `memoria/` ou `exec-reports/` conforme função |
+| roadmaps/handoffs Saara | migrar seletivamente para `01_manifest/`, `memorias/` ou `exec-reports/` conforme função |
 
 ## 19A.5 Critérios de aceite da adequação documental
 
@@ -1892,7 +1892,7 @@ Política recomendada:
 vault-maui/
 ├── 00_core/                      # Normativo herdado/evoluído
 ├── 01_manifest/                  # Definição de produto e arquitetura
-├── memoria/                      # Memórias operacionais e episódicas
+├── memorias/                     # Memórias operacionais e episódicas
 ├── adendos/                      # Evoluções incrementais aprovadas
 ├── insights/                     # Padrões consolidados
 ├── skills/                       # Capacidades executáveis por agentes

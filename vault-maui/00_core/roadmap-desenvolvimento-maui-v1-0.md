@@ -486,7 +486,7 @@ Indexar memórias Markdown como índice reconstruível.
 
 ### Atividades
 
-1. Listar arquivos em `memoria/`.
+1. Listar arquivos em `memorias/`.
 2. Validar frontmatter mínimo.
 3. Gerar índice JSON.
 4. Detectar possíveis duplicidades por título/data/tags.
@@ -1146,8 +1146,8 @@ Registrar decisões humanas do piloto Maui.
 ### Entregáveis
 
 ```text
-memoria/templates/decisao-template.md
-memoria/YYYY/MM/YYYY-MM-DD-decisao-adocao-piloto-maui.md
+memorias/templates/decisao-template.md
+memorias/YYYY/MM/YYYY-MM-DD-decisao-adocao-piloto-maui.md
 ```
 
 ## 13.2 Funcionalidade: Memória mínima
@@ -1162,7 +1162,7 @@ memoria/YYYY/MM/YYYY-MM-DD-decisao-adocao-piloto-maui.md
 ### Entregáveis
 
 ```text
-memoria/README.md
+memorias/README.md
 procedures/procedimento-captura-explicita.md
 .maui/cache/memory-index.json
 ```
@@ -1523,4 +1523,3 @@ O Maui está pronto para primeiro uso real quando:
 - O desenvolvimento inicial será feito por operador com filesystem.
 - P0 pode ser implementado sem servidor persistente.
 - Busca vetorial, UI e integrações REST podem ser adiadas sem comprometer o início do uso.
-
