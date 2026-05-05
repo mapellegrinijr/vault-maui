@@ -1,3 +1,13 @@
+---
+titulo: "Painel de status — Maui"
+versao: "1.0"
+status: ativo
+data_criacao: 2026-05-05
+idioma: pt-BR
+tipo: painel_status
+escopo: projeto_maui
+---
+
 # Status Maui
 
 - Versao inicial: `v1.0`
