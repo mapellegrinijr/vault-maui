@@ -6,15 +6,16 @@
 - Estado Saara: `.saara/` preservado quando existir
 - Git: inicializado em `main`
 - Commit inicial: `chore: initialize maui repository`
-- Fase atual: inventario diagnostico de Documentacao/ concluido (P0.1.6)
+- Fase atual: handoff pos-inventario consolidado (P0.1.7)
+- Proxima etapa: Tarefa 2 — decisao arquivo a arquivo Documentacao/
 
 ## Ultima execucao registrada
 
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-6-inventario-documentacao.md`
+- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-7-handoff-pos-inventario.md`
 
 ## Handoff atual
 
-- `vault-maui/context-packages/current/2026-05-04-handoff-sessao-claude-p0-1.md`
+- `vault-maui/context-packages/current/2026-05-04-handoff-sessao-claude-pos-inventario.md`
 
 ## Execucoes registradas
 
@@ -28,3 +29,4 @@
 - `vault-maui/exec-reports/submitted/2026-05-04-p0-1-b-schemas-review-handoff.md`
 - `vault-maui/exec-reports/submitted/2026-05-04-p0-1-4-novo-handoff.md`
 - `vault-maui/exec-reports/submitted/2026-05-04-p0-1-6-inventario-documentacao.md`
+- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-7-handoff-pos-inventario.md`
