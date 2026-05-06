@@ -1,7 +1,7 @@
 ---
 titulo: Regras operacionais — interação Saara ↔ Executor de Codificação
 versao: 1.0
-status: ativo
+status: proposta
 data_criacao: 2026-05-04
 idioma: pt-BR
 tipo: regra_operacional
