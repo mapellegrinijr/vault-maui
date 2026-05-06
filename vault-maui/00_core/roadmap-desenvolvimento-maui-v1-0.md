@@ -34,6 +34,13 @@ Etapas com evidência direta até esta reconciliação:
 | P0.1.20 | concluída | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-20-normalizacao-frontmatter-slugs.md`; commit `86756e18bf90d13b9036963fb7eecaf86603abc6`. |
 | P0.1.20-pre | concluída | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-20-pre-context-brief-pos-normalizacao.md`; commit `0dc40fb3195f33092d9c9780937555804ac21e6b`. |
 | P0.1.21 | concluída | `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md` e `vault-maui/exec-reports/submitted/2026-05-06-p0-1-21-context-brief-readiness.md`; commit `03dab3d5258f433fd47b667a2a1531ec4a907798`. |
+| P0.1.26 | concluída | `vault-maui/00_core/principios-fundacionais-maui.md` e `vault-maui/00_core/contrato-precedencia-maui.md`; commit `1f32776`. |
+| P0.1.27 | concluída | `vault-maui/00_core/especificacao-completa-maui.md`; commit `221d481`. |
+| P0.1.28 | concluída | `vault-maui/00_core/system-prompt-maui.md`; commit `4493448`. |
+| P0.1.29 | concluída | 6 PKAs em `vault-maui/00_core/pka-*.md` (PE Elite obrigatória + 5 adaptadas); commit `4c06623`. |
+| P0.1.30 | concluída | 6 specs subsidiárias em `vault-maui/00_core/spec-*-maui.md`; commit `b8c8749`. |
+| P0.1.31 | concluída | `vault-maui/00_core/spec-parametrizacao-maui.md`, `vault-maui/01_manifest/spec-parametrizacao-maui.json`, `vault-maui/00_core/indice-maui.md`; commit `9f2afc9`. |
+| P0.1.32 | concluída | Revisão integrada — 7 correções (A1 B1-B5 C1) em 5 normativos + exec-report + memória marco; commit `538b441`. **Configuração-base Maui concluída em 2026-05-06.** |
 
 Ressalvas operacionais:
 
