@@ -45,6 +45,50 @@ Ressalvas operacionais:
 - `vault-maui/review-reports/` não existe; há `vault-maui/exec-reports/reviewed/`, ainda sem uso como fonte principal.
 - ChatGPT/Handoff sem filesystem, hash ou commit verificável deve declarar conformidade como `unknown`, nunca `current`.
 
+## Planejamento P0.1.24-pre — Configuração-base Maui
+
+P0.1.24-pre registra uma frente explícita de **Configuração-base Maui** antes da P0.1.24. Esta frente atualiza o mapa de execução, mas não cria nem adapta arquivos de configuração-base.
+
+Sequência planejada:
+
+| Etapa | Papel | Limite |
+| --- | --- | --- |
+| P0.1.24-pre | Planejar a frente de Configuração-base Maui no roadmap e registrar decisão de Prompt Engineering Elite | Não cria configuração-base. |
+| P0.1.24 | Diagnosticar a configuração-base Maui necessária e lacunas atuais | Não implementa arquivos finais. |
+| P0.1.25 | Planejar implementação da configuração-base Maui, se aprovado | Ainda depende de decisão humana para execução posterior. |
+
+Escopo mínimo da Configuração-base Maui:
+
+- system prompt Maui;
+- especificação completa Maui;
+- princípios fundacionais Maui ou decisão explícita de herança/adaptação dos princípios Saara;
+- PKAs Maui, incluindo obrigatoriamente **Prompt Engineering Elite**;
+- specs subsidiárias Maui;
+- parametrização executável Maui;
+- índice core Maui;
+- contrato de precedência;
+- relação de dependência com operator packs P0.3 e context packages P0.4.
+
+Prompt Engineering Elite é PKA/competência obrigatória de primeira classe no Maui. Ela responde por prompts, system prompts, developer prompts, instruction sets, templates, rubricas, testes prompt-level, diagnóstico de falha instrucional e mitigação textual de prompt injection. Agent Engineering continua responsável por agentes, tools, memória, RAG, orquestração, roteamento, observabilidade, distribuição, instanciação, captura e rollout. Em tarefas híbridas, Prompt Engineering lidera o contrato textual/instrucional; Agent Engineering lidera integração sistêmica e operacional.
+
+De/para conceitual Saara → Maui, para diagnóstico futuro:
+
+| Saara / origem conceitual | Maui planejado | Observação |
+| --- | --- | --- |
+| `system-prompt.md` | `system-prompt-maui.md` | A criar/adaptar só após diagnóstico e plano. |
+| `especificacao-completa.md` | `especificacao-completa-maui.md` | Deve consolidar identidade e comportamento Maui. |
+| `principios-fundacionais.md` | princípios Maui ou decisão de herança/adaptação | Exige decisão explícita de precedência. |
+| `pka-agent-engineering.md` | PKA Agent Engineering Maui | Mantém fronteira operacional/sistêmica. |
+| `pka-prompt-engineering.md` | PKA Prompt Engineering Maui obrigatória | Inclui Prompt Engineering Elite como domínio de primeira classe. |
+| demais `pka-*.md` relevantes | PKAs Maui adaptadas | Diagnóstico deve decidir herança, adaptação ou exclusão. |
+| specs subsidiárias Saara | specs subsidiárias Maui | Não copiar integralmente sem curadoria. |
+| `spec-parametrizacao.md` / `spec-parametrizacao.json` | parametrização Maui | Deve ser separada da parametrização Saara. |
+| `indice.md` | índice core Maui | Deve apontar precedência e artefatos core. |
+| `CLAUDE.md`, `AGENTS.md`, Custom GPT instructions | operator packs P0.3 | Dependem da configuração-base; não criar nesta etapa. |
+| bootstrap / context packages | context packages P0.4 | Dependem da configuração-base; não criar bootstrap final nesta etapa. |
+
+Limites desta frente: não criar `system-prompt-maui.md`, `especificacao-completa-maui.md`, PKAs, specs subsidiárias, parametrização Maui, operator packs, context packages ou bootstrap final; não executar P0.1.24 nesta etapa.
+
 ## 1. Objetivo
 
 Definir o roadmap de desenvolvimento do Maui v1.0, quebrado por funcionalidade e por atividades dentro de cada funcionalidade, com foco em iniciar o uso do Maui com segurança, governança e rastreabilidade.
