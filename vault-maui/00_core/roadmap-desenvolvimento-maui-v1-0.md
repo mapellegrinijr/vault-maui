@@ -12,9 +12,38 @@ escopo: projeto_maui
 
 ## Nota de reconciliação de status
 
-> Este roadmap foi promovido ao `vault-maui/00_core/` após a execução parcial da adaptação Saara→Maui. O documento preserva seu conteúdo original de planejamento e ainda requer reconciliação dedicada com o progresso real já registrado em handoffs e exec-reports.
+> Reconciliação atualizada em 2026-05-06, após P0.1.21.
 >
-> Até esta promoção, há evidências operacionais de conclusão de etapas até P0.1.13, incluindo inventário de `Documentação/`, classificação arquivo a arquivo, aplicação do Lote A e promoção da arquitetura Maui v0.2 ao core. Esta nota não atualiza automaticamente o status de todas as fases do roadmap; apenas marca a necessidade de revisão controlada posterior.
+> Este roadmap permanece em `status: proposta` e deve ser usado como mapa de destino, critérios e referência estrutural. Ele não deve ser usado como fonte única de status executado.
+>
+> O estado executado deve ser confirmado preferencialmente por Git, exec-reports, inventários, memórias canônicas e handoffs recentes. A atualização abaixo corrige a defasagem da nota anterior, que registrava evidências apenas até P0.1.13.
+
+## Estado operacional reconciliado em 2026-05-06
+
+Fontes de execução preferenciais: `vault-maui/exec-reports/submitted/`, `vault-maui/inventarios/`, `vault-maui/memorias/`, `vault-maui/handoffs/` e Git local. O readiness P0.1.21 formaliza essa precedência em `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`.
+
+Etapas com evidência direta até esta reconciliação:
+
+| Etapa | Estado reconciliado | Evidência resumida |
+| --- | --- | --- |
+| Tarefa 2 / saneamento inicial de `Documentação/` | concluída | Inventário `vault-maui/inventarios/2026-05-04-documentacao.md` e exec-report P0.1.16 registram os 8 destinos finais e nenhuma pendência esperada em `Documentação/`. |
+| P0.1.16 | concluída | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-16-fechamento-tarefa-2-documentacao.md`; commit `31c63e90f4c330d500701c79daf409155e24fe47`. |
+| P0.1.17 | concluída | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-17-diagnostico-estrutural.md`; commit `7de2211122aa709e484e232a4ff4af18afd99f32`. |
+| P0.1.18 | concluída | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-18-normalizacao-memorias.md`; commit `ccf9efce4cea1261959c83beaf4c62836dce5266`. |
+| P0.1.19 | concluída | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-19-normalizacao-referencias-wikilinks.md`; commit `e554136d14f0bbcaec7e41a9e2096a7e24684e94`. |
+| P0.1.20 | concluída | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-20-normalizacao-frontmatter-slugs.md`; commit `86756e18bf90d13b9036963fb7eecaf86603abc6`. |
+| P0.1.20-pre | concluída | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-20-pre-context-brief-pos-normalizacao.md`; commit `0dc40fb3195f33092d9c9780937555804ac21e6b`. |
+| P0.1.21 | concluída | `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md` e `vault-maui/exec-reports/submitted/2026-05-06-p0-1-21-context-brief-readiness.md`; commit `03dab3d5258f433fd47b667a2a1531ec4a907798`. |
+
+Ressalvas operacionais:
+
+- P0.1.11 permanece não executada; não assumir instrução equivalente para Claude Code sem evidência posterior.
+- `vault-maui/memorias/` é o diretório canônico de memórias.
+- `Documentação/` não possui pendências esperadas dos 8 arquivos inventariados e não deve ser reaberta sem decisão humana explícita.
+- Instanciação manual Maui ainda não está pronta e permanece fora do escopo desta reconciliação.
+- Uma memória antiga pode conter trecho defasado tratando P0.1.20 como próximo passo; conferir exec-reports P0.1.20, P0.1.20-pre e P0.1.21 antes de declarar estado atual.
+- `vault-maui/review-reports/` não existe; há `vault-maui/exec-reports/reviewed/`, ainda sem uso como fonte principal.
+- ChatGPT/Handoff sem filesystem, hash ou commit verificável deve declarar conformidade como `unknown`, nunca `current`.
 
 ## 1. Objetivo
 
