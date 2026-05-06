@@ -26,6 +26,8 @@ Este marco registra o plano de normalização estrutural do vault Maui e o ponto
 
 A sessão avançou a partir do fechamento da Tarefa 2 / saneamento inicial de `Documentação/`, criou base para `Maui Context Brief`, diagnosticou a estrutura do vault e iniciou a normalização por lotes.
 
+Atualização de 2026-05-06: esta memória foi corrigida após P0.1.22 para refletir o estado real pós-reconciliação do roadmap. Trechos defasados foram atualizados sem reescrever o histórico da memória.
+
 ## Estado atual consolidado
 
 ### Concluído
@@ -41,15 +43,14 @@ A sessão avançou a partir do fechamento da Tarefa 2 / saneamento inicial de `D
 - P0.1.18-pre reconciliou pendências do working tree antes da normalização.
 - P0.1.18 normalizou o diretório canônico de memórias.
 - P0.1.19 normalizou referências e wikilinks operacionais.
-
-### Em preparação
-
-- P0.1.20 — Lote 3: normalização de frontmatter e slugs operacionais.
+- P0.1.20 normalizou frontmatter e slugs operacionais.
+- P0.1.20-pre reconciliou o marco de memória pós-normalização e criou Context Brief de continuidade.
+- P0.1.21 definiu readiness de Context Brief Maui.
+- P0.1.22 reconciliou o roadmap core com o estado real até P0.1.21, preservando `status: proposta`.
 
 ### Ainda pendente
 
 - P0.1.11 — instruir Claude Code a criar Context Brief sob demanda.
-- Lote 4 — Context Brief readiness.
 - Lote 5 — Instanciação manual Maui.
 - Retomada da P0.1.5 — plano de adaptação Saara→Maui, após normalização estrutural suficiente.
 
@@ -68,6 +69,10 @@ A sessão avançou a partir do fechamento da Tarefa 2 / saneamento inicial de `D
 | P0.1.18-pre | `1e12c08e544180cc16f0daa1417984e12c4a65a6` | reconcilia pendências antes da normalização de memórias |
 | P0.1.18 | `ccf9efce4cea1261959c83beaf4c62836dce5266` | normaliza diretório canônico de memórias |
 | P0.1.19 | `e554136d14f0bbcaec7e41a9e2096a7e24684e94` | normaliza referências e wikilinks operacionais |
+| P0.1.20 | `86756e18bf90d13b9036963fb7eecaf86603abc6` | normaliza frontmatter e slugs operacionais |
+| P0.1.20-pre | `0dc40fb3195f33092d9c9780937555804ac21e6b` | reconcilia memória e cria context brief pós-normalização |
+| P0.1.21 | `03dab3d5258f433fd47b667a2a1531ec4a907798` | define readiness de Context Brief Maui |
+| P0.1.22 | `a0ee423087a703b507e9ffce2718b5a567b4a541` | reconcilia roadmap Maui com estado real |
 
 ## Documentos promovidos ao core
 
@@ -132,7 +137,7 @@ Pendências preservadas:
 
 ### Lote 3 — Frontmatter e slugs
 
-Status: próximo passo imediato.
+Status: concluído na P0.1.20.
 
 Objetivo:
 - diagnosticar e corrigir frontmatter de arquivos operacionais atuais;
@@ -141,17 +146,34 @@ Objetivo:
 - renomear apenas slugs com destino inequívoco e baixo risco;
 - criar registro de normalização e exec-report.
 
-Prompt para P0.1.20 já foi preparado, mas ainda não executado neste ponto.
+Resultado:
+- `vault-maui/panel/status.md` recebeu frontmatter operacional atual;
+- nenhum slug foi renomeado;
+- READMEs, índices auxiliares, templates antigos, históricos e arquivados foram preservados para decisão futura.
 
 ### Lote 4 — Context Brief readiness
 
-Status: pendente.
+Status: concluído na P0.1.21.
 
 Objetivo:
 - garantir que `Maui Context Brief` consiga localizar memórias, handoffs, exec-reports, insights, inventários e atualizações relevantes;
 - validar se o template consulta as fontes corretas;
 - verificar se memórias marcadas com `deve_ser_considerado_em_context_brief: true` são priorizadas;
 - reduzir risco de perda de contexto entre sessões.
+
+Resultado:
+- criado readiness em `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`;
+- definida precedência operacional para retomadas por Context Brief;
+- registrado que ChatGPT/Handoff sem filesystem/hash verificável deve usar `unknown`, nunca `current`.
+
+### Reconciliação do roadmap
+
+Status: concluída na P0.1.22.
+
+Resultado:
+- o roadmap core foi reconciliado até P0.1.21;
+- o roadmap segue `status: proposta`;
+- o roadmap deve ser usado como mapa de destino, não como fonte única de status executado.
 
 ### Lote 5 — Instanciação manual Maui
 
@@ -204,15 +226,16 @@ Todas as memórias relevantes para retomada devem conter ou preservar:
 - Tarefa 2 foi concluída.
 - P0.1.18 definiu `vault-maui/memorias/` como diretório canônico.
 - P0.1.19 corrigiu referências operacionais e preservou histórico.
-- P0.1.20 é o próximo lote planejado.
+- P0.1.20 concluiu o Lote 3 — Frontmatter e slugs.
+- P0.1.21 concluiu o Lote 4 — Context Brief readiness.
+- P0.1.22 reconciliou o roadmap core com o estado real até P0.1.21.
 - P0.1.11 não foi executada.
 - Instanciação manual ainda está em readiness experimental.
 
 ### Inferências
 
-- A normalização estrutural deve continuar antes de retomar profundamente P0.1.5.
-- Lote 3 reduzirá riscos para Context Brief e instanciação manual futura.
-- Lotes 4 e 5 dependem de uma base documental mais consistente.
+- A retomada profunda de P0.1.5 deve considerar o roadmap reconciliado, exec-reports, inventários e memórias canônicas.
+- Lote 5 depende da base documental já estabilizada por P0.1.20-P0.1.22 e de decisão humana específica.
 
 ### Hipóteses
 
@@ -225,7 +248,8 @@ Todas as memórias relevantes para retomada devem conter ou preservar:
 Ao criar um `Maui Context Brief` para qualquer tarefa relacionada a:
 
 - normalização estrutural;
-- P0.1.20;
+- estado pós-P0.1.22;
+- P0.1.20, P0.1.21 e P0.1.22;
 - Context Brief readiness;
 - instanciação manual;
 - system prompt;
@@ -245,4 +269,4 @@ consultar este marco e refletir:
 
 ## Próximo passo recomendado
 
-Executar **P0.1.20 — Lote 3: Frontmatter e slugs**, usando o prompt já preparado, e depois revisar o retorno antes de avançar para o Lote 4.
+Revisar e aceitar esta correção pontual da memória. Depois, decidir humanamente a próxima etapa imediata, sem executar P0.1.11 nem assumir instanciação manual Maui pronta.
