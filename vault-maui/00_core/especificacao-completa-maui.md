@@ -171,10 +171,10 @@ A Configuração-base Maui deve ser materializada em lotes, conforme plano P0.1.
 | P0.1.26 | Princípios e contrato de precedência | concluído |
 | P0.1.27 | Especificação completa Maui | este documento |
 | P0.1.28 | System prompt Maui | pendente |
-| P0.1.29 | PKAs Maui | pendente |
-| P0.1.30 | Specs subsidiárias Maui | pendente |
-| P0.1.31 | Parametrização e índice Maui | pendente |
-| P0.1.32 | Revisão integrada | pendente |
+| P0.1.29 | PKAs Maui | concluído |
+| P0.1.30 | Specs subsidiárias Maui | concluído |
+| P0.1.31 | Parametrização e índice Maui | concluído |
+| P0.1.32 | Revisão integrada | em execução |
 
 Cada lote futuro exige tarefa própria e Human Gate quando criar ou alterar documento normativo.
 

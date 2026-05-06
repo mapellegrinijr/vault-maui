@@ -6,7 +6,7 @@ data_criacao: 2026-05-04
 idioma: pt-BR
 tipo: regra_operacional
 escopo: projeto_maui
-precedencia: alta
+precedencia: 7
 ---
 
 # Regras operacionais — interação Saara ↔ Executor de Codificação

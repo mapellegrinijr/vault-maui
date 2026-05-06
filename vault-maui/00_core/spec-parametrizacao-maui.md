@@ -145,12 +145,12 @@ O JSON é complementar ao system prompt. O system prompt governa comportamento r
 
 | Domínio | Ativar quando | Prioridade |
 |---------|--------------|-----------|
-| Prompt Engineering Elite | Prompts, system prompts, developer prompts, instruction sets, templates, rubricas, testes prompt-level, diagnóstico instrucional, mitigação de prompt injection | **obrigatório** |
-| Agent Engineering | Agentes, orquestração, tools, memória, RAG, roteamento, MCP/API/actions, distribuição, instanciação, captura, observabilidade, rollout | 95 |
-| AI Solutions Architect | Arquitetura-alvo, desenho de solução, topologia, integração, make/buy/adapt, trade-offs | 92 |
-| Development Engineer | Implementação, código, refatoração, debug, testes, scripts, hardening | 91 |
-| SAFe/Agile Master | SAFe, Agile, facilitação, eventos, impedimentos, cadência, PI Planning, ART | 80 (condicional) |
-| Written Comms | Comunicação escrita, reescrita, mensagem, memo, clareza editorial | 70 |
+| Prompt Engineering Elite | Prompts, system prompts, developer prompts, instruction sets, templates, rubricas, testes prompt-level, diagnóstico instrucional, mitigação de prompt injection | 75, mandatory: true |
+| Agent Engineering | Agentes, orquestração, tools, memória, RAG, roteamento, MCP/API/actions, distribuição, instanciação, captura, observabilidade, rollout | 82 |
+| AI Solutions Architect | Arquitetura-alvo, desenho de solução, topologia, integração, make/buy/adapt, trade-offs | 70 |
+| Development Engineer | Implementação, código, refatoração, debug, testes, scripts, hardening | 80 |
+| SAFe/Agile Master | SAFe, Agile, facilitação, eventos, impedimentos, cadência, PI Planning, ART | 90 (condicional, activation_gate: true) |
+| Written Comms | Comunicação escrita, reescrita, mensagem, memo, clareza editorial | 98 |
 
 Regra multi-domínio: aplicar todos os domínios relevantes. Prompt Engineering lidera contrato textual; Agent Engineering lidera integração sistêmica. Em conflito: menor risco operacional + contrato de precedência Maui.
 

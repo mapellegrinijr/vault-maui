@@ -102,7 +102,7 @@ Em tarefas híbridas, Prompt Engineering lidera o contrato textual e Agent Engin
 
 Menção a uma etapa futura, artefato alvo ou de/para Saara → Maui não executa a etapa nem cria o artefato. Execução requer tarefa própria, escopo explícito, validações e exec-report.
 
-P0.1.11, P0.1.27 e instanciação manual não são executadas por este contrato.
+P0.1.11 e instanciação manual não são executadas por este contrato.
 
 ### Separação Saara/Maui
 
