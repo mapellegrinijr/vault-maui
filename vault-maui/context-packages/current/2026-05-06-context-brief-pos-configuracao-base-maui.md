@@ -34,10 +34,10 @@ A **Configuração-base Maui está completa**. Os 19 artefatos normativos (lotes
 
 **Working tree observado na geração deste brief:** havia uma alteração não commitada no roadmap e três arquivos novos não rastreados:
 
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/context-packages/current/2026-05-06-context-brief-pos-configuracao-base-maui.md`
 - `vault-maui/handoffs/2026-05-06-handoff-pos-configuracao-base-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-encerramento-sessao-configuracao-base-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-encerramento-sessao-configuracao-base-maui.md`
 
 Esses arquivos devem ser tratados como estado local recente, ainda não versionado, até novo commit confirmar sua incorporação.
 
@@ -51,8 +51,8 @@ Este é o grupo mínimo recomendado para uma nova instância Saara entender onde
 
 1. `vault-maui/context-packages/current/2026-05-06-context-brief-pos-configuracao-base-maui.md`
 2. `vault-maui/handoffs/2026-05-06-handoff-pos-configuracao-base-maui.md`
-3. `vault-maui/memorias/2026-05-06-marco-encerramento-sessao-configuracao-base-maui.md`
-4. `vault-maui/memorias/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md`
+3. `vault-maui/project-memories/2026-05-06-marco-encerramento-sessao-configuracao-base-maui.md`
+4. `vault-maui/project-memories/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md`
 5. `vault-maui/exec-reports/submitted/2026-05-06-p0-1-32-revisao-integrada-configuracao-base.md`
 
 ### Camada 1 — contrato normativo obrigatório
@@ -82,7 +82,7 @@ Ler apenas conforme a tarefa:
 
 ### Camada 3 — histórico e evidência ampliada
 
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` — mapa de destino, não evidência isolada.
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` — mapa de destino, não evidência isolada.
 - `vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md`
 - `vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md`
 - `vault-maui/procedures/procedimento-gerar-context-brief.md`
@@ -100,9 +100,9 @@ Ler apenas conforme a tarefa:
 | 4 | `vault-maui/00_core/indice-maui.md` | Mapa completo de artefatos e navegação |
 | 5 | `vault-maui/00_core/spec-parametrizacao-maui.md` | Documentação da parametrização |
 | 5 | `vault-maui/01_manifest/spec-parametrizacao-maui.json` | Domain Router executável (prioridades numéricas) |
-| 6 | `vault-maui/memorias/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md` | Marco de conclusão |
+| 6 | `vault-maui/project-memories/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md` | Marco de conclusão |
 | 7 | `vault-maui/exec-reports/submitted/2026-05-06-p0-1-32-revisao-integrada-configuracao-base.md` | Correções aplicadas e achados |
-| 8 | `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | Mapa de destino (não evidência de execução) |
+| 8 | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | Mapa de destino (não evidência de execução) |
 
 ---
 

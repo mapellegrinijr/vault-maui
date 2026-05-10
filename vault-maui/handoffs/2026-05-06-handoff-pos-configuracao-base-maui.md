@@ -67,7 +67,7 @@ A Configuração-base Maui está **completa**. Os 19 artefatos normativos (P0.1.
 3. `vault-maui/00_core/system-prompt-maui.md` — contrato runtime
 4. `vault-maui/00_core/indice-maui.md` — mapa de navegação e tabela de artefatos
 5. `vault-maui/00_core/spec-parametrizacao-maui.md` + `vault-maui/01_manifest/spec-parametrizacao-maui.json` — Domain Router e parametrização
-6. `vault-maui/memorias/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md` — marco de conclusão P0.1.32
+6. `vault-maui/project-memories/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md` — marco de conclusão P0.1.32
 7. `vault-maui/exec-reports/submitted/2026-05-06-p0-1-32-revisao-integrada-configuracao-base.md` — achados e correções
 
 ---

@@ -40,9 +40,9 @@ A P0.1.17 foi executada como diagnóstico estrutural do `vault-maui/`, sem aplic
 
 ## Principais achados
 
-- `vault-maui/memoria/` e `vault-maui/memorias/` coexistem.
+- `vault-maui/memoria/` e `vault-maui/project-memories/` coexistem.
 - `vault-maui/memoria/` existe e está vazio.
-- `vault-maui/memorias/` existe e contém memórias com `deve_ser_considerado_em_context_brief: true`.
+- `vault-maui/project-memories/` existe e contém memórias com `deve_ser_considerado_em_context_brief: true`.
 - `vault-maui/review-reports/` não existe.
 - `vault-maui/operator-packs/` contém subdiretórios por target, mas sem arquivos de pack/template.
 - Há diretórios planejados ainda vazios, incluindo `scripts/`, `procedures/`, `skills/`, `hooks/`, `evals/` e `exports/`.
@@ -87,7 +87,7 @@ Antes da criação desta memória, o working tree já continha pendências não 
 - remoção pendente em `vault-maui/context-packages/current/2026-05-04-handoff-sessao-claude-pos-inventario.md`;
 - arquivo `Sem título.canvas` não rastreado;
 - arquivos não rastreados em `vault-maui/handoffs/`;
-- memória não rastreada em `vault-maui/memorias/2026-05-05-marco-decisao-normalizacao-estrutural.md`.
+- memória não rastreada em `vault-maui/project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md`.
 
 Essas pendências não fazem parte do commit `7de2211122aa709e484e232a4ff4af18afd99f32`.
 
@@ -103,4 +103,4 @@ Ao criar um `Maui Context Brief` para normalização estrutural, memórias, Cont
 
 ## Próximo passo recomendado
 
-Aprovar e executar o **Lote 1 — Memórias**, preservando memórias marcadas com `deve_ser_considerado_em_context_brief: true` e registrando a decisão canônica entre `vault-maui/memoria/` e `vault-maui/memorias/`.
+Aprovar e executar o **Lote 1 — Memórias**, preservando memórias marcadas com `deve_ser_considerado_em_context_brief: true` e registrando a decisão canônica entre `vault-maui/memoria/` e `vault-maui/project-memories/`.

@@ -13,7 +13,7 @@ human_gate: true
 referencias:
   - "vault-maui/00_core/principios-fundacionais-maui.md"
   - "vault-maui/00_core/arquitetura-maui-v0-2.md"
-  - "vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md"
+  - "vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md"
   - "vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md"
   - "vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md"
   - "vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md"
@@ -115,7 +115,7 @@ Para retomada e reconciliação de status, a ordem prática recomendada é:
 1. Git e filesystem local verificável.
 2. Exec-reports em `vault-maui/exec-reports/submitted/`.
 3. Inventários e planos em `vault-maui/inventarios/` e `vault-maui/planos/`.
-4. Memórias em `vault-maui/memorias/` com `deve_ser_considerado_em_context_brief: true`.
+4. Memórias em `vault-maui/project-memories/` com `deve_ser_considerado_em_context_brief: true`.
 5. Context briefs e readiness em `vault-maui/context-packages/`.
 6. Handoffs verificáveis.
 7. Roadmap core como mapa de destino.

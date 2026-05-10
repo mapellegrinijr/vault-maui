@@ -18,15 +18,15 @@ Executada a P0.1.21 — Lote 4: Context Brief readiness. Foi criado um artefato 
 
 ## Arquivos lidos
 
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/context-packages/templates/maui-context-brief.template.md`
 - `vault-maui/context-packages/current/2026-05-05-context-brief-pos-p0-1-20-normalizacao.md`
 - `vault-maui/handoffs/2026-05-04-handoff-sessao-claude-pos-inventario.md`
 - `vault-maui/handoffs/2026-05-05-handoff-fechamento-tarefa-2-pre-p0-1-17.md`
-- `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
-- `vault-maui/memorias/2026-05-05-marco-decisao-normalizacao-estrutural.md`
-- `vault-maui/memorias/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
-- `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
+- `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
+- `vault-maui/project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md`
+- `vault-maui/project-memories/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
+- `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
 - `vault-maui/inventarios/2026-05-04-documentacao.md`
 - `vault-maui/inventarios/2026-05-05-diagnostico-estrutural-vault-maui.md`
 - `vault-maui/inventarios/2026-05-05-normalizacao-memorias.md`
@@ -52,7 +52,7 @@ Nenhum arquivo existente foi alterado.
 - Confirmado que não havia commit `p0.1.21` no `git log`.
 - Confirmado que não havia artefato `p0-1-21`, `context-brief-readiness` ou `readiness` existente sob `vault-maui/`.
 - Confirmada existência dos diretórios relevantes: `00_core/`, `context-packages/`, `exec-reports/submitted/`, `handoffs/`, `inventarios/` e `memorias/`.
-- Confirmada existência de `vault-maui/memorias/` como diretório canônico de memórias.
+- Confirmada existência de `vault-maui/project-memories/` como diretório canônico de memórias.
 - Confirmado que `vault-maui/context-packages/readiness/` não existia antes e foi criado como caminho fallback previsto.
 - Validado manualmente o frontmatter dos arquivos criados.
 - Verificados caminhos internos mencionados no readiness contra o filesystem quando esperados.
@@ -64,7 +64,7 @@ Nenhum arquivo existente foi alterado.
 
 - Usar exec-reports, inventários, memórias canônicas e handoffs como evidência operacional primária para retomada.
 - Usar o roadmap core apenas como mapa de destino, critérios e referência estrutural reconciliável.
-- Declarar `vault-maui/memorias/` como fonte obrigatória e canônica para memórias.
+- Declarar `vault-maui/project-memories/` como fonte obrigatória e canônica para memórias.
 - Declarar `unknown` como estado correto para ChatGPT/Handoff sem filesystem, hash ou commit verificável.
 - Não criar inventário separado porque o artefato de readiness já contém classificação de fontes, regras, checklist, riscos e F/I/H; um inventário duplicaria a mesma informação sem acrescentar valor operacional.
 

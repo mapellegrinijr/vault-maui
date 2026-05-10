@@ -28,7 +28,7 @@ Foi criado um procedimento operacional e uma skill para que Claude Code (e outro
 | --- | --- | --- |
 | `vault-maui/procedures/procedimento-gerar-context-brief.md` | Procedimento operacional | Referência completa: fontes, ordem, regras, template, validações |
 | `vault-maui/skills/maui-context-brief/SKILL.md` | Skill compacta | Instrução de execução rápida para Claude Code e outros executores |
-| `vault-maui/memorias/2026-05-06-decisao-claude-code-gerar-context-brief.md` | Memória de decisão | Este arquivo |
+| `vault-maui/project-memories/2026-05-06-decisao-claude-code-gerar-context-brief.md` | Memória de decisão | Este arquivo |
 | `vault-maui/exec-reports/submitted/2026-05-06-claude-code-context-brief-procedure.md` | Exec-report | Registro da tarefa de documentação |
 
 ## Regra operacional

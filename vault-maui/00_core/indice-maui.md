@@ -34,7 +34,7 @@ referencias:
   - "vault-maui/00_core/spec-adendos-maui.md"
   - "vault-maui/00_core/spec-parametrizacao-maui.md"
   - "vault-maui/01_manifest/spec-parametrizacao-maui.json"
-  - "vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md"
+  - "vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md"
 tags:
   - maui
   - indice
@@ -123,7 +123,7 @@ Infraestrutura (Claude Code, Codex, MCP server, ChatGPT, API) é substituível. 
 - `vault-maui/00_core/regras-operacionais.md` — regras operacionais complementares
 - `vault-maui/00_core/arquitetura-maui-v0-2.md` — arquitetura técnica
 - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` — spec funcional
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` — roadmap (mapa de destino, não evidência)
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` — roadmap (mapa de destino, não evidência)
 
 ---
 
@@ -167,7 +167,7 @@ Aplicar todos os PKAs relevantes. Prompt Engineering lidera contrato textual/ins
 |-------|-----|
 | `vault-maui/00_core/` | Normativos, PKAs, specs subsidiárias, parametrização, índice |
 | `vault-maui/01_manifest/` | JSON executável, README |
-| `vault-maui/memorias/` | Memórias canônicas (escopo, confidencialidade, context_brief_flag) |
+| `vault-maui/project-memories/` | Memórias canônicas (escopo, confidencialidade, context_brief_flag) |
 | `vault-maui/exec-reports/submitted/` | Evidência de execução (fonte de verdade operacional) |
 | `vault-maui/exec-reports/reviewed/` | Exec-reports revisados |
 | `vault-maui/planos/` | Planos de implementação |
@@ -188,7 +188,7 @@ Aplicar todos os PKAs relevantes. Prompt Engineering lidera contrato textual/ins
 1. Verificar git log e filesystem atual
 2. Ler exec-reports em `vault-maui/exec-reports/submitted/`
 3. Ler context brief atual em `vault-maui/context-packages/current/`
-4. Consultar memórias com `deve_ser_considerado_em_context_brief: true` em `vault-maui/memorias/`
+4. Consultar memórias com `deve_ser_considerado_em_context_brief: true` em `vault-maui/project-memories/`
 5. Usar handoff em `vault-maui/handoffs/` se disponível e verificável
 
 ### Iniciar tarefa com domínio identificado
@@ -221,7 +221,7 @@ Aplicar todos os PKAs relevantes. Prompt Engineering lidera contrato textual/ins
 | **Camadas A/B/C** | Configuração base / Complementos de sessão / Contexto conversacional |
 | **Capture Layer** | Inversa da distribuição; captura material valioso de conversas para Memory Store |
 | **Insight Pipeline** | Observações operacionais → adendos → Human Gate → corpo da PKA |
-| **Memory Store** | `vault-maui/memorias/`; markdown é fonte de verdade; SQLite é auxiliar |
+| **Memory Store** | `vault-maui/project-memories/`; markdown é fonte de verdade; SQLite é auxiliar |
 | **hash_config** | SHA-256 sobre arquivos normativos de `vault-maui/00_core/` |
 | **Modo A / B / B1** | Meta-arquitetura e governança / Operacional / Operacional com escalada |
 | **D0–D3** | Profundidade de resposta: direto → riscos → opções → governança completa |

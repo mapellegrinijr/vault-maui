@@ -29,7 +29,7 @@ O próximo passo recomendado é P0.1.26, em tarefa separada, para definir princ�
 
 - Roadmap core preserva `status: proposta`.
 - Roadmap core deve ser tratado como mapa de destino, não como fonte única de status executado.
-- `vault-maui/memorias/` é o diretório canônico de memórias.
+- `vault-maui/project-memories/` é o diretório canônico de memórias.
 - `Documentação/` não possui pendência esperada e não deve ser reaberta sem decisão humana.
 - P0.1.11 permanece não executada.
 - Instanciação manual Maui permanece fora do escopo e não deve ser assumida como pronta.
@@ -68,7 +68,7 @@ O próximo passo recomendado é P0.1.26, em tarefa separada, para definir princ�
 | Área | Estado pós-P0.1.25 |
 |---|---|
 | `vault-maui/00_core/` | Contém roadmap e documentos core existentes; não contém pacote completo de Configuração-base Maui materializado. |
-| `vault-maui/memorias/` | Diretório canônico de memórias; contém memória de decisão sobre Configuração-base e Prompt Engineering. |
+| `vault-maui/project-memories/` | Diretório canônico de memórias; contém memória de decisão sobre Configuração-base e Prompt Engineering. |
 | `vault-maui/inventarios/` | Contém diagnóstico P0.1.24 da Configuração-base Maui. |
 | `vault-maui/planos/` | Contém plano P0.1.25 de implementação da Configuração-base Maui. |
 | `vault-maui/context-packages/readiness/` | Contém readiness P0.1.21 para Context Brief. |
@@ -130,7 +130,7 @@ O próximo passo recomendado é P0.1.26, em tarefa separada, para definir princ�
 ### Fatos
 
 - P0.1.21 a P0.1.25 possuem artefatos e commits citados neste marco.
-- `vault-maui/memorias/` é o diretório canônico de memórias.
+- `vault-maui/project-memories/` é o diretório canônico de memórias.
 - O roadmap core permanece `status: proposta`.
 - A Configuração-base Maui ainda não existe como pacote completo materializado.
 

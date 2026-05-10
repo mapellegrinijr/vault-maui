@@ -41,7 +41,7 @@ Estado real confirmado antes deste context package:
 - Roadmap core permanece `status: proposta`.
 - P0.1.11 permanece não executada.
 - Instanciação manual Maui não está pronta.
-- `vault-maui/memorias/` é canônico.
+- `vault-maui/project-memories/` é canônico.
 - `Documentação/` não deve ser reaberta nem alterada.
 - Sem filesystem/hash verificável, declarar conformidade `unknown`, nunca `current`.
 
@@ -178,7 +178,7 @@ Sem filesystem, hash, commit ou arquivos anexados verificáveis:
 - Se Prompt Engineering Elite deve ser preservado: sim, é obrigatório.
 - Se Prompt Engineering deve ser separado de Agent Engineering: sim.
 - Se Maui e Saara são separados: sim.
-- Se `vault-maui/memorias/` é canônico: sim.
+- Se `vault-maui/project-memories/` é canônico: sim.
 - Se P0.1.11 deve ser executada por inferência: não.
 - Se roadmap deve promover `status: proposta`: não.
 

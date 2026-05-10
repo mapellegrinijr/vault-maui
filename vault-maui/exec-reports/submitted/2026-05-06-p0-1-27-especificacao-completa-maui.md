@@ -27,7 +27,7 @@ Não foram criados system prompt, PKAs, specs subsidiárias, parametrização, �
 - `vault-maui/context-packages/current/2026-05-06-context-brief-pos-p0-1-25-configuracao-base.md`
 - `vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md`
 - `vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md`
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/00_core/arquitetura-maui-v0-2.md`
 - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md`
 - `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md`
@@ -36,7 +36,7 @@ Não foram criados system prompt, PKAs, specs subsidiárias, parametrização, �
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-25-plano-configuracao-base.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-25-post-marco-context-brief.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-26-principios-precedencia-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-p0-1-26-principios-precedencia-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-26-principios-precedencia-maui.md`
 
 ### Saara usados como modelo
 
@@ -62,7 +62,7 @@ Não foram criados system prompt, PKAs, specs subsidiárias, parametrização, �
 ## Arquivos criados/alterados
 
 - Criado: `vault-maui/00_core/especificacao-completa-maui.md`
-- Criado: `vault-maui/memorias/2026-05-06-marco-p0-1-27-especificacao-completa-maui.md`
+- Criado: `vault-maui/project-memories/2026-05-06-marco-p0-1-27-especificacao-completa-maui.md`
 - Criado: `vault-maui/exec-reports/submitted/2026-05-06-p0-1-27-especificacao-completa-maui.md`
 
 Nenhum arquivo em `Documentação/` foi alterado.

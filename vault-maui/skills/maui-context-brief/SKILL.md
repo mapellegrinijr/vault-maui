@@ -46,10 +46,10 @@ Consultar nesta ordem:
 1. `git status --short` e `git log --oneline -20`
 2. `vault-maui/exec-reports/submitted/` — exec-reports mais recentes
 3. `vault-maui/inventarios/` — diagnósticos e registros
-4. `vault-maui/memorias/` — apenas arquivos com `deve_ser_considerado_em_context_brief: true`
+4. `vault-maui/project-memories/` — apenas arquivos com `deve_ser_considerado_em_context_brief: true`
 5. `vault-maui/handoffs/` — handoffs recentes
 6. `vault-maui/context-packages/current/` — briefs anteriores relacionados
-7. `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` — apenas como referência estrutural
+7. `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` — apenas como referência estrutural
 
 ## Passos
 

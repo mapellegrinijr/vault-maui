@@ -18,20 +18,20 @@ Atualizado o roadmap para explicitar a frente de Configuração-base Maui antes 
 
 ## Arquivos lidos
 
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/00_core/arquitetura-maui-v0-2.md`
 - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md`
 - `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-22-reconciliacao-roadmap.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-23-correcao-memoria-defasada.md`
-- `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
+- `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
 - referências arquivadas e inventários via busca textual para identificar de/para conceitual.
 
 ## Arquivos alterados/criados
 
-- Alterado: `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
-- Criado: `vault-maui/memorias/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
+- Alterado: `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
+- Criado: `vault-maui/project-memories/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
 - Criado: `vault-maui/exec-reports/submitted/2026-05-06-p0-1-24-pre-planejamento-configuracao-base.md`
 
 ## Alterações aplicadas ao roadmap
@@ -47,7 +47,7 @@ Atualizado o roadmap para explicitar a frente de Configuração-base Maui antes 
 
 ## Memória criada
 
-- `vault-maui/memorias/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
+- `vault-maui/project-memories/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
 
 ## Validações executadas
 

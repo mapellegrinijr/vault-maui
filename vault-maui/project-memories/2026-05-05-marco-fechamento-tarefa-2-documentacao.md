@@ -47,7 +47,7 @@ Registrar que a sessão fechou o saneamento inicial dos 8 arquivos inventariados
 
 - `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md`
 - `vault-maui/00_core/arquitetura-maui-v0-2.md`
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md`
 
 ## Arquivos arquivados

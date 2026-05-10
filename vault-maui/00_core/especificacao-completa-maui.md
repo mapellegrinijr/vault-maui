@@ -22,7 +22,7 @@ referencias:
   - "vault-maui/00_core/arquitetura-maui-v0-2.md"
   - "vault-maui/00_core/spec-funcionalidades-maui-v0-1.md"
   - "vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md"
-  - "vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md"
+  - "vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md"
   - "vault-maui/00_core/regras-operacionais.md"
   - "vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md"
   - "vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md"
@@ -160,7 +160,7 @@ Resumo operacional:
 9. Prompt Engineering como competência obrigatória.
 10. Agent Engineering como competência de integração/orquestração.
 11. Context Engineering/Context Brief como mecanismo de retomada.
-12. Memória seletiva, sanitizada e canônica em `vault-maui/memorias/`.
+12. Memória seletiva, sanitizada e canônica em `vault-maui/project-memories/`.
 
 ## 4. Lifecycle da Configuração-base Maui
 
@@ -303,7 +303,7 @@ Ordem recomendada para retomada:
 
 ## 10. Memória e Capture Layer
 
-Memórias Maui vivem canonicamente em `vault-maui/memorias/`.
+Memórias Maui vivem canonicamente em `vault-maui/project-memories/`.
 
 Captura deve ser:
 

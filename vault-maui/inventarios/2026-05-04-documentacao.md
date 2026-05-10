@@ -650,7 +650,7 @@ Decisão arquivo a arquivo será feita pela instância Saara em conjunto com o u
 | `Documentação/spec-tecnica-atualizacao-saara-maui.md` | `arquivar` | `vault-maui/context-packages/archive/spec-tecnica-atualizacao-saara-maui-v1.md` | `baixo` | Versão 0.1 supersedida pela v2. |
 | `Documentação/pacote_documental_maui_multi_ia_v_1_0.md` | `arquivar` | `vault-maui/context-packages/archive/pacote-documental-maui-multi-ia-v1-0.md` | `baixo` | Pacote histórico após migração dos documentos autônomos. |
 | `Documentação/pacote documental maui multi IA.md` | `arquivar` | `vault-maui/context-packages/archive/pacote-documental-maui-multi-ia-draft.md` | `baixo` | Rascunho supersedido pelo pacote v1.0. |
-| `Documentação/roadmap_desenvolvimento_maui_v_1_0.md` | `atualizar` | `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | `médio` | Roadmap relevante; alinhar status das fases antes de mover. |
+| `Documentação/roadmap_desenvolvimento_maui_v_1_0.md` | `atualizar` | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | `médio` | Roadmap relevante; alinhar status das fases antes de mover. |
 | `Documentação/spec_funcionalidades_maui_unificada_v_0_1.md` | `atualizar` | `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` | `médio` | Especificação relevante; comparar com decisões posteriores. |
 | `Documentação/Arquitetura novo Saara - Maui` | `arquivar` | `vault-maui/context-packages/archive/arquitetura-novo-saara-maui-draft.md` | `baixo` | Rascunho inicial supersedido pela arquitetura v0.2. |
 
@@ -697,7 +697,7 @@ Decisão arquivo a arquivo será feita pela instância Saara em conjunto com o u
 ### 6. `Documentação/roadmap_desenvolvimento_maui_v_1_0.md`
 
 - `classificacao_proposta`: `atualizar`
-- `destino_proposto`: `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `destino_proposto`: `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `risco`: `médio`
 - `justificativa`: Roadmap relevante, mas frontmatter inválido e status das fases precisa refletir progresso real já registrado nos handoffs.
 - `dependencias`: Verificar alinhamento com o estado atual do projeto antes de mover para vault.
@@ -736,7 +736,7 @@ A aplicação das ações propostas depende de aprovação explícita do usuári
 | `Documentação/pacote documental maui multi IA.md` | `vault-maui/context-packages/archive/pacote-documental-maui-multi-ia-draft.md` | arquivado | `4c63dbff803df726178318e0daa71ab749c60b02` |
 | `Documentação/Arquitetura novo Saara - Maui` | `vault-maui/context-packages/archive/arquitetura-novo-saara-maui-draft.md` | arquivado | `4c63dbff803df726178318e0daa71ab749c60b02` |
 | `Documentação/arquitetura_maui_v_0_2.md` | `vault-maui/00_core/arquitetura-maui-v0-2.md` | promovido ao core com frontmatter corrigido | `f1f50dbc85d082556385dafbd75340cf6edcb8cc` |
-| `Documentação/roadmap_desenvolvimento_maui_v_1_0.md` | `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | promovido ao core com frontmatter corrigido e nota de reconciliação | `28cfffe0f6e0bc386737f4db4c6307cf0555c50c` |
+| `Documentação/roadmap_desenvolvimento_maui_v_1_0.md` | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | promovido ao core com frontmatter corrigido e nota de reconciliação | `28cfffe0f6e0bc386737f4db4c6307cf0555c50c` |
 | `Documentação/spec_funcionalidades_maui_unificada_v_0_1.md` | `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` | promovido ao core com frontmatter corrigido e nota de reconciliação | `cef5e65fd10faf3d2e1995b351468163a72868e3` |
 
 - Pendência da Tarefa 2: nenhuma pendência esperada em `Documentação/`.

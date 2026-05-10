@@ -14,7 +14,7 @@ proxima_acao: >
   diretório canônico de memórias. O brief deve consultar o marco de memória
   da P0.1.16, exec-reports recentes, inventário reconciliado, regras
   operacionais e documentos core promovidos. Deve registrar explicitamente a
-  ambiguidade entre vault-maui/memoria/ e vault-maui/memorias/ como risco/lacuna
+  ambiguidade entre vault-maui/memoria/ e vault-maui/project-memories/ como risco/lacuna
   antes de qualquer movimentação.
 deve_ser_considerado_em_context_brief: true
 ---
@@ -29,7 +29,7 @@ O bloqueio principal era a **Tarefa 2 — decisão arquivo a arquivo sobre os 8 
 
 Também foi criado e incorporado o padrão operacional **Maui Context Brief**, incluindo instrução para o Codex gerar briefs sob demanda e regra para priorizar memórias marcadas com `deve_ser_considerado_em_context_brief: true`.
 
-Ao final, surgiu uma nova pendência estrutural: existem `vault-maui/memoria/` e `vault-maui/memorias/`. Antes de normalizar, recomenda-se criar um Context Brief específico para P0.1.17.
+Ao final, surgiu uma nova pendência estrutural: existem `vault-maui/memoria/` e `vault-maui/project-memories/`. Antes de normalizar, recomenda-se criar um Context Brief específico para P0.1.17.
 
 ## 2. Estado atual
 
@@ -40,7 +40,7 @@ Ao final, surgiu uma nova pendência estrutural: existem `vault-maui/memoria/` e
 - Rascunhos e pacotes históricos foram arquivados em `vault-maui/context-packages/archive/`.
 - Codex foi instruído a gerar `Maui Context Brief` sob demanda.
 - Claude Code ainda não foi atualizado para Context Brief sob demanda; P0.1.11 permanece não executada por decisão do usuário.
-- Nova pendência: ambiguidade entre `vault-maui/memoria/` e `vault-maui/memorias/`.
+- Nova pendência: ambiguidade entre `vault-maui/memoria/` e `vault-maui/project-memories/`.
 
 ## 3. Decisões humanas registradas nesta sessão
 

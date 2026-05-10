@@ -27,7 +27,7 @@ Foi criado pacote de handoff/contexto para que uma nova instância Claude operan
 - `vault-maui/handoffs/2026-05-06-handoff-saara-7-1-1-pe-claude-maui.md`
 - `vault-maui/context-packages/generated/2026-05-06-claude-saara-7-1-1-pe-maui-continuation.md`
 - `vault-maui/context-packages/generated/2026-05-06-ordem-leitura-claude-saara-pe-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-handoff-saara-7-1-1-pe-claude-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-handoff-saara-7-1-1-pe-claude-maui.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-handoff-saara-7-1-1-pe-claude-maui.md`
 
 ## Estado consolidado

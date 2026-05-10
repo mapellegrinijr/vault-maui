@@ -26,7 +26,7 @@ Este readiness cobre seleção e precedência de fontes para Context Briefs Maui
 | --- | --- | --- |
 | Exec-reports submetidos | `vault-maui/exec-reports/submitted/` | Evidência primária de execução, resultados, validações, ressalvas e próximos passos. |
 | Inventários e registros | `vault-maui/inventarios/` | Evidência de diagnóstico, normalização aplicada, pendências preservadas e divergências estruturais. |
-| Memórias canônicas | `vault-maui/memorias/` | Memórias de continuidade; priorizar arquivos com `deve_ser_considerado_em_context_brief: true`. |
+| Memórias canônicas | `vault-maui/project-memories/` | Memórias de continuidade; priorizar arquivos com `deve_ser_considerado_em_context_brief: true`. |
 | Handoffs recentes | `vault-maui/handoffs/` | Transições entre sessões, decisões humanas e contexto operacional recente. |
 | Template de Context Brief | `vault-maui/context-packages/templates/maui-context-brief.template.md` | Estrutura canônica de preenchimento. |
 | Git local | `git status`, `git log`, `git show` | Confirmação de working tree, commits, hashes e ausência ou presença de etapas executadas. |
@@ -46,8 +46,8 @@ Este readiness cobre seleção e precedência de fontes para Context Briefs Maui
 
 | Fonte | Ressalva | Regra de uso |
 | --- | --- | --- |
-| Roadmap core | `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` permanece `status: proposta` e registra reconciliação apenas até P0.1.13. | Usar como mapa de destino e critérios, nunca como fonte única de status executado. |
-| Memória de plano pós-normalização | `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md` ainda descreve P0.1.20 como próximo passo em algumas seções. | Reconciliar com exec-report P0.1.20 e P0.1.20-pre antes de declarar estado atual. |
+| Roadmap core | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` permanece `status: proposta` e registra reconciliação apenas até P0.1.13. | Usar como mapa de destino e critérios, nunca como fonte única de status executado. |
+| Memória de plano pós-normalização | `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md` ainda descreve P0.1.20 como próximo passo em algumas seções. | Reconciliar com exec-report P0.1.20 e P0.1.20-pre antes de declarar estado atual. |
 | Handoffs antigos | Handoffs podem refletir estado anterior ao fechamento da Tarefa 2 ou à normalização de memórias. | Usar como histórico; conferir contra exec-reports e inventários mais recentes. |
 | Registros históricos e arquivados | Podem conter caminhos antigos, placeholders e wikilinks sem destino inequívoco. | Preservar como histórico e não normalizar por inferência em Context Brief. |
 
@@ -56,7 +56,7 @@ Este readiness cobre seleção e precedência de fontes para Context Briefs Maui
 1. Começar por `git status --short` e pelos exec-reports mais recentes relacionados à tarefa.
 2. Confirmar no Git commits associados às fases citadas quando o brief declarar execução concluída.
 3. Ler inventários e registros de normalização antes de sintetizar pendências.
-4. Ler todas as memórias relevantes em `vault-maui/memorias/` marcadas com `deve_ser_considerado_em_context_brief: true` quando escopo, tags ou fase forem compatíveis.
+4. Ler todas as memórias relevantes em `vault-maui/project-memories/` marcadas com `deve_ser_considerado_em_context_brief: true` quando escopo, tags ou fase forem compatíveis.
 5. Ler handoffs recentes para decisões humanas e transições, mas reconciliar seu conteúdo com fontes posteriores.
 6. Usar o roadmap core apenas para intenção, ordem macro, critérios e lacunas planejadas.
 7. Separar fato, inferência e hipótese sempre que o status depender de reconciliação.
@@ -97,7 +97,7 @@ Este readiness cobre seleção e precedência de fontes para Context Briefs Maui
 
 ## Checklist de readiness
 
-- [x] Diretório canônico de memórias definido como `vault-maui/memorias/`.
+- [x] Diretório canônico de memórias definido como `vault-maui/project-memories/`.
 - [x] Template canônico de Context Brief existe.
 - [x] Exec-reports P0.1.16 a P0.1.20 existem.
 - [x] Inventários e registros de normalização existem.
@@ -137,7 +137,7 @@ Um `Maui Context Brief` está pronto para retomada quando:
 
 ### Fatos
 
-- `vault-maui/memorias/` é o diretório canônico de memórias.
+- `vault-maui/project-memories/` é o diretório canônico de memórias.
 - P0.1.16 a P0.1.20 têm exec-reports e commits associados.
 - P0.1.20-pre criou Context Brief para continuidade e recomendou P0.1.21.
 - P0.1.11 não foi executada.

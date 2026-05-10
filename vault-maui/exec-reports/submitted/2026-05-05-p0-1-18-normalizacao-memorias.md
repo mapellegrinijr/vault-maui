@@ -13,11 +13,11 @@ fase: P0.1.18
 
 ## Objetivo
 
-Executar o Lote 1 da normalização estrutural do vault Maui, adotando `vault-maui/memorias/` como diretório canônico de memórias.
+Executar o Lote 1 da normalização estrutural do vault Maui, adotando `vault-maui/project-memories/` como diretório canônico de memórias.
 
 ## Decisão humana aplicada
 
-O usuário aprovou explicitamente `vault-maui/memorias/` como diretório canônico, porque este diretório já contém as memórias recentes usadas para continuidade e Context Brief.
+O usuário aprovou explicitamente `vault-maui/project-memories/` como diretório canônico, porque este diretório já contém as memórias recentes usadas para continuidade e Context Brief.
 
 ## Estado inicial do working tree
 
@@ -25,32 +25,32 @@ O working tree inicial estava limpo após a execução da P0.1.18-pre no commit 
 
 ## Diretório canônico escolhido
 
-`vault-maui/memorias/`.
+`vault-maui/project-memories/`.
 
 ## Estado de `vault-maui/memoria/`
 
 `vault-maui/memoria/` existia no início da tarefa e estava vazio. O diretório vazio foi removido localmente; como Git não rastreia diretórios vazios, essa remoção não gera alteração rastreável.
 
-## Estado de `vault-maui/memorias/`
+## Estado de `vault-maui/project-memories/`
 
-`vault-maui/memorias/` existe e contém memórias marcadas com `deve_ser_considerado_em_context_brief: true`:
+`vault-maui/project-memories/` existe e contém memórias marcadas com `deve_ser_considerado_em_context_brief: true`:
 
-- `vault-maui/memorias/2026-05-05-marco-decisao-normalizacao-estrutural.md`
-- `vault-maui/memorias/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
-- `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
+- `vault-maui/project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md`
+- `vault-maui/project-memories/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
+- `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
 
 Nenhum arquivo de memória foi apagado, movido ou reescrito.
 
 ## Referências encontradas e classificação
 
 - Operacional futura atualizada: template `vault-maui/context-packages/templates/maui-context-brief.template.md`.
-- Operacional já compatível: `vault-maui/00_core/regras-operacionais.md`, que já menciona `vault-maui/memorias/` ou pasta equivalente de memórias.
+- Operacional já compatível: `vault-maui/00_core/regras-operacionais.md`, que já menciona `vault-maui/project-memories/` ou pasta equivalente de memórias.
 - Histórica ou diagnóstica preservada: inventário P0.1.17, exec-reports P0.1.16/P0.1.17, context brief P0.1.17, handoffs e memórias que registram a ambiguidade `memoria/` vs `memorias/`.
 - Conceitual ou fora do escopo mínimo preservada: documentos core promovidos e arquivos arquivados que citam `memoria/` como estrutura planejada ou histórica.
 
 ## Referências atualizadas
 
-O template canônico de Context Brief foi atualizado para orientar consulta explícita a `vault-maui/memorias/` e priorização de memórias com `deve_ser_considerado_em_context_brief: true`.
+O template canônico de Context Brief foi atualizado para orientar consulta explícita a `vault-maui/project-memories/` e priorização de memórias com `deve_ser_considerado_em_context_brief: true`.
 
 ## Referências históricas preservadas
 
@@ -73,13 +73,13 @@ Criado `vault-maui/inventarios/2026-05-05-normalizacao-memorias.md`.
 ## Validações realizadas
 
 - `git status --short` inicial confirmou working tree limpo.
-- Confirmada a existência de `vault-maui/memorias/`.
+- Confirmada a existência de `vault-maui/project-memories/`.
 - Confirmada a existência do template canônico de Context Brief.
 - Confirmada a existência do inventário diagnóstico P0.1.17.
-- Confirmada a existência das memórias esperadas em `vault-maui/memorias/`.
+- Confirmada a existência das memórias esperadas em `vault-maui/project-memories/`.
 - Confirmado que `vault-maui/memoria/` existia e estava vazio antes da remoção local.
-- Confirmado que memórias em `vault-maui/memorias/` têm `deve_ser_considerado_em_context_brief: true`.
-- Confirmado que o template aponta para `vault-maui/memorias/`.
+- Confirmado que memórias em `vault-maui/project-memories/` têm `deve_ser_considerado_em_context_brief: true`.
+- Confirmado que o template aponta para `vault-maui/project-memories/`.
 
 ## Confirmações
 

@@ -97,7 +97,7 @@ Execução no modelo
 
 - Conteúdo: memórias relevantes, exec-reports recentes, handoffs, decisões da sessão atual
 - Carregamento: por turno, conforme relevância detectada
-- Fonte: `vault-maui/memorias/`, `vault-maui/exec-reports/submitted/`, `vault-maui/handoffs/`
+- Fonte: `vault-maui/project-memories/`, `vault-maui/exec-reports/submitted/`, `vault-maui/handoffs/`
 - Seleção: via `retrieve` com filtros de escopo, domínio e relevância
 
 ---

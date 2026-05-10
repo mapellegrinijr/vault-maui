@@ -80,7 +80,7 @@ Os seguintes documentos foram promovidos para `vault-maui/00_core/`:
 
 - `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md`
 - `vault-maui/00_core/arquitetura-maui-v0-2.md`
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md`
 
 Notas:
@@ -107,10 +107,10 @@ A normalização estrutural foi dividida em cinco lotes.
 Status: concluído na P0.1.18.
 
 Decisão:
-- `vault-maui/memorias/` é o diretório canônico de memórias do Maui.
+- `vault-maui/project-memories/` é o diretório canônico de memórias do Maui.
 
 Ações:
-- template `Maui Context Brief` atualizado para consultar `vault-maui/memorias/`;
+- template `Maui Context Brief` atualizado para consultar `vault-maui/project-memories/`;
 - memórias marcadas com `deve_ser_considerado_em_context_brief: true` confirmadas;
 - diretório vazio `vault-maui/memoria/` removido localmente;
 - registro de normalização criado.
@@ -195,9 +195,9 @@ Handoffs relevantes:
 - `vault-maui/handoffs/2026-05-05-handoff-fechamento-tarefa-2-pre-p0-1-17.md`
 
 Memórias relevantes:
-- `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
-- `vault-maui/memorias/2026-05-05-marco-decisao-normalizacao-estrutural.md`
-- `vault-maui/memorias/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
+- `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
+- `vault-maui/project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md`
+- `vault-maui/project-memories/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
 - este marco de memória
 
 Todas as memórias relevantes para retomada devem conter ou preservar:
@@ -217,14 +217,14 @@ Todas as memórias relevantes para retomada devem conter ou preservar:
 - Mudanças normativas exigem Human Gate.
 - Instância sem filesystem/hash declara `unknown`, nunca `current`.
 - Status atual do Maui permanece `proposta`.
-- Context Briefs futuros devem priorizar memórias em `vault-maui/memorias/` marcadas com `deve_ser_considerado_em_context_brief: true`.
+- Context Briefs futuros devem priorizar memórias em `vault-maui/project-memories/` marcadas com `deve_ser_considerado_em_context_brief: true`.
 
 ## F/I/H
 
 ### Fatos
 
 - Tarefa 2 foi concluída.
-- P0.1.18 definiu `vault-maui/memorias/` como diretório canônico.
+- P0.1.18 definiu `vault-maui/project-memories/` como diretório canônico.
 - P0.1.19 corrigiu referências operacionais e preservou histórico.
 - P0.1.20 concluiu o Lote 3 — Frontmatter e slugs.
 - P0.1.21 concluiu o Lote 4 — Context Brief readiness.

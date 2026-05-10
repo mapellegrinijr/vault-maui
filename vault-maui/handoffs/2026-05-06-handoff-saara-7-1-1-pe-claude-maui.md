@@ -60,7 +60,7 @@ Configuração-base Maui em estado real:
 - Pendentes: PKAs Maui, specs subsidiárias Maui, parametrização Maui, índice Maui e revisão integrada P0.1.32.
 - P0.1.11 permanece não executada, salvo futura evidência direta em contrário.
 - Instanciação manual Maui não está pronta.
-- `vault-maui/memorias/` é o diretório canônico de memórias.
+- `vault-maui/project-memories/` é o diretório canônico de memórias.
 - `Documentação/` não deve ser reaberta nem alterada sem decisão humana explícita.
 - ChatGPT/Handoff/Claude sem filesystem, hash, commit ou arquivo anexado verificável deve declarar conformidade `unknown`, nunca `current`.
 

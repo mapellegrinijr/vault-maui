@@ -20,8 +20,8 @@ Criado plano de implementação da Configuração-base Maui, definindo lotes P0.
 
 - `vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-24-diagnostico-configuracao-base.md`
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
-- `vault-maui/memorias/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project-memories/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
 - `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-22-reconciliacao-roadmap.md`

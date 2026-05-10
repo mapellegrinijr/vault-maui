@@ -17,7 +17,7 @@ Este diagnóstico ocorre após o fechamento da Tarefa 2 / saneamento inicial de 
 
 > Este inventário não aplica correções. Nenhum arquivo existente foi movido, apagado, renomeado ou reescrito nesta tarefa.
 
-Observação de estado inicial: `git status --short` não estava limpo antes deste diagnóstico. Havia uma remoção pendente em `vault-maui/context-packages/current/2026-05-04-handoff-sessao-claude-pos-inventario.md`, arquivos não rastreados em `vault-maui/handoffs/`, uma memória não rastreada em `vault-maui/memorias/2026-05-05-marco-decisao-normalizacao-estrutural.md` e um arquivo `Sem título.canvas` não rastreado na raiz. Estes itens foram apenas observados, não alterados.
+Observação de estado inicial: `git status --short` não estava limpo antes deste diagnóstico. Havia uma remoção pendente em `vault-maui/context-packages/current/2026-05-04-handoff-sessao-claude-pos-inventario.md`, arquivos não rastreados em `vault-maui/handoffs/`, uma memória não rastreada em `vault-maui/project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md` e um arquivo `Sem título.canvas` não rastreado na raiz. Estes itens foram apenas observados, não alterados.
 
 ## 2. Mapa de diretórios do vault
 
@@ -54,7 +54,7 @@ Diretórios de primeiro e segundo nível sob `vault-maui/`:
 | `vault-maui/inventarios/` | sim | 1 | 0 | contém inventário de `Documentação/`; este diagnóstico será adicionado |
 | `vault-maui/mcp-servers/` | sim | 0 | 0 | vazio |
 | `vault-maui/memoria/` | sim | 0 | 0 | vazio; singular; citado nos documentos core |
-| `vault-maui/memorias/` | sim | 2 | 0 | plural; contém memórias marcadas para Context Brief; uma delas não rastreada no status inicial |
+| `vault-maui/project-memories/` | sim | 2 | 0 | plural; contém memórias marcadas para Context Brief; uma delas não rastreada no status inicial |
 | `vault-maui/operator-packs/` | sim | 0 | 7 | subpastas por target, todas vazias |
 | `vault-maui/operator-packs/antigravity/` | sim | 0 | 0 | vazio |
 | `vault-maui/operator-packs/chatgpt-action/` | sim | 0 | 0 | vazio |
@@ -84,7 +84,7 @@ Diretórios relevantes ausentes na validação prévia:
 
 | ID | Divergência | Caminhos envolvidos | Evidência | Severidade | Impacto | Correção sugerida em lote futuro |
 | --- | --- | --- | --- | --- | --- | --- |
-| D-001 | Singular/plural para memórias | `vault-maui/memoria/`, `vault-maui/memorias/` | ambos existem; `memoria/` vazio; `memorias/` contém memórias marcadas; core cita `memoria/` | alta | Context Briefs, scripts e validações podem procurar memórias em caminhos diferentes | Lote 1: decidir canônico e compatibilizar ou migrar sem perda |
+| D-001 | Singular/plural para memórias | `vault-maui/memoria/`, `vault-maui/project-memories/` | ambos existem; `memoria/` vazio; `memorias/` contém memórias marcadas; core cita `memoria/` | alta | Context Briefs, scripts e validações podem procurar memórias em caminhos diferentes | Lote 1: decidir canônico e compatibilizar ou migrar sem perda |
 | D-002 | Handoffs em dois lugares e estado git pendente | `vault-maui/context-packages/current/`, `vault-maui/context-packages/archive/`, `vault-maui/handoffs/` | status inicial mostra delete pendente em `context-packages/current/...` e `vault-maui/handoffs/` não rastreado | média | próximos briefs podem referenciar handoff antigo inexistente no caminho anterior | Lote 4: definir local canônico de handoffs atuais |
 | D-003 | Diretório esperado ausente | `vault-maui/review-reports/` | validação prévia retornou ausente | baixa | Context Brief pode listar review-reports como fonte, mas não há área canônica | Lote 4: criar ou documentar ausência |
 | D-004 | Operator packs só como diretórios vazios | `vault-maui/operator-packs/*/` | 7 subpastas, 0 arquivos | média | instanciação manual não tem templates operacionais por target | Lote 5: consolidar packs mínimos |
@@ -104,22 +104,22 @@ Diretórios relevantes ausentes na validação prévia:
 - Referências no corpus: múltiplas referências em documentos core e arquivos arquivados. Exemplos:
   - `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md` cita `memoria/` como parte da estrutura.
   - `vault-maui/00_core/arquitetura-maui-v0-2.md` cita `memoria/` como área de memórias operacionais e episódicas.
-  - `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` cita `memoria/README.md`, `memoria/YYYY/MM/...` e scripts de índice.
+  - `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` cita `memoria/README.md`, `memoria/YYYY/MM/...` e scripts de índice.
   - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` cita `memoria/` para busca, índice e estrutura.
 
-### `vault-maui/memorias/`
+### `vault-maui/project-memories/`
 
 - Existe? sim.
 - Arquivos:
-  - `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
-  - `vault-maui/memorias/2026-05-05-marco-decisao-normalizacao-estrutural.md` *(não rastreado no status inicial)*
+  - `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
+  - `vault-maui/project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md` *(não rastreado no status inicial)*
 - Subdiretórios: nenhum.
 - Frontmatter dos arquivos: ambos foram lidos como YAML válido.
 - Presença de `deve_ser_considerado_em_context_brief: true`: presente nos dois arquivos.
 - Referências no corpus:
-  - `vault-maui/00_core/regras-operacionais.md` menciona `vault-maui/memorias/` ou pasta equivalente de memórias.
+  - `vault-maui/00_core/regras-operacionais.md` menciona `vault-maui/project-memories/` ou pasta equivalente de memórias.
   - `vault-maui/context-packages/templates/maui-context-brief.template.md` prioriza memórias com `deve_ser_considerado_em_context_brief: true`.
-  - `vault-maui/exec-reports/submitted/2026-05-05-p0-1-16-fechamento-tarefa-2-documentacao.md` registra que `vault-maui/memorias/` foi criada e que `vault-maui/memoria/` existia como pasta legada não alterada.
+  - `vault-maui/exec-reports/submitted/2026-05-05-p0-1-16-fechamento-tarefa-2-documentacao.md` registra que `vault-maui/project-memories/` foi criada e que `vault-maui/memoria/` existia como pasta legada não alterada.
 
 Diagnóstico: `memoria/` parece ser o caminho planejado nos documentos core; `memorias/` é o caminho operacional recente onde as memórias marcadas foram gravadas. Esta é a divergência estrutural de maior prioridade.
 
@@ -131,7 +131,7 @@ Diagnóstico: `memoria/` parece ser o caminho planejado nos documentos core; `me
 | `vault-maui/00_core/regras-operacionais.md` | `regra_operacional` | `ativo` | `1.0` | válido | contém instrução Codex para Context Brief sob demanda |
 | `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md` | `especificacao_tecnica_atualizacao` | `proposta` | `0.2` | válido | cita `system-prompt.md` e `pka-*.md`, mas estes não existem no core |
 | `vault-maui/00_core/arquitetura-maui-v0-2.md` | `especificacao_arquitetural` | `proposta` | `0.2` | válido | arquitetura existe, mas ainda há nota de proposta e referências a estrutura futura |
-| `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | `roadmap` | `proposta` | `1.0` | válido | possui nota de reconciliação; fases não foram reconciliadas integralmente |
+| `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | `roadmap` | `proposta` | `1.0` | válido | possui nota de reconciliação; fases não foram reconciliadas integralmente |
 | `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` | `especificacao_funcional` | `proposta` | `0.1` | válido | possui nota de reconciliação; funcionalidades ainda não reconciliadas integralmente |
 
 Lacunas específicas verificadas:
@@ -213,14 +213,14 @@ Referências buscadas: `Documentação/`, `vault-maui/memoria`, `vault-maui/memo
 | Arquivo | Trecho curto | Provável status |
 | --- | --- | --- |
 | `vault-maui/inventarios/2026-05-04-documentacao.md` | múltiplas referências a `Documentação/...` | válido como histórico/inventário |
-| `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` | menciona `Documentação/` e arquivos promovidos | válido como memória histórica |
-| `vault-maui/exec-reports/submitted/2026-05-05-p0-1-16-fechamento-tarefa-2-documentacao.md` | registra criação de `vault-maui/memorias/` e pasta legada `vault-maui/memoria/` | válido como evidência |
+| `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` | menciona `Documentação/` e arquivos promovidos | válido como memória histórica |
+| `vault-maui/exec-reports/submitted/2026-05-05-p0-1-16-fechamento-tarefa-2-documentacao.md` | registra criação de `vault-maui/project-memories/` e pasta legada `vault-maui/memoria/` | válido como evidência |
 | `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md` | `[[context-packages/current]]`, `[[spec-tecnica-atualizacao-saara-maui-v1]]` | precisa revisão; pode apontar para conceito/destino antigo |
-| `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | `1. Localizar links [[...]]` | válido como exemplo de funcionalidade, não necessariamente placeholder ativo |
+| `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | `1. Localizar links [[...]]` | válido como exemplo de funcionalidade, não necessariamente placeholder ativo |
 | `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` | `Valida links internos [[...]]` | válido como exemplo funcional |
 | `vault-maui/inventarios/2026-05-04-documentacao.md` | `[[...]]`, `[[link]]`, `[[wikilink]]` | placeholder histórico; precisa revisão se migrado para core |
-| `vault-maui/context-packages/current/2026-05-05-context-brief-p0-1-17-normalizacao-memorias.md` | `vault-maui/memoria/` e `vault-maui/memorias/` | válido como diagnóstico/lacuna |
-| `vault-maui/handoffs/2026-05-05-handoff-fechamento-tarefa-2-pre-p0-1-17.md` | ambiguidade `vault-maui/memoria/` vs `vault-maui/memorias/` | válido como handoff, mas arquivo não rastreado no status inicial |
+| `vault-maui/context-packages/current/2026-05-05-context-brief-p0-1-17-normalizacao-memorias.md` | `vault-maui/memoria/` e `vault-maui/project-memories/` | válido como diagnóstico/lacuna |
+| `vault-maui/handoffs/2026-05-05-handoff-fechamento-tarefa-2-pre-p0-1-17.md` | ambiguidade `vault-maui/memoria/` vs `vault-maui/project-memories/` | válido como handoff, mas arquivo não rastreado no status inicial |
 | `vault-maui/00_core/arquitetura-maui-v0-2.md` | `context-packages/current/maui-bootstrap.md` | possivelmente futuro/ausente; precisa revisão |
 
 Não foram alteradas referências nesta tarefa.
@@ -230,7 +230,7 @@ Não foram alteradas referências nesta tarefa.
 - `vault-maui/context-packages/templates/maui-context-brief.template.md` existe.
 - O template menciona memórias marcadas com `deve_ser_considerado_em_context_brief: true`.
 - O template não aponta explicitamente para `memoria/` nem `memorias/`; ele instrui consultar memórias relevantes.
-- `vault-maui/00_core/regras-operacionais.md` aponta para `vault-maui/memorias/` ou pasta equivalente de memórias.
+- `vault-maui/00_core/regras-operacionais.md` aponta para `vault-maui/project-memories/` ou pasta equivalente de memórias.
 - `vault-maui/context-packages/current/` existe.
 - Há um brief instanciado rastreado: `vault-maui/context-packages/current/2026-05-05-context-brief-p0-1-17-normalizacao-memorias.md`.
 - Há remoção pendente de `vault-maui/context-packages/current/2026-05-04-handoff-sessao-claude-pos-inventario.md` no status inicial.
@@ -266,7 +266,7 @@ Justificativa: há documentos core importantes e regras operacionais, mas faltam
 
 - Objetivo: normalizar ou compatibilizar `memoria/` vs `memorias/`.
 - Pré-requisitos: decisão humana sobre caminho canônico; hash dos arquivos em `memorias/`; status git limpo ou isolamento de mudanças pendentes.
-- Arquivos prováveis: `vault-maui/memoria/`, `vault-maui/memorias/`, template de Context Brief, regras operacionais, inventário/exec-report.
+- Arquivos prováveis: `vault-maui/memoria/`, `vault-maui/project-memories/`, template de Context Brief, regras operacionais, inventário/exec-report.
 - Risco: médio.
 - Critério de aceite: uma fonte canônica definida, memórias marcadas preservadas, Context Briefs conseguem encontrá-las.
 
@@ -311,8 +311,8 @@ Recomendo executar primeiro o **Lote 1 — Memórias**, porque a ambiguidade `me
 ### Fatos
 
 - `vault-maui/memoria/` existe e está vazio.
-- `vault-maui/memorias/` existe e contém duas memórias, ambas com `deve_ser_considerado_em_context_brief: true`.
-- Uma das memórias em `vault-maui/memorias/` estava não rastreada no status inicial.
+- `vault-maui/project-memories/` existe e contém duas memórias, ambas com `deve_ser_considerado_em_context_brief: true`.
+- Uma das memórias em `vault-maui/project-memories/` estava não rastreada no status inicial.
 - Documentos core promovidos existem em `vault-maui/00_core/`.
 - `system-prompt.md` e `pka-*.md` não existem em `vault-maui/00_core/`.
 - `vault-maui/operator-packs/` contém subdiretórios, mas nenhum arquivo de pack/template.
@@ -334,4 +334,4 @@ Recomendo executar primeiro o **Lote 1 — Memórias**, porque a ambiguidade `me
 
 ## 14. Próximo passo recomendado
 
-Aprovar o **Lote 1 — Memórias** para decidir o caminho canônico entre `vault-maui/memoria/` e `vault-maui/memorias/`, preservando as memórias marcadas para Context Brief e registrando a compatibilidade/depreciação do caminho não escolhido.
+Aprovar o **Lote 1 — Memórias** para decidir o caminho canônico entre `vault-maui/memoria/` e `vault-maui/project-memories/`, preservando as memórias marcadas para Context Brief e registrando a compatibilidade/depreciação do caminho não escolhido.

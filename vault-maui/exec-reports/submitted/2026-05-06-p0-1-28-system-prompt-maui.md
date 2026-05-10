@@ -28,13 +28,13 @@ Não foram criados PKAs, specs subsidiárias, parametrização, índice, operato
 - `vault-maui/context-packages/current/2026-05-06-context-brief-pos-p0-1-25-configuracao-base.md`
 - `vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md`
 - `vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md`
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-24-diagnostico-configuracao-base.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-25-plano-configuracao-base.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-25-post-marco-context-brief.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-26-principios-precedencia-maui.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-27-especificacao-completa-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-p0-1-27-especificacao-completa-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-27-especificacao-completa-maui.md`
 
 ### Saara usados como modelo
 
@@ -60,7 +60,7 @@ Não foram criados PKAs, specs subsidiárias, parametrização, índice, operato
 ## Arquivos criados/alterados
 
 - Criado: `vault-maui/00_core/system-prompt-maui.md`
-- Criado: `vault-maui/memorias/2026-05-06-marco-p0-1-28-system-prompt-maui.md`
+- Criado: `vault-maui/project-memories/2026-05-06-marco-p0-1-28-system-prompt-maui.md`
 - Criado: `vault-maui/exec-reports/submitted/2026-05-06-p0-1-28-system-prompt-maui.md`
 
 Nenhum arquivo em `Documentação/` foi alterado.
@@ -93,7 +93,7 @@ O roadmap não foi alterado nesta tarefa. A conclusão da P0.1.28 pode ser regis
 - Incluir Prompt Engineering Elite no Domain Router Maui planejado como obrigatório.
 - Preservar a fronteira Prompt Engineering vs Agent Engineering e a regra híbrida prompt + agente.
 - Adaptar modos A/B/B1, profundidade D0-D3 e disclosure L0-L3 do modelo Saara para Maui.
-- Declarar `vault-maui/memorias/` como memória canônica.
+- Declarar `vault-maui/project-memories/` como memória canônica.
 - Manter `unknown` para ChatGPT/Handoff sem filesystem/hash verificável.
 - Registrar que PKAs serão P0.1.29, specs subsidiárias P0.1.30 e parametrização/índice P0.1.31.
 - Não atualizar roadmap por padrão.

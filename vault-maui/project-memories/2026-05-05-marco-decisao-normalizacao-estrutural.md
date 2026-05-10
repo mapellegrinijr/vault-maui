@@ -21,7 +21,7 @@ deve_ser_considerado_em_context_brief: true
 
 ## Resumo
 
-Antes de executar a P0.1.17, foi tomada a decisão de ampliar o escopo da etapa: em vez de diagnosticar apenas a divergência `vault-maui/memoria/` vs `vault-maui/memorias/`, a P0.1.17 passará a ser um diagnóstico estrutural completo do vault Maui.
+Antes de executar a P0.1.17, foi tomada a decisão de ampliar o escopo da etapa: em vez de diagnosticar apenas a divergência `vault-maui/memoria/` vs `vault-maui/project-memories/`, a P0.1.17 passará a ser um diagnóstico estrutural completo do vault Maui.
 
 O objetivo é identificar divergências de estrutura antes de aplicar qualquer correção, para que a normalização seja planejada em subetapas explícitas no roadmap.
 
@@ -38,7 +38,7 @@ Essa etapa deve ser somente diagnóstica e propositiva. Ela não deve corrigir, 
 Durante o fechamento da Tarefa 2 / saneamento inicial de `Documentação/`, foi detectada uma divergência estrutural entre:
 
 - `vault-maui/memoria/`
-- `vault-maui/memorias/`
+- `vault-maui/project-memories/`
 
 A partir dessa divergência, decidiu-se ampliar o diagnóstico para procurar outras inconsistências estruturais antes de seguir com P0.1.5, P0.3/P0.4 ou instanciação manual do Maui.
 
@@ -49,7 +49,7 @@ A normalização estrutural será planejada em lotes futuros, a serem incorporad
 ### Lote 1 — Memórias
 
 Objetivo:
-- normalizar ou compatibilizar `vault-maui/memoria/` vs `vault-maui/memorias/`;
+- normalizar ou compatibilizar `vault-maui/memoria/` vs `vault-maui/project-memories/`;
 - garantir que memórias relevantes, especialmente as marcadas com `deve_ser_considerado_em_context_brief: true`, sejam encontradas por futuros `Maui Context Briefs`.
 
 ### Lote 2 — Referências e wikilinks

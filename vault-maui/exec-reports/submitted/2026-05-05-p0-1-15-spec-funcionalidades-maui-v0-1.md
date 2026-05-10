@@ -66,7 +66,7 @@ Nenhum outro arquivo de `Documentação/` foi alterado. Após a movimentação d
 - Confirmado que `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` não existia.
 - Confirmado que `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md` existia.
 - Confirmado que `vault-maui/00_core/arquitetura-maui-v0-2.md` existia.
-- Confirmado que `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` existia.
+- Confirmado que `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` existia.
 - Confirmado que `git status --short` inicial estava limpo.
 - Identificado o bloco de frontmatter inválido inicial para substituição controlada.
 - Confirmado que a origem estava ignorada por `.gitignore` e não estava sob controle de versão.

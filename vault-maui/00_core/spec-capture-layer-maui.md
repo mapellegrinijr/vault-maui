@@ -49,7 +49,7 @@ Esta spec foi criada sob Human Gate explícito da P0.1.30. Status `proposta`. Im
 
 ## 0. Propósito
 
-Definir a camada inversa à distribuição: a **Capture Layer** observa conversas, seleciona o que tem valor futuro, compacta e persiste no Memory Store (`vault-maui/memorias/`), garantindo que o corpus Maui cresce com aprendizado real, não com ruído.
+Definir a camada inversa à distribuição: a **Capture Layer** observa conversas, seleciona o que tem valor futuro, compacta e persiste no Memory Store (`vault-maui/project-memories/`), garantindo que o corpus Maui cresce com aprendizado real, não com ruído.
 
 ---
 
@@ -99,7 +99,7 @@ Observer → Selector → Compactor → Memory Store Writer
 ## 3. Governança de captura
 
 - Capture Layer é o **único escritor sanctioned** do Memory Store para memórias originadas em conversa
-- Nenhuma outra camada escreve diretamente em `vault-maui/memorias/` sem passar pelo fluxo de captura ou Human Gate explícito
+- Nenhuma outra camada escreve diretamente em `vault-maui/project-memories/` sem passar pelo fluxo de captura ou Human Gate explícito
 - Exceção: criação manual de memórias por commit human-approved (ex: exec-reports, decisões de P0)
 - Sanitização obrigatória antes de persistir: remover dados pessoais desnecessários, credenciais, paths temporários
 - Conteúdo capturado deve ter `escopo` e `confidencialidade` declarados no frontmatter

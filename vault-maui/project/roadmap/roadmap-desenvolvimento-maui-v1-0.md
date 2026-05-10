@@ -20,7 +20,7 @@ escopo: projeto_maui
 
 ## Estado operacional reconciliado em 2026-05-06
 
-Fontes de execução preferenciais: `vault-maui/exec-reports/submitted/`, `vault-maui/inventarios/`, `vault-maui/memorias/`, `vault-maui/handoffs/` e Git local. O readiness P0.1.21 formaliza essa precedência em `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`.
+Fontes de execução preferenciais: `vault-maui/exec-reports/submitted/`, `vault-maui/inventarios/`, `vault-maui/project-memories/`, `vault-maui/handoffs/` e Git local. O readiness P0.1.21 formaliza essa precedência em `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`.
 
 Etapas com evidência direta até esta reconciliação:
 
@@ -45,7 +45,7 @@ Etapas com evidência direta até esta reconciliação:
 Ressalvas operacionais:
 
 - P0.1.11 permanece não executada; não assumir instrução equivalente para Claude Code sem evidência posterior.
-- `vault-maui/memorias/` é o diretório canônico de memórias.
+- `vault-maui/project-memories/` é o diretório canônico de memórias.
 - `Documentação/` não possui pendências esperadas dos 8 arquivos inventariados e não deve ser reaberta sem decisão humana explícita.
 - Instanciação manual Maui ainda não está pronta e permanece fora do escopo desta reconciliação.
 - Uma memória antiga pode conter trecho defasado tratando P0.1.20 como próximo passo; conferir exec-reports P0.1.20, P0.1.20-pre e P0.1.21 antes de declarar estado atual.

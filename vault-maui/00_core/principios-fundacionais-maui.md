@@ -13,7 +13,7 @@ human_gate: true
 referencias:
   - "vault-maui/00_core/contrato-precedencia-maui.md"
   - "vault-maui/00_core/arquitetura-maui-v0-2.md"
-  - "vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md"
+  - "vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md"
   - "vault-maui/00_core/spec-funcionalidades-maui-v0-1.md"
   - "vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md"
   - "vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md"
@@ -93,7 +93,7 @@ Context Engineering organiza Write, Select, Compress e Isolate. Context Briefs s
 
 ### 12. Memória seletiva, sanitizada e canônica
 
-Memórias operacionais devem ser seletivas, sanitizadas, rastreáveis e canônicas em `vault-maui/memorias/`. Memórias com `deve_ser_considerado_em_context_brief: true` devem ser priorizadas em retomadas.
+Memórias operacionais devem ser seletivas, sanitizadas, rastreáveis e canônicas em `vault-maui/project-memories/`. Memórias com `deve_ser_considerado_em_context_brief: true` devem ser priorizadas em retomadas.
 
 ## Limites do documento
 

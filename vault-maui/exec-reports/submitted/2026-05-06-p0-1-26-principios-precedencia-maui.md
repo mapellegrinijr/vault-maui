@@ -21,16 +21,16 @@ Não foram criados system prompt, especificação completa, PKAs, specs subsidi�
 ## Arquivos lidos
 
 - `vault-maui/context-packages/current/2026-05-06-context-brief-pos-p0-1-25-configuracao-base.md`
-- `vault-maui/memorias/2026-05-06-marco-pos-p0-1-25-configuracao-base-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-pos-p0-1-25-configuracao-base-maui.md`
 - `vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md`
 - `vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md`
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/00_core/arquitetura-maui-v0-2.md`
 - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md`
 - `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md`
 - `vault-maui/00_core/regras-operacionais.md`
 - `vault-maui/01_manifest/README.md`
-- `vault-maui/memorias/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
+- `vault-maui/project-memories/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-22-reconciliacao-roadmap.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-23-correcao-memoria-defasada.md`
@@ -43,7 +43,7 @@ Não foram criados system prompt, especificação completa, PKAs, specs subsidi�
 
 - Criado: `vault-maui/00_core/principios-fundacionais-maui.md`
 - Criado: `vault-maui/00_core/contrato-precedencia-maui.md`
-- Criado: `vault-maui/memorias/2026-05-06-marco-p0-1-26-principios-precedencia-maui.md`
+- Criado: `vault-maui/project-memories/2026-05-06-marco-p0-1-26-principios-precedencia-maui.md`
 - Criado: `vault-maui/exec-reports/submitted/2026-05-06-p0-1-26-principios-precedencia-maui.md`
 
 Nenhum arquivo em `Documentação/` foi alterado.

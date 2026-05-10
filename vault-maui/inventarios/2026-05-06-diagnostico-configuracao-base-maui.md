@@ -22,9 +22,9 @@ Este diagnóstico cobre documentos core, manifestos, schemas, operator packs, co
 
 ## Fontes consultadas
 
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-24-pre-planejamento-configuracao-base.md`
-- `vault-maui/memorias/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
+- `vault-maui/project-memories/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
 - `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-22-reconciliacao-roadmap.md`
@@ -58,7 +58,7 @@ A Configuração-base Maui ainda não existe como pacote completo. O repositóri
 | `spec-instanciacao-conformidade.md` | spec de instanciação/conformidade Maui | ausente | spec subsidiária | sim |
 | `spec-context-injection.md` | spec de context injection/context engineering Maui | parcialmente coberta por arquitetura/spec funcional; arquivo próprio ausente | spec subsidiária | sim |
 | `spec-capture-layer.md` | spec de capture layer Maui | ausente | spec subsidiária | sim |
-| `spec-memory-store.md` | spec de memory store Maui | ausente; memórias operacionais existem em `vault-maui/memorias/` | spec subsidiária | sim |
+| `spec-memory-store.md` | spec de memory store Maui | ausente; memórias operacionais existem em `vault-maui/project-memories/` | spec subsidiária | sim |
 | `spec-adendos.md` | spec de adendos Maui | ausente | spec subsidiária | sim |
 | `spec-parametrizacao.md` / `spec-parametrizacao.json` | parametrização Maui | ausente | técnico/executável | sim |
 | `indice.md` | índice Maui | parcialmente coberto por READMEs; índice core com precedência ausente | normativo/operacional | sim |
@@ -71,11 +71,11 @@ A Configuração-base Maui ainda não existe como pacote completo. O repositóri
 | Artefato | Caminho | Função atual | Tipo |
 | --- | --- | --- | --- |
 | Arquitetura Maui | `vault-maui/00_core/arquitetura-maui-v0-2.md` | Define arquitetura corpus-first e camadas | normativo/proposta |
-| Roadmap Maui | `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | Mapa de destino reconciliado; inclui P0.1.24-pre | planejamento/proposta |
+| Roadmap Maui | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | Mapa de destino reconciliado; inclui P0.1.24-pre | planejamento/proposta |
 | Spec funcional Maui | `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` | Visão funcional ampla; ainda com nota de reconciliação própria | normativo/proposta |
 | Spec técnica atualização Saara → Maui | `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md` | Fonte técnica de migração/adaptação | normativo/proposta |
 | Regras operacionais | `vault-maui/00_core/regras-operacionais.md` | Regras operacionais e Context Brief sob demanda para Codex | operacional |
-| Memórias canônicas | `vault-maui/memorias/` | Continuidade e decisões; diretório canônico | memória |
+| Memórias canônicas | `vault-maui/project-memories/` | Continuidade e decisões; diretório canônico | memória |
 | Readiness Context Brief | `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md` | Precedência e limites para Context Brief | operacional |
 | Context Brief template | `vault-maui/context-packages/templates/maui-context-brief.template.md` | Template de retomada | operacional/template |
 | Schemas P0 iniciais | `vault-maui/schemas/*.schema.yaml` | Frontmatter, exec-report, exec-request, handoff, review-report | técnico |

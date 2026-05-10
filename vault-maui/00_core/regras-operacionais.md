@@ -37,7 +37,7 @@ O Context Brief deve usar como referência primária o template `vault-maui/cont
 Antes de criar o brief, o Codex deve consultar, quando existirem e forem relevantes:
 
 - `vault-maui/00_core/`
-- `vault-maui/memorias/` ou pasta equivalente de memórias
+- `vault-maui/project-memories/` ou pasta equivalente de memórias
 - adendos
 - insights
 - handoffs

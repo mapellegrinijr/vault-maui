@@ -40,7 +40,7 @@ Foram buscadas referências em arquivos Markdown/YAML/JSON/TOML/TXT sob `vault-m
 - `vault-maui/panel/status.md`: handoff atual atualizado de `vault-maui/context-packages/current/2026-05-04-handoff-sessao-claude-pos-inventario.md` para `vault-maui/handoffs/2026-05-04-handoff-sessao-claude-pos-inventario.md`.
 - `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md`: referências operacionais a `memoria/` atualizadas para `memorias/`.
 - `vault-maui/00_core/arquitetura-maui-v0-2.md`: referências operacionais a `memoria/` atualizadas para `memorias/`.
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`: referências operacionais a `memoria/` atualizadas para `memorias/`.
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`: referências operacionais a `memoria/` atualizadas para `memorias/`.
 - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md`: referências operacionais a `memoria/` atualizadas para `memorias/`.
 
 ## Referências preservadas
@@ -63,7 +63,7 @@ Foram buscadas referências em arquivos Markdown/YAML/JSON/TOML/TXT sob `vault-m
 - Alterado: `vault-maui/panel/status.md`
 - Alterado: `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md`
 - Alterado: `vault-maui/00_core/arquitetura-maui-v0-2.md`
-- Alterado: `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- Alterado: `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - Alterado: `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md`
 - Criado: `vault-maui/inventarios/2026-05-05-normalizacao-referencias-wikilinks.md`
 - Criado: `vault-maui/exec-reports/submitted/2026-05-05-p0-1-19-normalizacao-referencias-wikilinks.md`
@@ -72,7 +72,7 @@ Foram buscadas referências em arquivos Markdown/YAML/JSON/TOML/TXT sob `vault-m
 
 - `git status --short` inicial confirmou working tree limpo.
 - Confirmada a existência dos inventários e template exigidos.
-- Confirmada a existência de `vault-maui/memorias/`.
+- Confirmada a existência de `vault-maui/project-memories/`.
 - Confirmada a existência dos documentos promovidos ao core.
 - Confirmada a existência dos arquivos arquivados.
 - Confirmado que referências corrigidas apontam para diretórios ou arquivos existentes.

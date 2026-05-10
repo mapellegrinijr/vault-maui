@@ -34,7 +34,7 @@ A P0.1.28 criou `vault-maui/00_core/system-prompt-maui.md` como contrato runtime
 - O system prompt referencia princípios fundacionais, contrato de precedência e especificação completa Maui.
 - A Configuração-base permanece `status: proposta` enquanto faltarem PKAs, specs subsidiárias, parametrização, índice e revisão integrada.
 - O Context Brief pós-P0.1.25 segue como referência de retomada até haver Configuração-base completa, reconciliado com Git/filesystem e exec-reports mais recentes.
-- `vault-maui/memorias/` segue como diretório canônico de memórias.
+- `vault-maui/project-memories/` segue como diretório canônico de memórias.
 - ChatGPT/Handoff sem filesystem/hash verificável deve declarar `unknown`, nunca `current`.
 
 ## Relação com Saara como modelo

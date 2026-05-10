@@ -62,7 +62,7 @@ Nenhum slug foi corrigido nesta tarefa.
 | Arquivo | Problema | Motivo da preservação ou pendência |
 | --- | --- | --- |
 | Arquivos Markdown sob `vault-maui/` | Não foram encontrados nomes com espaços, underscores, acentuação, versão `v_0_1`/`v0.1` ou arquivos Markdown sem extensão | Nenhuma ação necessária. |
-| Arquivos históricos em `vault-maui/context-packages/archive/`, `vault-maui/exec-reports/`, `vault-maui/inventarios/`, `vault-maui/handoffs/` e `vault-maui/memorias/` | Possíveis convenções históricas de nome | Preservados por regra da tarefa; não houve renomeação. |
+| Arquivos históricos em `vault-maui/context-packages/archive/`, `vault-maui/exec-reports/`, `vault-maui/inventarios/`, `vault-maui/handoffs/` e `vault-maui/project-memories/` | Possíveis convenções históricas de nome | Preservados por regra da tarefa; não houve renomeação. |
 
 ## 7. Impacto
 

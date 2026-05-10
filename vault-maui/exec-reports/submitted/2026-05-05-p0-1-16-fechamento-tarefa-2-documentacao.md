@@ -25,7 +25,7 @@ O usuário aprovou registrar o fechamento da Tarefa 2 após a execução por lot
 - Confirmada a existência do inventário `vault-maui/inventarios/2026-05-04-documentacao.md`.
 - Confirmada a existência do template `vault-maui/context-packages/templates/maui-context-brief.template.md`.
 - Confirmado que os 8 arquivos originalmente inventariados não existem mais em `Documentação/`.
-- Criada a pasta `vault-maui/memorias/`, que não existia.
+- Criada a pasta `vault-maui/project-memories/`, que não existia.
 - Detectado com segurança o commit da P0.1.9 no git log: `26a56622f1d4f427fcddc288a09e81983b59ea36`.
 
 ## Atualização feita no inventário
@@ -34,7 +34,7 @@ Adicionada ao final do inventário a seção `Fechamento da Tarefa 2 — saneame
 
 ## Memória criada
 
-Criada a memória `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`, com `deve_ser_considerado_em_context_brief: true`.
+Criada a memória `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`, com `deve_ser_considerado_em_context_brief: true`.
 
 ## Atualização feita no template de Context Brief
 
@@ -43,7 +43,7 @@ Atualizada a seção `Memórias relevantes` do template `vault-maui/context-pack
 ## Arquivos alterados/criados
 
 - Alterado: `vault-maui/inventarios/2026-05-04-documentacao.md`
-- Criado: `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
+- Criado: `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
 - Alterado: `vault-maui/context-packages/templates/maui-context-brief.template.md`
 - Criado: `vault-maui/exec-reports/submitted/2026-05-05-p0-1-16-fechamento-tarefa-2-documentacao.md`
 
@@ -61,7 +61,7 @@ Aceito para revisão.
 
 ## Ressalvas
 
-`vault-maui/memorias/` não existia e foi criada nesta tarefa, conforme regra obrigatória. Existe também a pasta legada `vault-maui/memoria/`, que não foi alterada.
+`vault-maui/project-memories/` não existia e foi criada nesta tarefa, conforme regra obrigatória. Existe também a pasta legada `vault-maui/memoria/`, que não foi alterada.
 
 ## Próximo passo recomendado
 

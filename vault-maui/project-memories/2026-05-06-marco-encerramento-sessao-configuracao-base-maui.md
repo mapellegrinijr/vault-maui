@@ -77,7 +77,7 @@ Os 19 artefatos normativos da Configuração-base Maui estão criados, revisados
 **P0.1.32 (revisão integrada):**
 - Correções A1, B1–B5, C1 em 5 artefatos normativos
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-32-revisao-integrada-configuracao-base.md`
-- `vault-maui/memorias/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md`
 
 ## Decisões humanas tomadas nesta sessão
 

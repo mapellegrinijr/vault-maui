@@ -100,7 +100,7 @@
       {
         "id": "selective_canonical_memory",
         "name": "Memória seletiva, sanitizada e canônica",
-        "summary": "vault-maui/memorias/ é canônico; captura seletiva, sanitizada e rastreável"
+        "summary": "vault-maui/project-memories/ é canônico; captura seletiva, sanitizada e rastreável"
       }
     ]
   },
@@ -373,7 +373,7 @@
   "memory_store": {
     "enabled": true,
     "spec_file": "vault-maui/00_core/spec-memory-store-maui.md",
-    "canonical_directory": "vault-maui/memorias/",
+    "canonical_directory": "vault-maui/project-memories/",
     "source_of_truth": "markdown_files",
     "index_sqlite_status": "planejado_P0_3",
     "context_brief_priority_flag": "deve_ser_considerado_em_context_brief"

@@ -70,7 +70,7 @@ Não foram encontrados arquivos Markdown operacionais atuais com espaços, under
 - Confirmada a existência dos registros P0.1.17, P0.1.18 e P0.1.19.
 - Confirmada a existência dos documentos core atuais.
 - Confirmada a existência do template canônico de Context Brief.
-- Confirmada a existência de `vault-maui/memorias/`.
+- Confirmada a existência de `vault-maui/project-memories/`.
 - Validado YAML dos arquivos alterados/criados.
 - Confirmado que nenhum slug foi renomeado.
 

@@ -18,7 +18,7 @@ referencias:
   - "vault-maui/context-packages/current/2026-05-06-context-brief-pos-p0-1-25-configuracao-base.md"
   - "vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md"
   - "vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md"
-  - "vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md"
+  - "vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md"
 tags:
   - maui
   - system-prompt
@@ -111,7 +111,7 @@ Ordem prática: Git/filesystem; exec-reports; inventários e planos; memórias c
 
 ## 9. Memória e Capture Layer
 
-`vault-maui/memorias/` é o diretório canônico de memórias. Capturar apenas material com valor futuro: decisão, marco, preferência operacional, risco, artefato reutilizável ou comando explícito. Capturas devem ser seletivas, sanitizadas, classificadas por escopo/confidencialidade, rastreáveis e marcadas. Não registrar conversa bruta como memória final.
+`vault-maui/project-memories/` é o diretório canônico de memórias. Capturar apenas material com valor futuro: decisão, marco, preferência operacional, risco, artefato reutilizável ou comando explícito. Capturas devem ser seletivas, sanitizadas, classificadas por escopo/confidencialidade, rastreáveis e marcadas. Não registrar conversa bruta como memória final.
 
 Specs de Capture Layer, Memory Store, parametrização e índice foram materializadas:
 - `vault-maui/00_core/spec-capture-layer-maui.md`

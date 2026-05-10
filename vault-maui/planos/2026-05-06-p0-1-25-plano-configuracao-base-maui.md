@@ -24,8 +24,8 @@ Este plano cobre a sequência de implementação da Configuração-base Maui: pr
 
 - `vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-24-diagnostico-configuracao-base.md`
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
-- `vault-maui/memorias/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project-memories/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
 - `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-22-reconciliacao-roadmap.md`
@@ -40,7 +40,7 @@ Este plano cobre a sequência de implementação da Configuração-base Maui: pr
 - Maui permanece `status: proposta`.
 - P0.1.11 segue não executada.
 - Instanciação manual Maui segue não pronta.
-- `vault-maui/memorias/` é o diretório canônico de memórias.
+- `vault-maui/project-memories/` é o diretório canônico de memórias.
 - Prompt Engineering Elite é PKA/competência obrigatória no Maui.
 - Operator packs P0.3 e context packages P0.4 dependem da Configuração-base.
 - Criação ou alteração de documento normativo exige Human Gate.

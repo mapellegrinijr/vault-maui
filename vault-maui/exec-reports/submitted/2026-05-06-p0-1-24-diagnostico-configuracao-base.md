@@ -18,9 +18,9 @@ Executado diagnóstico da Configuração-base Maui. Foi criado inventário diagn
 
 ## Arquivos lidos
 
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-24-pre-planejamento-configuracao-base.md`
-- `vault-maui/memorias/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
+- `vault-maui/project-memories/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
 - `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-22-reconciliacao-roadmap.md`
@@ -30,7 +30,7 @@ Executado diagnóstico da Configuração-base Maui. Foi criado inventário diagn
 - arquivos em `vault-maui/schemas/`
 - diretórios e arquivos em `vault-maui/operator-packs/`
 - diretórios e arquivos em `vault-maui/context-packages/`
-- memórias canônicas relevantes em `vault-maui/memorias/`
+- memórias canônicas relevantes em `vault-maui/project-memories/`
 - inventários e referências arquivadas para de/para conceitual.
 
 ## Arquivos criados/alterados

@@ -24,7 +24,7 @@ Tarefa de documentação operacional executada com sucesso. Foram criados um pro
 | `vault-maui/context-packages/current/2026-05-06-context-brief-pos-p0-1-25-configuracao-base.md` | Context brief mais recente como referência de padrão |
 | `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md` | Readiness P0.1.21 — fontes, precedência e regras existentes |
 | `vault-maui/exec-reports/submitted/2026-05-06-p0-1-28-system-prompt-maui.md` | Exec-report mais recente como referência de estrutura |
-| `vault-maui/memorias/` (10 arquivos com `deve_ser_considerado_em_context_brief: true`) | Memórias sinalizadas para context brief |
+| `vault-maui/project-memories/` (10 arquivos com `deve_ser_considerado_em_context_brief: true`) | Memórias sinalizadas para context brief |
 
 ## Verificações de pré-condições
 
@@ -41,7 +41,7 @@ Tarefa de documentação operacional executada com sucesso. Foram criados um pro
 | --- | --- | --- |
 | `vault-maui/procedures/procedimento-gerar-context-brief.md` | Procedimento operacional | Criado |
 | `vault-maui/skills/maui-context-brief/SKILL.md` | Skill compacta | Criado |
-| `vault-maui/memorias/2026-05-06-decisao-claude-code-gerar-context-brief.md` | Memória de decisão | Criado |
+| `vault-maui/project-memories/2026-05-06-decisao-claude-code-gerar-context-brief.md` | Memória de decisão | Criado |
 | `vault-maui/exec-reports/submitted/2026-05-06-claude-code-context-brief-procedure.md` | Este exec-report | Criado |
 
 ## Decisão sobre skill

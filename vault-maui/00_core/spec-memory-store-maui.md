@@ -49,13 +49,13 @@ Esta spec foi criada sob Human Gate explícito da P0.1.30. Status `proposta`. In
 
 ## 0. Propósito
 
-Definir a estrutura, governança e operação do repositório canônico de memórias do Maui: `vault-maui/memorias/`. O Memory Store é o local onde decisões, marcos, preferências e artefatos com valor futuro são preservados de forma seletiva, sanitizada e rastreável.
+Definir a estrutura, governança e operação do repositório canônico de memórias do Maui: `vault-maui/project-memories/`. O Memory Store é o local onde decisões, marcos, preferências e artefatos com valor futuro são preservados de forma seletiva, sanitizada e rastreável.
 
 ---
 
 ## 1. Princípio fundamental
 
-**Os arquivos markdown em `vault-maui/memorias/` são a fonte de verdade.**
+**Os arquivos markdown em `vault-maui/project-memories/` são a fonte de verdade.**
 
 O índice SQLite (quando existir) é auxiliar e derivado; se houver divergência entre o índice e um arquivo markdown, o arquivo markdown prevalece. Nunca apagar um arquivo markdown baseado apenas no estado do índice.
 
@@ -64,7 +64,7 @@ O índice SQLite (quando existir) é auxiliar e derivado; se houver divergência
 ## 2. Estrutura do diretório
 
 ```
-vault-maui/memorias/
+vault-maui/project-memories/
 ├── [YYYY-MM-DD]-[slug].md     # memórias canônicas
 └── (index.sqlite)             # índice auxiliar — planejado para P0.3
 ```
@@ -78,7 +78,7 @@ Convenção de nomenclatura: `YYYY-MM-DD-slug-descritivo.md`
 
 ## 3. Frontmatter canônico de memória
 
-Toda memória em `vault-maui/memorias/` deve conter:
+Toda memória em `vault-maui/project-memories/` deve conter:
 
 ```yaml
 ---
@@ -110,7 +110,7 @@ tags:
 | Human Gate (commit) | manual | commit aprovado explicitamente pelo usuário |
 | Claude Code (exec-report) | manual | durante exec-reports com instrução explícita |
 
-Nenhum outro processo pode escrever em `vault-maui/memorias/` sem autorização explícita.
+Nenhum outro processo pode escrever em `vault-maui/project-memories/` sem autorização explícita.
 
 ---
 
@@ -137,7 +137,7 @@ CREATE TABLE memories (
 ```
 
 - `instantiated_hash`: SHA-256 do conteúdo do arquivo no momento da indexação; detecta se arquivo foi modificado fora do fluxo sanctioned
-- Reconstruível a qualquer momento via scan de `vault-maui/memorias/`
+- Reconstruível a qualquer momento via scan de `vault-maui/project-memories/`
 
 ---
 
@@ -161,7 +161,7 @@ retrieve_memory(
 Lista de memórias ordenadas por data descendente, contendo arquivo, título, data, tipo, trecho relevante.
 
 - Se `context_brief_flag=true`, retornar apenas memórias marcadas com `deve_ser_considerado_em_context_brief: true`
-- Se índice ausente (pré-P0.3): scan manual de `vault-maui/memorias/` com grep por frontmatter
+- Se índice ausente (pré-P0.3): scan manual de `vault-maui/project-memories/` com grep por frontmatter
 
 ---
 
@@ -171,7 +171,7 @@ Lista de memórias ordenadas por data descendente, contendo arquivo, título, da
 |--------|-----------|
 | ativa | arquivo presente, conteúdo válido |
 | obsoleta | substituída por versão mais recente; manter arquivo com nota de obsolescência |
-| arquivada | movida para subdiretório `vault-maui/memorias/arquivo/` com nota de motivo |
+| arquivada | movida para subdiretório `vault-maui/project-memories/arquivo/` com nota de motivo |
 
 Nunca deletar memórias sem decisão humana explícita. Preferir obsolescência com nota à deleção.
 

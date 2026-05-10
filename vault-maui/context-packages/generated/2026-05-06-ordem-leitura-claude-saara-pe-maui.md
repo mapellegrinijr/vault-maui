@@ -26,9 +26,9 @@ confidencialidade: interna
 | 8 | `vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md` | Plano de lotes da configuração-base | Sequência P0.1.26-P0.1.32, critérios e Human Gates | planejamento |
 | 9 | `vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md` | Diagnóstico de lacunas | Artefatos ausentes/planejados, riscos, de/para Saara | inventário/evidência de diagnóstico |
 | 10 | `vault-maui/context-packages/current/2026-05-06-context-brief-pos-p0-1-25-configuracao-base.md` | Brief de retomada anterior | Contexto histórico pós-P0.1.25 e cautelas | context brief; pode estar defasado |
-| 11 | `vault-maui/memorias/2026-05-06-marco-p0-1-28-system-prompt-maui.md` | Memória marco mais recente da configuração-base | Decisões runtime e riscos P0.1.28 | memória |
+| 11 | `vault-maui/project-memories/2026-05-06-marco-p0-1-28-system-prompt-maui.md` | Memória marco mais recente da configuração-base | Decisões runtime e riscos P0.1.28 | memória |
 | 12 | Exec-reports P0.1.21-P0.1.27 | Evidência histórica | Linha do tempo, commits, restrições preservadas | evidência operacional |
-| 13 | `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | Mapa de destino | Sequência macro e proposta de roadmap | roadmap/planejamento |
+| 13 | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | Mapa de destino | Sequência macro e proposta de roadmap | roadmap/planejamento |
 | 14 | `../Saara/vault-saara/00_core/system-prompt.md` | Modelo runtime Saara 7.1.1 | Formato, precedência, modos, Domain Router | referência Saara |
 | 15 | `../Saara/vault-saara/00_core/pka-prompt-engineering.md` | PKA PE vigente | Fronteira PE/Agent, IO, quality gates de prompt | referência Saara |
 | 16 | Demais PKAs/specs Saara e `indice.md` | Modelo conceitual | Domínios, specs, parametrização e índice futuros | referência Saara |
@@ -47,7 +47,7 @@ Use como fonte principal de execução:
 
 Use como planejamento, não como prova isolada:
 
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md`
 - Seções de próximos passos em exec-reports.
 
@@ -66,10 +66,10 @@ Não promover status sem decisão humana.
 
 Use para continuidade, não como prova única:
 
-- `vault-maui/memorias/2026-05-06-marco-p0-1-28-system-prompt-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-p0-1-27-especificacao-completa-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-p0-1-26-principios-precedencia-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-pos-p0-1-25-configuracao-base-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-28-system-prompt-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-27-especificacao-completa-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-26-principios-precedencia-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-pos-p0-1-25-configuracao-base-maui.md`
 - Este handoff e context package gerado.
 
 ## Arquivos que não devem ser usados sozinhos

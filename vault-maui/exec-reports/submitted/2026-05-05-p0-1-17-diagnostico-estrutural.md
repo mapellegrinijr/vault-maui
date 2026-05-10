@@ -20,7 +20,7 @@ O usuário aprovou tratar P0.1.17 como diagnóstico estrutural completo do vault
 ## Escopo analisado
 
 - Diretórios de primeiro e segundo nível sob `vault-maui/`.
-- Diretórios `vault-maui/memoria/` e `vault-maui/memorias/`.
+- Diretórios `vault-maui/memoria/` e `vault-maui/project-memories/`.
 - Documentos core em `vault-maui/00_core/`.
 - Arquivos Markdown sob `vault-maui/` para diagnóstico de frontmatter.
 - Referências e wikilinks selecionados no corpus.
@@ -29,7 +29,7 @@ O usuário aprovou tratar P0.1.17 como diagnóstico estrutural completo do vault
 
 ## Divergências estruturais encontradas
 
-- `vault-maui/memoria/` e `vault-maui/memorias/` coexistem.
+- `vault-maui/memoria/` e `vault-maui/project-memories/` coexistem.
 - `vault-maui/review-reports/` não existe.
 - `vault-maui/operator-packs/` contém subdiretórios por target, mas nenhum arquivo de pack/template.
 - Handoffs aparecem entre `context-packages/current`, `context-packages/archive` e `vault-maui/handoffs/`, com mudanças pendentes já existentes antes desta tarefa.
@@ -38,8 +38,8 @@ O usuário aprovou tratar P0.1.17 como diagnóstico estrutural completo do vault
 ## Diagnóstico específico de `memoria/` vs `memorias/`
 
 - `vault-maui/memoria/` existe e está vazio.
-- `vault-maui/memorias/` existe e contém duas memórias com `deve_ser_considerado_em_context_brief: true`.
-- Uma memória em `vault-maui/memorias/` já estava não rastreada antes desta tarefa: `2026-05-05-marco-decisao-normalizacao-estrutural.md`.
+- `vault-maui/project-memories/` existe e contém duas memórias com `deve_ser_considerado_em_context_brief: true`.
+- Uma memória em `vault-maui/project-memories/` já estava não rastreada antes desta tarefa: `2026-05-05-marco-decisao-normalizacao-estrutural.md`.
 - Documentos core citam principalmente `memoria/`.
 - Regras operacionais e artefatos recentes citam `memorias/` ou pasta equivalente.
 
@@ -99,7 +99,7 @@ Executar primeiro o Lote 1 — Memórias, com decisão humana explícita sobre o
 
 - Registrado `git status --short` inicial, que já continha alterações pendentes não relacionadas.
 - Confirmada a existência de `vault-maui/`, `vault-maui/00_core/`, inventário de `Documentação/` e template de Context Brief.
-- Confirmada a existência de `vault-maui/memoria/` e `vault-maui/memorias/`.
+- Confirmada a existência de `vault-maui/memoria/` e `vault-maui/project-memories/`.
 - Confirmada a existência/ausência dos diretórios estruturais solicitados.
 - Confirmado que `Documentação/` não contém os 8 arquivos originalmente inventariados.
 - Percorridos arquivos Markdown sob `vault-maui/` para diagnóstico de frontmatter.
@@ -111,7 +111,7 @@ Executar primeiro o Lote 1 — Memórias, com decisão humana explícita sobre o
 - Nenhum arquivo existente foi movido, apagado, renomeado ou reescrito nesta tarefa.
 - Nenhuma normalização foi aplicada.
 - Nenhum arquivo em `vault-maui/memoria/` foi alterado.
-- Nenhum arquivo em `vault-maui/memorias/` foi alterado.
+- Nenhum arquivo em `vault-maui/project-memories/` foi alterado.
 - `Documentação/` não foi alterada.
 - P0.1.11 não foi executada.
 
@@ -121,8 +121,8 @@ Aceito para revisão.
 
 ## Ressalvas
 
-O working tree já estava sujo no início da tarefa, com alterações não relacionadas: remoção pendente em `vault-maui/context-packages/current/`, arquivos não rastreados em `vault-maui/handoffs/`, memória não rastreada em `vault-maui/memorias/` e `Sem título.canvas` na raiz. Esses itens foram diagnosticados quando relevantes, mas não foram alterados nem incluídos no commit desta tarefa.
+O working tree já estava sujo no início da tarefa, com alterações não relacionadas: remoção pendente em `vault-maui/context-packages/current/`, arquivos não rastreados em `vault-maui/handoffs/`, memória não rastreada em `vault-maui/project-memories/` e `Sem título.canvas` na raiz. Esses itens foram diagnosticados quando relevantes, mas não foram alterados nem incluídos no commit desta tarefa.
 
 ## Próximo passo recomendado
 
-Aprovar o Lote 1 — Memórias, definindo o caminho canônico entre `vault-maui/memoria/` e `vault-maui/memorias/`.
+Aprovar o Lote 1 — Memórias, definindo o caminho canônico entre `vault-maui/memoria/` e `vault-maui/project-memories/`.

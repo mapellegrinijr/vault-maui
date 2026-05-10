@@ -10,7 +10,7 @@ uso_previsto: "futuras_instancias_maui_saara"
 tarefa_relacionada: "pos-p0.1.25"
 fontes_consultadas:
   - "vault-maui/00_core/"
-  - "vault-maui/memorias/"
+  - "vault-maui/project-memories/"
   - "vault-maui/inventarios/"
   - "vault-maui/planos/"
   - "vault-maui/exec-reports/submitted/"
@@ -34,7 +34,7 @@ Este context brief prepara futuras instâncias Maui e/ou Saara para retomar o pr
 - Instanciação manual Maui: não pronta e fora do escopo atual.
 - Configuração-base Maui: diagnosticada e planejada, mas não materializada como pacote completo.
 - Prompt Engineering Elite: PKA/competência obrigatória decidida para Maui, ainda não materializada como PKA Maui.
-- `vault-maui/memorias/`: diretório canônico de memórias.
+- `vault-maui/project-memories/`: diretório canônico de memórias.
 - `Documentação/`: não deve ser reaberta sem decisão humana.
 
 ## Fontes obrigatórias para retomada
@@ -42,17 +42,17 @@ Este context brief prepara futuras instâncias Maui e/ou Saara para retomar o pr
 - `vault-maui/exec-reports/submitted/`
 - `vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md`
 - `vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-pos-p0-1-25-configuracao-base-maui.md`
-- `vault-maui/memorias/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
+- `vault-maui/project-memories/2026-05-06-marco-pos-p0-1-25-configuracao-base-maui.md`
+- `vault-maui/project-memories/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md`
 - `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`, apenas como mapa de destino reconciliável.
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`, apenas como mapa de destino reconciliável.
 
 ## Ordem de precedência operacional
 
 1. Git e filesystem local verificável.
 2. Exec-reports em `vault-maui/exec-reports/submitted/`.
 3. Inventários e planos em `vault-maui/inventarios/` e `vault-maui/planos/`.
-4. Memórias em `vault-maui/memorias/` com `deve_ser_considerado_em_context_brief: true`.
+4. Memórias em `vault-maui/project-memories/` com `deve_ser_considerado_em_context_brief: true`.
 5. Context briefs e readiness em `vault-maui/context-packages/`.
 6. Handoffs recentes, quando existirem e forem verificáveis.
 7. Roadmap core, como mapa de destino e não como fonte única de status executado.

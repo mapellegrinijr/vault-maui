@@ -41,18 +41,18 @@ Criado pacote de handoff/contexto para nova instância Claude com Saara 7.1.1 + 
 
 ### Maui
 
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/context-packages/current/2026-05-06-context-brief-pos-p0-1-25-configuracao-base.md`
-- `vault-maui/memorias/2026-05-06-marco-pos-p0-1-25-configuracao-base-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-pos-p0-1-25-configuracao-base-maui.md`
 - `vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md`
 - `vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md`
 - `vault-maui/00_core/principios-fundacionais-maui.md`
 - `vault-maui/00_core/contrato-precedencia-maui.md`
 - `vault-maui/00_core/especificacao-completa-maui.md`
 - `vault-maui/00_core/system-prompt-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-p0-1-26-principios-precedencia-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-p0-1-27-especificacao-completa-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-p0-1-28-system-prompt-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-26-principios-precedencia-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-27-especificacao-completa-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-28-system-prompt-maui.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-21-context-brief-readiness.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-22-reconciliacao-roadmap.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-23-correcao-memoria-defasada.md`
@@ -72,7 +72,7 @@ Criado pacote de handoff/contexto para nova instância Claude com Saara 7.1.1 + 
 - Criado: `vault-maui/handoffs/2026-05-06-handoff-saara-7-1-1-pe-claude-maui.md`
 - Criado: `vault-maui/context-packages/generated/2026-05-06-claude-saara-7-1-1-pe-maui-continuation.md`
 - Criado: `vault-maui/context-packages/generated/2026-05-06-ordem-leitura-claude-saara-pe-maui.md`
-- Criado: `vault-maui/memorias/2026-05-06-marco-handoff-saara-7-1-1-pe-claude-maui.md`
+- Criado: `vault-maui/project-memories/2026-05-06-marco-handoff-saara-7-1-1-pe-claude-maui.md`
 - Criado: `vault-maui/exec-reports/submitted/2026-05-06-handoff-saara-7-1-1-pe-claude-maui.md`
 
 Nenhum arquivo em `Documentação/` foi alterado.
@@ -88,7 +88,7 @@ Nenhum arquivo Saara foi alterado.
 - Confirmação de existência de `vault-maui/`.
 - Confirmação de existência de `vault-maui/00_core/system-prompt-maui.md`.
 - Confirmação de existência de `vault-maui/exec-reports/submitted/2026-05-06-p0-1-28-system-prompt-maui.md`.
-- Confirmação de existência de `vault-maui/memorias/2026-05-06-marco-p0-1-28-system-prompt-maui.md`.
+- Confirmação de existência de `vault-maui/project-memories/2026-05-06-marco-p0-1-28-system-prompt-maui.md`.
 - Busca por handoff/context package equivalente para Saara 7.1.1 + PE no Claude após P0.1.27/P0.1.28: nenhum encontrado.
 - Localização dos arquivos Saara 7.1.1 + PE em `../Saara/vault-saara/00_core/`.
 - Validação manual de frontmatter dos arquivos criados.
@@ -112,7 +112,7 @@ Nenhum arquivo Saara foi alterado.
 P0.1.28 está concluída no filesystem local verificado, com:
 
 - `vault-maui/00_core/system-prompt-maui.md`
-- `vault-maui/memorias/2026-05-06-marco-p0-1-28-system-prompt-maui.md`
+- `vault-maui/project-memories/2026-05-06-marco-p0-1-28-system-prompt-maui.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-28-system-prompt-maui.md`
 - commit `4493448 p0.1.28: cria system prompt Maui`
 

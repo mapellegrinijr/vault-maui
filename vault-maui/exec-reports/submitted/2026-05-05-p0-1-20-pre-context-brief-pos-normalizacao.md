@@ -17,15 +17,15 @@ Reconciliar o marco de memória pós-P0.1.20 e criar um `Maui Context Brief` atu
 
 ## Decisão humana aplicada
 
-O usuário confirmou que `vault-maui/memorias/Sem título.md` era o marco de memória previamente gerado e deveria ser reconciliado como `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`, preservando `deve_ser_considerado_em_context_brief: true`.
+O usuário confirmou que `vault-maui/project-memories/Sem título.md` era o marco de memória previamente gerado e deveria ser reconciliado como `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`, preservando `deve_ser_considerado_em_context_brief: true`.
 
 ## Estado inicial do working tree
 
 O status inicial mostrava apenas o arquivo canônico não rastreado:
 
-- `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
+- `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
 
-O arquivo `vault-maui/memorias/Sem título.md` já não existia no momento da validação prévia.
+O arquivo `vault-maui/project-memories/Sem título.md` já não existia no momento da validação prévia.
 
 ## Reconciliação do marco de memória
 
@@ -48,13 +48,13 @@ O brief usa como referência primária o template `vault-maui/context-packages/t
 ## Fontes consultadas
 
 - `vault-maui/context-packages/templates/maui-context-brief.template.md`
-- `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
-- `vault-maui/memorias/2026-05-05-marco-decisao-normalizacao-estrutural.md`
-- `vault-maui/memorias/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
-- `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
+- `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
+- `vault-maui/project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md`
+- `vault-maui/project-memories/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
+- `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
 - `vault-maui/handoffs/2026-05-04-handoff-sessao-claude-pos-inventario.md`
 - `vault-maui/handoffs/2026-05-05-handoff-fechamento-tarefa-2-pre-p0-1-17.md`
-- `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md`
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 - `vault-maui/00_core/arquitetura-maui-v0-2.md`
 - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md`
 - `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md`
@@ -72,14 +72,14 @@ O brief usa como referência primária o template `vault-maui/context-packages/t
 
 ## Arquivos alterados/criados
 
-- Rastreado: `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
+- Rastreado: `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
 - Criado: `vault-maui/context-packages/current/2026-05-05-context-brief-pos-p0-1-20-normalizacao.md`
 - Criado: `vault-maui/exec-reports/submitted/2026-05-05-p0-1-20-pre-context-brief-pos-normalizacao.md`
 
 ## Validações realizadas
 
 - Executado `git status --short`.
-- Confirmada ausência de `vault-maui/memorias/Sem título.md`.
+- Confirmada ausência de `vault-maui/project-memories/Sem título.md`.
 - Confirmada existência do marco canônico.
 - Validado frontmatter YAML do marco canônico.
 - Confirmado `tipo: memoria_marco` no marco canônico.

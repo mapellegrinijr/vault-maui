@@ -13,18 +13,18 @@ tarefa: P0.1.17
 
 ## 1. Finalidade
 
-Preparar a P0.1.17: normalizar a decisão sobre o diretório canônico de memórias do Maui, resolvendo a ambiguidade operacional entre `vault-maui/memoria/` e `vault-maui/memorias/`.
+Preparar a P0.1.17: normalizar a decisão sobre o diretório canônico de memórias do Maui, resolvendo a ambiguidade operacional entre `vault-maui/memoria/` e `vault-maui/project-memories/`.
 
 Este brief consolida apenas o contexto mínimo necessário para o próximo executor propor e executar uma normalização controlada, sem reescrever documentos core nem inventar decisão normativa ausente.
 
 ## 2. Estado atual conhecido
 
-- Estado: existem dois diretórios relacionados a memórias: `vault-maui/memoria/` e `vault-maui/memorias/`.
+- Estado: existem dois diretórios relacionados a memórias: `vault-maui/memoria/` e `vault-maui/project-memories/`.
 - Evidências:
-  - `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` existe e contém `deve_ser_considerado_em_context_brief: true`.
+  - `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` existe e contém `deve_ser_considerado_em_context_brief: true`.
   - `vault-maui/memoria/` existe, mas não contém arquivos encontrados na inspeção material desta preparação.
   - Documentos core promovidos mencionam majoritariamente `memoria/` como caminho conceitual/canônico planejado.
-  - P0.1.16 criou `vault-maui/memorias/` porque essa pasta não existia e a tarefa exigia esse destino específico.
+  - P0.1.16 criou `vault-maui/project-memories/` porque essa pasta não existia e a tarefa exigia esse destino específico.
 - Limites do que foi confirmado:
   - Não foi encontrada decisão normativa explícita que escolha definitivamente entre singular `memoria/` e plural `memorias/`.
   - Não foi feita leitura integral de todos os documentos core; a consulta foi direcionada a ocorrências e fontes recentes materialmente relevantes.
@@ -34,10 +34,10 @@ Este brief consolida apenas o contexto mínimo necessário para o próximo execu
 | Fonte | Caminho ou referência | Motivo da consulta | Observação |
 | --- | --- | --- | --- |
 | Template canônico | `vault-maui/context-packages/templates/maui-context-brief.template.md` | Estrutura e regra para criação deste brief | Contém regra de priorização de memórias marcadas. |
-| Memória marcada | `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` | Marco da P0.1.16 e fechamento da Tarefa 2 | Deve ser considerada em Context Brief. |
-| Regras operacionais | `vault-maui/00_core/regras-operacionais.md` | Instruções Codex para Context Brief sob demanda | Menciona `vault-maui/memorias/` ou pasta equivalente. |
+| Memória marcada | `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` | Marco da P0.1.16 e fechamento da Tarefa 2 | Deve ser considerada em Context Brief. |
+| Regras operacionais | `vault-maui/00_core/regras-operacionais.md` | Instruções Codex para Context Brief sob demanda | Menciona `vault-maui/project-memories/` ou pasta equivalente. |
 | Inventário reconciliado | `vault-maui/inventarios/2026-05-04-documentacao.md` | Fechamento da Tarefa 2 e destinos finais | Confirma saneamento concluído e P0.1.5 desbloqueada. |
-| Exec-report P0.1.16 | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-16-fechamento-tarefa-2-documentacao.md` | Origem da criação de `vault-maui/memorias/` | Registra ressalva: `memorias/` criada; `memoria/` legada não alterada. |
+| Exec-report P0.1.16 | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-16-fechamento-tarefa-2-documentacao.md` | Origem da criação de `vault-maui/project-memories/` | Registra ressalva: `memorias/` criada; `memoria/` legada não alterada. |
 | Exec-reports P0.1.12-P0.1.15 | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-12...` a `...p0-1-15...` | Histórico recente do saneamento documental | Confirmam movimentações, ressalvas e preservação. |
 | Core promovido | `vault-maui/00_core/*.md` | Evidências de referências a memória | Ocorrências apontam principalmente para `memoria/`. |
 | Estrutura local | `find vault-maui/memoria vault-maui/memorias` | Verificar existência e conteúdo dos diretórios | Só `memorias/` contém a memória P0.1.16. |
@@ -52,8 +52,8 @@ Este brief consolida apenas o contexto mínimo necessário para o próximo execu
   Fonte: `vault-maui/00_core/regras-operacionais.md`; commit `cbea5991947121b38b5e79d91959201b18860279`.
   Impacto: este brief segue instrução operacional registrada.
 
-- Decisão: P0.1.16 criou uma memória em `vault-maui/memorias/` marcada para Context Brief.
-  Fonte: `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`; commit `31c63e90f4c330d500701c79daf409155e24fe47`.
+- Decisão: P0.1.16 criou uma memória em `vault-maui/project-memories/` marcada para Context Brief.
+  Fonte: `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`; commit `31c63e90f4c330d500701c79daf409155e24fe47`.
   Impacto: a normalização precisa preservar essa memória e seu marcador.
 
 - Decisão: P0.1.11 não foi executada.
@@ -62,7 +62,7 @@ Este brief consolida apenas o contexto mínimo necessário para o próximo execu
 
 ## 5. Pendências e bloqueios
 
-- Pendência ou bloqueio: não há decisão canônica explícita entre `vault-maui/memoria/` e `vault-maui/memorias/`.
+- Pendência ou bloqueio: não há decisão canônica explícita entre `vault-maui/memoria/` e `vault-maui/project-memories/`.
 - Impacto: scripts futuros, schemas, context briefs, buscas e procedimentos podem consultar caminhos divergentes ou duplicar memórias.
 - Menor ação necessária: aprovar uma normalização controlada para escolher o diretório canônico, mover ou manter a memória existente conforme decisão, e registrar compatibilidade/depreciação do outro caminho.
 
@@ -74,7 +74,7 @@ Este brief consolida apenas o contexto mínimo necessário para o próximo execu
 
 ## 7. Memórias relevantes
 
-- Memória: `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
+- Memória: `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
 - Aplicação: fonte prioritária para decisões fechadas da sessão, commits relevantes, fechamento da Tarefa 2 e próximos passos desbloqueados.
 - Fonte: frontmatter contém `deve_ser_considerado_em_context_brief: true`.
 
@@ -86,8 +86,8 @@ Este brief consolida apenas o contexto mínimo necessário para o próximo execu
 
 ## 9. Atualizações recentes do corpus
 
-- Atualização: P0.1.16 criou `vault-maui/memorias/` e a primeira memória marcada para Context Brief.
-- Arquivo ou área afetada: `vault-maui/memorias/`, template de Context Brief, inventário.
+- Atualização: P0.1.16 criou `vault-maui/project-memories/` e a primeira memória marcada para Context Brief.
+- Arquivo ou área afetada: `vault-maui/project-memories/`, template de Context Brief, inventário.
 - Impacto esperado: futuros Context Briefs devem considerar memórias marcadas, mas a pasta canônica ainda precisa ser reconciliada.
 
 - Atualização: documentos core promovidos em P0.1.12-P0.1.15 já estão em `vault-maui/00_core/`.
@@ -98,37 +98,37 @@ Este brief consolida apenas o contexto mínimo necessário para o próximo execu
 
 | Documento | Necessidade | Obrigatório para continuar? |
 | --- | --- | --- |
-| `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` | Preservar memória existente e seu marcador | Sim |
+| `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` | Preservar memória existente e seu marcador | Sim |
 | `vault-maui/00_core/regras-operacionais.md` | Confirmar regra de Context Brief e fontes de memória | Sim |
 | `vault-maui/context-packages/templates/maui-context-brief.template.md` | Confirmar comportamento de briefs futuros | Sim |
 | `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md` | Verificar referência estrutural a `memoria/` | Sim |
 | `vault-maui/00_core/arquitetura-maui-v0-2.md` | Verificar referência estrutural a `memoria/` | Sim |
-| `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | Verificar referências planejadas a `memoria/` e scripts de memória | Sim |
+| `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | Verificar referências planejadas a `memoria/` e scripts de memória | Sim |
 | `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` | Verificar referências funcionais a `memoria/` | Sim |
 | `vault-maui/exec-reports/submitted/2026-05-05-p0-1-16-fechamento-tarefa-2-documentacao.md` | Entender por que `memorias/` foi criado | Sim |
 
 ## 11. Solicitação ao usuário quando houver lacuna documental
 
-- Lacuna documental: falta decisão explícita sobre qual caminho deve ser canônico: `vault-maui/memoria/` ou `vault-maui/memorias/`.
+- Lacuna documental: falta decisão explícita sobre qual caminho deve ser canônico: `vault-maui/memoria/` ou `vault-maui/project-memories/`.
 - Impacto na continuidade: sem essa decisão, P0.1.17 pode normalizar na direção errada ou criar compatibilidade contrária à arquitetura planejada.
 - Menor conjunto solicitado ao usuário: aprovar uma das duas opções antes da execução:
-  - tornar `vault-maui/memoria/` canônico e migrar a memória P0.1.16 para lá, registrando `vault-maui/memorias/` como legado/erro histórico;
-  - tornar `vault-maui/memorias/` canônico e atualizar referências operacionais mínimas, registrando divergência com documentos core como débito de reconciliação.
+  - tornar `vault-maui/memoria/` canônico e migrar a memória P0.1.16 para lá, registrando `vault-maui/project-memories/` como legado/erro histórico;
+  - tornar `vault-maui/project-memories/` canônico e atualizar referências operacionais mínimas, registrando divergência com documentos core como débito de reconciliação.
 
 ## 12. Contexto mínimo para o próximo executor
 
 - Fatos confirmados:
   - `vault-maui/memoria/` existe.
-  - `vault-maui/memorias/` existe.
-  - A única memória encontrada está em `vault-maui/memorias/`.
+  - `vault-maui/project-memories/` existe.
+  - A única memória encontrada está em `vault-maui/project-memories/`.
   - A memória P0.1.16 tem `deve_ser_considerado_em_context_brief: true`.
-  - P0.1.16 registrou que `vault-maui/memorias/` foi criada e que `vault-maui/memoria/` já existia e não foi alterada.
+  - P0.1.16 registrou que `vault-maui/project-memories/` foi criada e que `vault-maui/memoria/` já existia e não foi alterada.
   - Documentos core promovidos contêm referências a `memoria/`.
-  - Regras operacionais mencionam `vault-maui/memorias/` ou pasta equivalente de memórias.
+  - Regras operacionais mencionam `vault-maui/project-memories/` ou pasta equivalente de memórias.
 
 - Hipóteses ou inferências:
   - `vault-maui/memoria/` parece ser o caminho conceitual original nos documentos promovidos.
-  - `vault-maui/memorias/` parece ter surgido como destino operacional recente da P0.1.16.
+  - `vault-maui/project-memories/` parece ter surgido como destino operacional recente da P0.1.16.
   - A normalização provavelmente deve escolher um caminho canônico e registrar política de transição.
 
 - O que não deve ser assumido:

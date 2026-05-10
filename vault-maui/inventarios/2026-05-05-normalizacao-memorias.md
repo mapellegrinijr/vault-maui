@@ -13,24 +13,24 @@ fase: P0.1.18
 
 ## 1. Decisão
 
-`vault-maui/memorias/` é o diretório canônico de memórias do Maui.
+`vault-maui/project-memories/` é o diretório canônico de memórias do Maui.
 
 ## 2. Justificativa
 
-- `vault-maui/memorias/` já contém memórias recentes marcadas para Context Brief.
+- `vault-maui/project-memories/` já contém memórias recentes marcadas para Context Brief.
 - `vault-maui/memoria/` foi diagnosticado como vazio na P0.1.17.
 - A escolha reduz risco de perda de contexto e evita mover memórias já criadas.
 
 ## 3. Ações aplicadas
 
 - Referências operacionais futuras foram avaliadas; a única atualização aplicada foi no template canônico de Context Brief.
-- O template `vault-maui/context-packages/templates/maui-context-brief.template.md` foi ajustado para consultar explicitamente `vault-maui/memorias/` e priorizar memórias com `deve_ser_considerado_em_context_brief: true`.
+- O template `vault-maui/context-packages/templates/maui-context-brief.template.md` foi ajustado para consultar explicitamente `vault-maui/project-memories/` e priorizar memórias com `deve_ser_considerado_em_context_brief: true`.
 - O diretório vazio `vault-maui/memoria/` foi removido localmente após confirmação de ausência de arquivos e subdiretórios.
-- As memórias existentes em `vault-maui/memorias/` foram preservadas e confirmadas como marcadas para Context Brief.
+- As memórias existentes em `vault-maui/project-memories/` foram preservadas e confirmadas como marcadas para Context Brief.
 
 ## 4. Impacto no Context Brief
 
-Briefs futuros devem consultar `vault-maui/memorias/` e priorizar memórias com `deve_ser_considerado_em_context_brief: true` quando o escopo, tags ou tarefa relacionada forem compatíveis.
+Briefs futuros devem consultar `vault-maui/project-memories/` e priorizar memórias com `deve_ser_considerado_em_context_brief: true` quando o escopo, tags ou tarefa relacionada forem compatíveis.
 
 ## 5. Ressalvas
 

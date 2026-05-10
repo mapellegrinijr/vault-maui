@@ -8,7 +8,7 @@ tipo: context_brief
 escopo: projeto_maui
 tarefa_relacionada: "P0.1.21"
 fontes_consultadas:
-  - "vault-maui/memorias/"
+  - "vault-maui/project-memories/"
   - "vault-maui/handoffs/"
   - "vault-maui/00_core/"
   - "vault-maui/inventarios/"
@@ -29,11 +29,11 @@ Este brief deve apoiar a provável P0.1.21, sem reabrir `Documentação/`, sem e
 
 - Estado: Tarefa 2 / saneamento inicial de `Documentação/` está concluída.
 - Estado: P0.1.17, P0.1.18, P0.1.19 e P0.1.20 foram concluídas e commitadas.
-- Estado: `vault-maui/memorias/` é o diretório canônico de memórias do Maui.
+- Estado: `vault-maui/project-memories/` é o diretório canônico de memórias do Maui.
 - Estado: `Documentação/` não possui pendências esperadas dos 8 arquivos originalmente inventariados.
 - Estado: P0.1.11 permanece não executada.
 - Estado: documentos Maui promovidos ao core permanecem com status `proposta`.
-- Evidências: memórias marcadas em `vault-maui/memorias/`, handoffs recentes, registros de normalização, exec-reports P0.1.16 a P0.1.20 e documentos core promovidos.
+- Evidências: memórias marcadas em `vault-maui/project-memories/`, handoffs recentes, registros de normalização, exec-reports P0.1.16 a P0.1.20 e documentos core promovidos.
 - Limites do que foi confirmado: este brief sintetiza fontes locais; não executa reconciliação completa do roadmap, não corrige handoffs, não cria readiness de instanciação manual e não valida conteúdo externo.
 
 ## 3. Fontes consultadas
@@ -41,17 +41,17 @@ Este brief deve apoiar a provável P0.1.21, sem reabrir `Documentação/`, sem e
 | Fonte | Caminho ou referência | Motivo da consulta | Observação |
 | --- | --- | --- | --- |
 | Template Context Brief | `vault-maui/context-packages/templates/maui-context-brief.template.md` | Estrutura e regras de preenchimento | Template canônico usado como referência primária. |
-| Memória de fechamento Tarefa 2 | `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` | Decisões, commits e fechamento dos 8 arquivos de `Documentação/` | Marcada para Context Brief. |
-| Memória de decisão estrutural | `vault-maui/memorias/2026-05-05-marco-decisao-normalizacao-estrutural.md` | Decisão de tratar P0.1.17 como diagnóstico estrutural amplo | Marcada para Context Brief. |
-| Memória P0.1.17 | `vault-maui/memorias/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md` | Resultado do diagnóstico estrutural | Marcada para Context Brief. |
-| Memória plano/estado atual | `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md` | Estado consolidado até P0.1.20 | Marcada para Context Brief; reconciliada nesta etapa. |
+| Memória de fechamento Tarefa 2 | `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md` | Decisões, commits e fechamento dos 8 arquivos de `Documentação/` | Marcada para Context Brief. |
+| Memória de decisão estrutural | `vault-maui/project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md` | Decisão de tratar P0.1.17 como diagnóstico estrutural amplo | Marcada para Context Brief. |
+| Memória P0.1.17 | `vault-maui/project-memories/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md` | Resultado do diagnóstico estrutural | Marcada para Context Brief. |
+| Memória plano/estado atual | `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md` | Estado consolidado até P0.1.20 | Marcada para Context Brief; reconciliada nesta etapa. |
 | Handoff pós-inventário | `vault-maui/handoffs/2026-05-04-handoff-sessao-claude-pos-inventario.md` | Contexto inicial da Tarefa 2 e estado proposta | Handoff histórico reorganizado para `vault-maui/handoffs/`. |
 | Handoff fechamento Tarefa 2 | `vault-maui/handoffs/2026-05-05-handoff-fechamento-tarefa-2-pre-p0-1-17.md` | Continuidade até P0.1.17 e decisão de adiar P0.1.11 | Confirma necessidade de Context Brief antes da normalização. |
-| Roadmap core | `vault-maui/00_core/roadmap-desenvolvimento-maui-v1-0.md` | Próximos lotes e status proposta | Contém nota de reconciliação; não foi reescrito. |
+| Roadmap core | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | Próximos lotes e status proposta | Contém nota de reconciliação; não foi reescrito. |
 | Arquitetura core | `vault-maui/00_core/arquitetura-maui-v0-2.md` | Base arquitetural promovida ao core | Status `proposta`. |
 | Spec funcional core | `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` | Escopo funcional e pendências de alinhamento | Status `proposta`; possui nota de reconciliação. |
 | Spec técnica core | `vault-maui/00_core/spec-tecnica-atualizacao-saara-maui-v2.md` | Base técnica Saara→Maui | Promovida ao core na P0.1.12. |
-| Regras operacionais | `vault-maui/00_core/regras-operacionais.md` | Instruções Codex para Context Brief sob demanda | Consulta `vault-maui/memorias/` ou pasta equivalente. |
+| Regras operacionais | `vault-maui/00_core/regras-operacionais.md` | Instruções Codex para Context Brief sob demanda | Consulta `vault-maui/project-memories/` ou pasta equivalente. |
 | Inventário documentação | `vault-maui/inventarios/2026-05-04-documentacao.md` | Fechamento da Tarefa 2 | Mantém rastreabilidade dos 8 arquivos. |
 | Diagnóstico estrutural | `vault-maui/inventarios/2026-05-05-diagnostico-estrutural-vault-maui.md` | Divergências e lotes futuros | Base de P0.1.17. |
 | Registro Lote 1 | `vault-maui/inventarios/2026-05-05-normalizacao-memorias.md` | Diretório canônico de memórias | Base de P0.1.18. |
@@ -61,7 +61,7 @@ Este brief deve apoiar a provável P0.1.21, sem reabrir `Documentação/`, sem e
 
 ## 4. Decisões fechadas relevantes
 
-- Decisão: `vault-maui/memorias/` é o diretório canônico de memórias.
+- Decisão: `vault-maui/project-memories/` é o diretório canônico de memórias.
   Fonte: P0.1.18 e registro `2026-05-05-normalizacao-memorias.md`.
   Impacto: Context Briefs futuros devem consultar essa pasta e priorizar memórias com `deve_ser_considerado_em_context_brief: true`.
 
@@ -116,19 +116,19 @@ Este brief deve apoiar a provável P0.1.21, sem reabrir `Documentação/`, sem e
 
 ## 7. Memórias relevantes
 
-- Memória: `vault-maui/memorias/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
+- Memória: `vault-maui/project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md`
   Aplicação: confirma fechamento da Tarefa 2, documentos promovidos/arquivados, status `proposta` e P0.1.11 não executada.
   Fonte: frontmatter marcado com `deve_ser_considerado_em_context_brief: true`.
 
-- Memória: `vault-maui/memorias/2026-05-05-marco-decisao-normalizacao-estrutural.md`
+- Memória: `vault-maui/project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md`
   Aplicação: registra decisão de transformar P0.1.17 em diagnóstico estrutural amplo e organizar correções por lotes.
   Fonte: frontmatter marcado com `deve_ser_considerado_em_context_brief: true`.
 
-- Memória: `vault-maui/memorias/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
+- Memória: `vault-maui/project-memories/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md`
   Aplicação: sintetiza divergências estruturais, readiness parcial para Context Brief e proposta de lotes.
   Fonte: frontmatter marcado com `deve_ser_considerado_em_context_brief: true`.
 
-- Memória: `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
+- Memória: `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`
   Aplicação: consolida o ponto alcançado até P0.1.20 e os commits relevantes da normalização.
   Fonte: frontmatter marcado com `deve_ser_considerado_em_context_brief: true`.
 
@@ -141,14 +141,14 @@ Este brief deve apoiar a provável P0.1.21, sem reabrir `Documentação/`, sem e
 ## 9. Atualizações recentes do corpus
 
 - Atualização: P0.1.16 fechou a Tarefa 2 e criou memória de marco.
-  Arquivo ou área afetada: inventário de `Documentação/`, `vault-maui/memorias/`, exec-report P0.1.16.
+  Arquivo ou área afetada: inventário de `Documentação/`, `vault-maui/project-memories/`, exec-report P0.1.16.
   Impacto esperado: `Documentação/` não deve ser reaberta para os 8 arquivos inventariados.
 
 - Atualização: P0.1.17 diagnosticou a estrutura do vault Maui.
   Arquivo ou área afetada: inventário diagnóstico e exec-report P0.1.17.
   Impacto esperado: normalização estrutural deve continuar por lotes.
 
-- Atualização: P0.1.18 adotou `vault-maui/memorias/` como diretório canônico.
+- Atualização: P0.1.18 adotou `vault-maui/project-memories/` como diretório canônico.
   Arquivo ou área afetada: template Context Brief, registro de normalização e exec-report P0.1.18.
   Impacto esperado: briefs futuros devem priorizar memórias marcadas nesse diretório.
 
@@ -161,7 +161,7 @@ Este brief deve apoiar a provável P0.1.21, sem reabrir `Documentação/`, sem e
   Impacto esperado: READMEs/templates antigos permanecem pendentes, sem bloquear P0.1.21.
 
 - Atualização: marco de memória pós-P0.1.20 foi reconciliado para nome canônico.
-  Arquivo ou área afetada: `vault-maui/memorias/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`.
+  Arquivo ou área afetada: `vault-maui/project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md`.
   Impacto esperado: futuros Context Briefs devem considerar esse marco.
 
 ## 10. Documentos necessários para continuar
@@ -169,7 +169,7 @@ Este brief deve apoiar a provável P0.1.21, sem reabrir `Documentação/`, sem e
 | Documento | Necessidade | Obrigatório para continuar? |
 | --- | --- | --- |
 | `vault-maui/context-packages/templates/maui-context-brief.template.md` | Referência canônica para briefs | Sim |
-| `vault-maui/memorias/*.md` com `deve_ser_considerado_em_context_brief: true` | Memórias priorizadas | Sim |
+| `vault-maui/project-memories/*.md` com `deve_ser_considerado_em_context_brief: true` | Memórias priorizadas | Sim |
 | `vault-maui/handoffs/2026-05-04-handoff-sessao-claude-pos-inventario.md` | Histórico pós-inventário | Sim |
 | `vault-maui/handoffs/2026-05-05-handoff-fechamento-tarefa-2-pre-p0-1-17.md` | Transição para normalização estrutural | Sim |
 | Documentos core em `vault-maui/00_core/` | Estado documental base | Sim |
@@ -186,7 +186,7 @@ Este brief deve apoiar a provável P0.1.21, sem reabrir `Documentação/`, sem e
 ## 12. Contexto mínimo para o próximo executor
 
 - Fatos confirmados:
-  - `vault-maui/memorias/` é canônico.
+  - `vault-maui/project-memories/` é canônico.
   - As quatro memórias relevantes estão marcadas com `deve_ser_considerado_em_context_brief: true`.
   - P0.1.17 a P0.1.20 foram executadas.
   - P0.1.11 não foi executada.
@@ -230,10 +230,10 @@ Este brief deve apoiar a provável P0.1.21, sem reabrir `Documentação/`, sem e
 | Executar P0.1.11 sem aprovação | Baixa | Médio | Manter P0.1.11 como pendência explícita. |
 | Assumir readiness de instanciação manual como concluída | Média | Alto | Continuar pelos lotes de readiness antes de instanciar. |
 | Copiar corpus inteiro em Context Briefs futuros | Média | Médio | Aplicar Context Injection Sob Demanda e sintetizar só fontes materialmente necessárias. |
-| Ignorar memórias marcadas para Context Brief | Baixa | Alto | Priorizar `deve_ser_considerado_em_context_brief: true` em `vault-maui/memorias/`. |
+| Ignorar memórias marcadas para Context Brief | Baixa | Alto | Priorizar `deve_ser_considerado_em_context_brief: true` em `vault-maui/project-memories/`. |
 
 ## 14. Próximo passo recomendado
 
 - Próximo passo: executar P0.1.21 — Lote 4 Context Brief readiness.
 - Pré-condições: aprovação humana do escopo; working tree limpo; leitura das quatro memórias marcadas e dos registros P0.1.17 a P0.1.20.
-- Validações mínimas: confirmar que `vault-maui/memorias/`, `vault-maui/handoffs/`, `vault-maui/exec-reports/submitted/`, `vault-maui/inventarios/` e `vault-maui/00_core/` são descobertos sem copiar o corpus inteiro.
+- Validações mínimas: confirmar que `vault-maui/project-memories/`, `vault-maui/handoffs/`, `vault-maui/exec-reports/submitted/`, `vault-maui/inventarios/` e `vault-maui/00_core/` são descobertos sem copiar o corpus inteiro.
