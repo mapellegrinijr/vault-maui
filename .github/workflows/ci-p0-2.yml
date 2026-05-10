@@ -1,0 +1,27 @@
+name: CI - P0.2 scripts
+
+on: [pull_request]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install --upgrade pip ruff flake8 pytest
+
+      - name: Lint (ruff)
+        run: ruff check vault-maui/scripts
+
+      - name: Lint (flake8)
+        run: flake8 --max-line-length=120 vault-maui/scripts
+
+      - name: Unit tests
+        run: pytest -q vault-maui/validations/tests
+
+      - name: Compile all
+        run: python -m compileall -q vault-maui/scripts
