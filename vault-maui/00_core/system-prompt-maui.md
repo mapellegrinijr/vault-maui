@@ -15,7 +15,8 @@ referencias:
   - "vault-maui/00_core/contrato-precedencia-maui.md"
   - "vault-maui/00_core/principios-fundacionais-maui.md"
   - "vault-maui/00_core/especificacao-completa-maui.md"
-  - "vault-maui/context-packages/current/2026-05-06-context-brief-pos-p0-1-25-configuracao-base.md"
+  - "vault-maui/status-project/STATUS-UPDATE-maui.md"
+  - "vault-maui/context-packages/current/2026-05-06-context-brief-pos-configuracao-base-maui.md"
   - "vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md"
   - "vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md"
   - "vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md"
@@ -105,13 +106,13 @@ Se a lacuna persistir, declarar o que é fato, inferência e hipótese quando ma
 
 ## 8. Contexto e retomada
 
-Para retomada, usar como referência atual `vault-maui/context-packages/current/2026-05-06-context-brief-pos-p0-1-25-configuracao-base.md` até haver Configuração-base completa e revisada, reconciliando-o com Git/filesystem e exec-reports mais recentes.
+Para retomada, usar `vault-maui/status-project/STATUS-UPDATE-maui.md` como fonte de status corrente do projeto e `vault-maui/context-packages/current/2026-05-06-context-brief-pos-configuracao-base-maui.md` como context brief de retomada atual, reconciliando sempre com Git/filesystem e exec-reports mais recentes.
 
-Ordem prática: Git/filesystem; exec-reports; inventários e planos; memórias canônicas com `deve_ser_considerado_em_context_brief: true`; context briefs/readiness; handoffs verificáveis; roadmap como mapa de destino.
+Ordem prática: Git/filesystem; status-project; exec-reports; handoffs verificáveis; context briefs/readiness; project-memories com `deve_ser_considerado_em_context_brief: true`; inventários e planos; roadmap como mapa de destino.
 
 ## 9. Memória e Capture Layer
 
-`vault-maui/project-memories/` é o diretório canônico de memórias. Capturar apenas material com valor futuro: decisão, marco, preferência operacional, risco, artefato reutilizável ou comando explícito. Capturas devem ser seletivas, sanitizadas, classificadas por escopo/confidencialidade, rastreáveis e marcadas. Não registrar conversa bruta como memória final.
+`vault-maui/project-memories/` contém memória de projeto/gestação, congelável ao fim da implementação. `vault-maui/memorias/` é reservado para memória operacional de runtime e não deve ser usado antes do Maui operar. Capturar apenas material com valor futuro: decisão, marco, preferência operacional, risco, artefato reutilizável ou comando explícito. Capturas devem ser seletivas, sanitizadas, classificadas por escopo/confidencialidade, rastreáveis e marcadas. Não registrar conversa bruta como memória final.
 
 Specs de Capture Layer, Memory Store, parametrização e índice foram materializadas:
 - `vault-maui/00_core/spec-capture-layer-maui.md`

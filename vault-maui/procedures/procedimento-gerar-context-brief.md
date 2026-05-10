@@ -16,6 +16,8 @@ mantenedor: claude-code
 
 Descrever passo a passo como gerar um `Maui Context Brief` confiável: seleção de fontes, ordem de leitura, regras de declaração de lacunas, separação de F/I/H e critérios de qualidade. Este procedimento é a referência canônica para Claude Code, Codex e qualquer executor que precise preparar retomada segura de tarefas no projeto Maui.
 
+Um Context Brief é artefato de **Project**: serve para retomada, handoff e auditoria do projeto Maui. Ele não é status de runtime nem memória operacional de runtime.
+
 ## Quando usar
 
 - Antes de iniciar ou retomar qualquer tarefa no projeto Maui que exija contexto de estado atual.
@@ -48,11 +50,12 @@ Ler sempre antes de compor o brief:
 | Fonte | Caminho | Prioridade |
 | --- | --- | --- |
 | Git local | `git status`, `git log --oneline -20`, `git show <hash>` | 1 — máxima |
-| Exec-reports submetidos | `vault-maui/exec-reports/submitted/` | 2 |
-| Inventários | `vault-maui/inventarios/` | 3 |
-| Memórias canônicas com flag | `vault-maui/project-memories/` onde `deve_ser_considerado_em_context_brief: true` | 4 |
-| Handoffs recentes | `vault-maui/handoffs/` | 5 |
-| Context briefs atuais | `vault-maui/context-packages/current/` | 6 |
+| Status corrente do projeto | `vault-maui/status-project/STATUS-UPDATE-maui.md` | 2 |
+| Exec-reports submetidos | `vault-maui/exec-reports/submitted/` | 3 |
+| Handoffs recentes | `vault-maui/handoffs/` | 4 |
+| Context briefs atuais | `vault-maui/context-packages/current/` | 5 |
+| Memórias de projeto com flag | `vault-maui/project-memories/` onde `deve_ser_considerado_em_context_brief: true` | 6 |
+| Inventários | `vault-maui/inventarios/` | 7 |
 | Template canônico | `vault-maui/context-packages/templates/maui-context-brief.template.md` | — (estrutura) |
 
 ## Fontes opcionais
@@ -72,20 +75,32 @@ Consultar quando aplicável ao escopo:
 
 | Fonte | Ressalva | Regra de uso |
 | --- | --- | --- |
-| Roadmap core | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` permanece `status: proposta`. Reconciliação documentada somente até P0.1.13. | Usar apenas como mapa de destino, ordem macro e critérios. Nunca como fonte única de status executado. |
+| Painel | `vault-maui/panel/status.md` é indexador de baixa confiança. | Usar apenas para navegação; status corrente vem de `vault-maui/status-project/STATUS-UPDATE-maui.md`. |
+| Roadmap Project | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` permanece `status: proposta`. Reconciliação documentada somente até P0.1.13. | Usar apenas como mapa de destino, ordem macro e critérios. Nunca como fonte única de status executado. |
 | Handoffs antigos | Podem refletir estado anterior a fases já fechadas. | Usar como histórico. Sempre reconciliar com exec-reports e inventários mais recentes. |
 | Memórias sem `deve_ser_considerado_em_context_brief: true` | Podem conter contexto parcial ou desatualizado. | Usar com cautela; confirmar relevância antes de incluir no brief. |
 | Históricos e arquivos arquivados | Podem conter caminhos antigos, placeholders e wikilinks obsoletos. | Preservar como histórico. Não normalizar por inferência no brief. |
+| Pastas runtime | `vault-maui/memorias/` e `vault-maui/status/` são reservadas para operação runtime. | Não usar como fonte antes do Maui operar em runtime. |
 
 ## Ordem de leitura recomendada
 
 1. `git status --short` e `git log --oneline -20` — confirmar estado do filesystem.
-2. Exec-reports mais recentes em `vault-maui/exec-reports/submitted/` — evidência primária de execução.
-3. Inventários em `vault-maui/inventarios/` — diagnósticos, pendências e divergências.
-4. Memórias em `vault-maui/project-memories/` com `deve_ser_considerado_em_context_brief: true` — sínteses de continuidade.
-5. Handoffs em `vault-maui/handoffs/` — transições e decisões humanas recentes.
-6. Context briefs em `vault-maui/context-packages/current/` — briefs anteriores relacionados ao escopo.
-7. Roadmap e planos — apenas como referência estrutural e mapa de destino.
+2. `vault-maui/status-project/STATUS-UPDATE-maui.md` — status vivo do projeto.
+3. Exec-reports mais recentes em `vault-maui/exec-reports/submitted/` — evidência primária de execução.
+4. Handoffs em `vault-maui/handoffs/` — transições e decisões humanas recentes.
+5. Context briefs em `vault-maui/context-packages/current/` — briefs anteriores relacionados ao escopo.
+6. Memórias de projeto em `vault-maui/project-memories/` com `deve_ser_considerado_em_context_brief: true` — histórico da gestação e sínteses de continuidade.
+7. Inventários em `vault-maui/inventarios/` — diagnósticos, pendências e divergências.
+8. Contrato do corpus: `vault-maui/00_core/` e `vault-maui/01_manifest/`, conforme o escopo.
+9. Roadmap e planos — apenas como referência estrutural e mapa de destino.
+
+## Separação Project vs Runtime
+
+- `vault-maui/context-packages/current/`: Context Briefs de Project para retomada e handoff.
+- `vault-maui/status-project/`: status vivo do projeto e auditoria rápida.
+- `vault-maui/project-memories/`: memória da gestação/projeto, congelável ao fim da implementação.
+- `vault-maui/memorias/`: reservado para memória operacional do Maui em runtime; vazio por enquanto.
+- `vault-maui/status/`: reservado para status operacional de runtime; vazio por enquanto.
 
 ## Regra de precedência operacional
 
@@ -94,11 +109,13 @@ Em caso de conflito entre fontes:
 1. Git local e filesystem verificável.
 2. Exec-reports recentes com commit associado.
 3. Inventários e registros de normalização.
-4. Memórias canônicas marcadas para Context Brief.
+4. Status corrente do projeto em `vault-maui/status-project/STATUS-UPDATE-maui.md`.
 5. Handoffs recentes verificáveis.
 6. Context briefs atuais.
-7. Documentos core (`vault-maui/00_core/`), incluindo roadmap, como contratos e mapa de destino.
-8. Arquivos arquivados, históricos, adendos e insights quando aplicáveis.
+7. Memórias de projeto marcadas para Context Brief.
+8. Documentos core (`vault-maui/00_core/`) e manifest (`vault-maui/01_manifest/`) como contrato do corpus.
+9. Roadmap e planos como mapa de destino.
+10. Arquivos arquivados, históricos, adendos e insights quando aplicáveis.
 
 A fonte de maior precedência vence; declarar quando houver conflito explícito.
 
@@ -164,6 +181,8 @@ Verificar:
 - [ ] Nenhuma etapa do roadmap foi executada durante a geração.
 - [ ] `Documentação/` e `vault-maui/00_core/` não foram alterados.
 - [ ] Roadmap não foi tratado como fonte única de status executado.
+- [ ] Status corrente veio de `vault-maui/status-project/STATUS-UPDATE-maui.md`, não do painel.
+- [ ] Pastas runtime `vault-maui/memorias/` e `vault-maui/status/` não foram usadas como fonte de Project.
 - [ ] P0.1.11 preservada como não executada salvo evidência direta em contrário.
 - [ ] Instanciação manual Maui não assumida como pronta.
 - [ ] Duplicidade verificada: não existe brief do mesmo escopo e data.
@@ -284,6 +303,12 @@ Se uma fonte obrigatória não estiver disponível:
 - Usar o roadmap apenas para: intenção macro, ordem de fases, critérios de entregável, lacunas planejadas.
 - Para status de execução, usar sempre exec-reports, inventários e git como fontes primárias.
 
+## Regra para status do projeto
+
+- A fonte corrente de status do projeto é `vault-maui/status-project/STATUS-UPDATE-maui.md`.
+- O painel `vault-maui/panel/status.md` é indexador de baixa confiança e não deve ser usado como prova de estado.
+- Status de runtime vive futuramente em `vault-maui/status/`, mas essa pasta está reservada e vazia por enquanto.
+
 ## F/I/H — Como separar fatos, inferências e hipóteses
 
 | Categoria | Definição | Exemplo |
@@ -303,7 +328,7 @@ Regras:
 Um Context Brief está pronto quando:
 
 - [ ] Lista todas as fontes consultadas e indica fontes ausentes.
-- [ ] Usa exec-reports, inventários, memórias e handoffs antes do roadmap para status executado.
+- [ ] Usa git, status-project, exec-reports, handoffs e memórias de projeto antes do roadmap para status executado.
 - [ ] Declara roadmap apenas como fonte estrutural/proposta.
 - [ ] Separa fatos, inferências e hipóteses explicitamente.
 - [ ] Preserva `Documentação/` fora do escopo.
@@ -321,4 +346,4 @@ Um Context Brief está pronto quando:
 - **Readiness:** `vault-maui/context-packages/readiness/` — define pré-condições e checklist por fase.
 - **Skill:** `vault-maui/skills/maui-context-brief/SKILL.md` — instrução compacta para executores.
 - **Exec-report:** registrar a criação do brief no exec-report da tarefa que o originou.
-- **Memória:** após criar brief significativo, criar memória de marco em `vault-maui/project-memories/`.
+- **Memória de projeto:** após criar brief significativo durante a implementação, criar memória de marco em `vault-maui/project-memories/`.

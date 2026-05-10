@@ -3,6 +3,7 @@ titulo: "Painel de status — Maui"
 versao: "1.0"
 status: ativo
 data_criacao: 2026-05-05
+data_atualizacao: 2026-05-10
 idioma: pt-BR
 tipo: painel_status
 escopo: projeto_maui
@@ -10,33 +11,23 @@ escopo: projeto_maui
 
 # Status Maui
 
-- Versao inicial: `v1.0`
-- Raiz canonica: `vault-maui/`
-- Estado tecnico Maui: `.maui/`
-- Estado Saara: `.saara/` preservado quando existir
-- Git: inicializado em `main`
-- Commit inicial: `chore: initialize maui repository`
-- Fase atual: handoff pos-inventario consolidado (P0.1.7)
-- Proxima etapa: Tarefa 2 — decisao arquivo a arquivo Documentacao/
+Este painel é apenas um indexador de baixa confiança. Não usar como fonte declarativa de estado do projeto.
 
-## Ultima execucao registrada
+## Fonte de status corrente
 
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-7-handoff-pos-inventario.md`
+- Status do projeto: `vault-maui/status-project/STATUS-UPDATE-maui.md`
+- Relatório da migração estrutural: `vault-maui/status-project/MIGRACAO-ESTRUTURA-2026-05-10.md`
+- Roadmap Project: `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 
-## Handoff atual
+## Fontes de evidência
 
-- `vault-maui/handoffs/2026-05-04-handoff-sessao-claude-pos-inventario.md`
+- Git local
+- `vault-maui/exec-reports/submitted/`
+- `vault-maui/handoffs/`
+- `vault-maui/context-packages/current/`
+- `vault-maui/project-memories/`
 
-## Execucoes registradas
+## Pastas runtime
 
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-0-fundacao-documental.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-0-1-inicializacao-git.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-0-2-sincronizacao-documental-pos-fundacao-git.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-0-4-handoff-sessao-maui.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-0-5-normalizar-handoff-sessao-maui.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-0-5-regras-operacionais.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-a-schemas-coordenacao.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-b-schemas-review-handoff.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-4-novo-handoff.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-6-inventario-documentacao.md`
-- `vault-maui/exec-reports/submitted/2026-05-04-p0-1-7-handoff-pos-inventario.md`
+- `vault-maui/status/` — reservado para status operacional de runtime.
+- `vault-maui/memorias/` — reservado para memória operacional de runtime.

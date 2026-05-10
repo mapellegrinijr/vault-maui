@@ -22,7 +22,32 @@ Registrar apenas o estado verificável do projeto Maui necessário para continua
 - Evidências:
 - Limites do que foi confirmado:
 
-## 3. Fontes consultadas
+## 3. Fonte de status corrente
+
+Status corrente do projeto:
+
+- Fonte principal: `vault-maui/status-project/STATUS-UPDATE-maui.md`
+- Data/hash verificados:
+- Observações:
+
+Não usar `vault-maui/panel/status.md` como fonte de estado; o painel é indexador de baixa confiança.
+
+## 4. Pacote mínimo de leitura
+
+Listar o pacote mínimo para retomada, com prioridade 1-8.
+
+| Prioridade | Fonte | Caminho ou referência | Motivo |
+| --- | --- | --- | --- |
+| 1 | Git/filesystem | `git status --short`; `git log --oneline -20` | Confirmar HEAD e working tree |
+| 2 | Context brief atual | `vault-maui/context-packages/current/<context-brief-atual>.md` | Retomada de contexto |
+| 3 | Status do projeto | `vault-maui/status-project/STATUS-UPDATE-maui.md` | Estado vivo auditável |
+| 4 | Handoff mais recente | `vault-maui/handoffs/<handoff-relevante>.md` | Transição e decisões humanas |
+| 5 | Exec-report recente relevante | `vault-maui/exec-reports/submitted/<exec-report-relevante>.md` | Evidência primária de execução |
+| 6 | Project memories relevantes | `vault-maui/project-memories/` | Histórico da gestação/projeto |
+| 7 | Contrato do corpus | `vault-maui/00_core/` + `vault-maui/01_manifest/` | Normativos e manifest executável |
+| 8 | Roadmap Project | `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` | Mapa de destino; não prova execução |
+
+## 5. Fontes consultadas
 
 Listar os documentos, handoffs, exec-reports, inventários, memórias ou artefatos consultados.
 
@@ -30,7 +55,7 @@ Listar os documentos, handoffs, exec-reports, inventários, memórias ou artefat
 | --- | --- | --- | --- |
 |  |  |  |  |
 
-## 4. Decisões fechadas relevantes
+## 6. Decisões fechadas relevantes
 
 Registrar somente decisões já fechadas e rastreáveis que afetem a continuidade.
 
@@ -38,7 +63,7 @@ Registrar somente decisões já fechadas e rastreáveis que afetem a continuidad
 - Fonte:
 - Impacto:
 
-## 5. Pendências e bloqueios
+## 7. Pendências e bloqueios
 
 Listar pendências, lacunas documentais, bloqueios técnicos ou decisões ainda abertas.
 
@@ -46,7 +71,7 @@ Listar pendências, lacunas documentais, bloqueios técnicos ou decisões ainda 
 - Impacto:
 - Menor ação necessária:
 
-## 6. Handoffs relevantes
+## 8. Handoffs relevantes
 
 Apontar handoffs que devem ser considerados pelo próximo executor.
 
@@ -54,17 +79,19 @@ Apontar handoffs que devem ser considerados pelo próximo executor.
 | --- | --- | --- |
 |  |  |  |
 
-## 7. Memórias relevantes
+## 9. Memórias relevantes
 
-Listar memórias operacionais ou contextuais que sejam materialmente necessárias para a continuidade.
+Listar memórias de projeto que sejam materialmente necessárias para a continuidade.
 
 Ao criar um Context Brief, consultar memórias relevantes em `vault-maui/project-memories/` e priorizar memórias com `deve_ser_considerado_em_context_brief: true` quando o escopo, tags ou tarefa relacionada forem compatíveis. Essas memórias não devem ser copiadas integralmente por padrão; devem ser sintetizadas nas seções de decisões, pendências, riscos e próximo passo.
+
+`vault-maui/memorias/` é reservado para memória operacional de runtime e não deve ser usado como fonte de Project antes do Maui operar.
 
 - Memória:
 - Aplicação:
 - Fonte:
 
-## 8. Adendos e insights aplicáveis
+## 10. Adendos e insights aplicáveis
 
 Registrar adendos, insights ou observações aplicáveis à tarefa atual, sem transformar hipótese em decisão.
 
@@ -72,7 +99,7 @@ Registrar adendos, insights ou observações aplicáveis à tarefa atual, sem tr
 - Aplicação:
 - Grau de confiança:
 
-## 9. Atualizações recentes do corpus
+## 11. Atualizações recentes do corpus
 
 Registrar mudanças recentes no corpus documental que possam alterar a leitura da tarefa.
 
@@ -80,7 +107,7 @@ Registrar mudanças recentes no corpus documental que possam alterar a leitura d
 - Arquivo ou área afetada:
 - Impacto esperado:
 
-## 10. Documentos necessários para continuar
+## 12. Documentos necessários para continuar
 
 Listar o conjunto mínimo de documentos necessário para o próximo executor continuar com segurança.
 
@@ -88,7 +115,7 @@ Listar o conjunto mínimo de documentos necessário para o próximo executor con
 | --- | --- | --- |
 |  |  |  |
 
-## 11. Solicitação ao usuário quando houver lacuna documental
+## 13. Solicitação ao usuário quando houver lacuna documental
 
 Se faltar documento essencial, declarar a lacuna, explicar o impacto e pedir ao usuário o menor conjunto de documentos ou anexos necessário.
 
@@ -96,7 +123,7 @@ Se faltar documento essencial, declarar a lacuna, explicar o impacto e pedir ao 
 - Impacto na continuidade:
 - Menor conjunto solicitado ao usuário:
 
-## 12. Contexto mínimo para o próximo executor
+## 14. Contexto mínimo para o próximo executor
 
 Sintetizar o contexto mínimo necessário para execução imediata, separando fatos confirmados de hipóteses.
 
@@ -104,7 +131,15 @@ Sintetizar o contexto mínimo necessário para execução imediata, separando fa
 - Hipóteses ou inferências:
 - O que não deve ser assumido:
 
-## 13. Riscos de continuidade
+## 15. O que não assumir
+
+- Não assumir estado pelo painel; confirmar por Git, status-project, exec-reports e handoffs.
+- Não usar `vault-maui/memorias/` nem `vault-maui/status/` como fontes de Project antes do runtime Maui operar.
+- Não tratar roadmap como evidência de execução.
+- Não executar P0.2/P0.3/P0.4 ou qualquer etapa do roadmap durante a geração do brief.
+- Não copiar textos longos das fontes; sintetizar o que for material.
+
+## 16. Riscos de continuidade
 
 Registrar riscos de continuação sem contexto suficiente ou com contexto possivelmente obsoleto.
 
@@ -112,7 +147,7 @@ Registrar riscos de continuação sem contexto suficiente ou com contexto possiv
 | --- | --- | --- | --- |
 |  |  |  |  |
 
-## 14. Próximo passo recomendado
+## 17. Próximo passo recomendado
 
 Indicar a próxima ação recomendada, com pré-condições e validações mínimas.
 
@@ -125,3 +160,4 @@ Indicar a próxima ação recomendada, com pré-condições e validações míni
 - Se faltar documento essencial, declarar a lacuna, explicar o impacto e pedir ao usuário o menor conjunto de documentos/anexos necessário.
 - Não inventar conteúdo, status, versões, hashes ou decisões ausentes.
 - Carregar apenas contexto materialmente necessário, respeitando o princípio de Context Injection Sob Demanda.
+- O Context Brief é artefato de Project; runtime folders são reservados para operação futura.
