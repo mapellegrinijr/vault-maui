@@ -1,26 +1,28 @@
 # Status Update — Projeto Maui (Project)
 
-- Gerado em: 2026-05-10T03:54:42-03:00
-- HEAD: `1d875e367f93645402b9eafdcba5e0f657d5a246` — 2026-05-10 03:44:04 -0300 — `docs(project): alinhar roadmap e core à separação project vs runtime`
-- Working tree: limpo na coleta inicial
+- Gerado em: 2026-05-10T15:20:00-03:00
+- HEAD: `143a3d9aae539f783c66668b2d31226106a1a971` — 2026-05-10 03:57:48 -0300 — `docs(project): gerar pacote manual-first (status/context/handoff/guia instancias)`
+- Working tree: sujo — arquivo não commitado: `vault-maui/handoffs/2026-05-10-handoff-saara-claude-pos-reorg-manual-first.md`
 
 ## 1) TL;DR (5 bullets)
 
 - Configuração-base Maui está concluída por evidência de P0.1.32: `vault-maui/exec-reports/submitted/2026-05-06-p0-1-32-revisao-integrada-configuracao-base.md`, memória marco e commit `538b441`.
-- Estrutura Project vs Runtime foi aplicada e alinhada por `f8b5120`, `9c76d62` e `1d875e3`: projeto usa `project-memories/`, `status-project/` e `project/roadmap/`.
-- `vault-maui/memorias/` e `vault-maui/status/` permanecem reservados para runtime e não devem ser usados antes de operação runtime.
-- Este pacote manual-first atualiza status, context brief, handoff, roadmap, painel, exec-report e guia manual sem depender de integrações.
-- Próxima decisão humana continua sendo escolher P0.2 ou P0.3; nenhuma etapa do roadmap foi executada por inferência.
+- Reorg Project vs Runtime aplicada por `f8b5120`/`9c76d62`/`1d875e3`; pacote manual-first gerado e commitado em `143a3d9`.
+- `vault-maui/memorias/` e `vault-maui/status/` permanecem reservados para runtime (apenas README); não usar em contexto de Project.
+- Há um handoff não commitado (`2026-05-10-handoff-saara-claude-pos-reorg-manual-first.md`) gerado por sessão Saara pós-pacote; deve ser commitado com os artefatos desta sessão.
+- Próxima decisão humana: escolher P0.2 ou P0.3; nenhuma etapa do roadmap foi executada por inferência neste pacote.
 
 ## 2) Evidência Git
 
-- HEAD completo: `1d875e367f93645402b9eafdcba5e0f657d5a246`
-- Data do HEAD: 2026-05-10 03:44:04 -0300
-- Mensagem do HEAD: `docs(project): alinhar roadmap e core à separação project vs runtime`
-- Status na coleta: `git status --porcelain` sem saída.
+- HEAD completo: `143a3d9aae539f783c66668b2d31226106a1a971`
+- Data do HEAD: 2026-05-10 03:57:48 -0300
+- Mensagem do HEAD: `docs(project): gerar pacote manual-first (status/context/handoff/guia instancias)`
+- Working tree na coleta: **sujo** — arquivo não rastreado:
+  - `vault-maui/handoffs/2026-05-10-handoff-saara-claude-pos-reorg-manual-first.md`
 
-Últimos commits:
+Últimos commits (20):
 
+- `143a3d9` `docs(project): gerar pacote manual-first (status/context/handoff/guia instancias)`
 - `1d875e3` `docs(project): alinhar roadmap e core à separação project vs runtime`
 - `9c76d62` `docs(project): atualizar context brief + status-project para nova estrutura`
 - `f8b5120` `chore(structure): separar project-memories e status-project; mover roadmap para project`
@@ -40,36 +42,39 @@
 - `322b9af` `p0.1.24: diagnostica configuracao-base Maui`
 - `7e43dbd` `p0.1.24-pre: planeja configuracao-base Maui`
 - `8804664` `p0.1.23: corrige memoria defasada pos-roadmap`
-- `a0ee423` `p0.1.22: reconcilia roadmap Maui com estado real`
 
 ## 3) Estado confirmado por evidência
 
 - Último lote normativo comprovado: P0.1.32, revisão integrada da configuração-base, com evidência em `vault-maui/exec-reports/submitted/2026-05-06-p0-1-32-revisao-integrada-configuracao-base.md`, `vault-maui/project-memories/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md` e commit `538b441`.
-- Últimos lotes de governança estrutural: separação Project vs Runtime em `f8b5120`, atualização de context brief/status-project em `9c76d62` e alinhamento de roadmap/core em `1d875e3`.
-- Handoff de retomada anterior: `vault-maui/handoffs/2026-05-06-handoff-pos-configuracao-base-maui.md`.
-- Context brief anterior relevante: `vault-maui/context-packages/current/2026-05-06-context-brief-pos-configuracao-base-maui.md`.
-- Decisões humanas recentes registradas: separar Project vs Runtime; tratar `status-project/` como fonte viva de projeto; manter `memorias/` e `status/` reservados para runtime; gerar pacote manual-first de retomada.
-- Pendências/riscos atuais: P0.2, P0.3 e P0.4 seguem não executadas neste pacote; painel é baixo-trust; documentos históricos podem conter menções antigas e devem ser lidos como evidência temporal, não como status corrente.
+- Últimos lotes de governança estrutural: separação Project vs Runtime (`f8b5120`), atualização de context brief/status-project (`9c76d62`), alinhamento de roadmap/core (`1d875e3`) e geração do pacote manual-first (`143a3d9`).
+- Handoffs da sessão 2026-05-10: `vault-maui/handoffs/2026-05-10-handoff-sessao-pacote-status-context.md` (commitado em `143a3d9`) e `vault-maui/handoffs/2026-05-10-handoff-saara-claude-pos-reorg-manual-first.md` (não commitado — pendente).
+- Context brief current: `vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui.md`.
+- Exec-report do pacote: `vault-maui/exec-reports/submitted/2026-05-10-p0-x-pacote-manual-first-status-context-handoff.md`.
+- Decisões humanas recentes: separar Project vs Runtime; `status-project/` como fonte viva; `memorias/` e `status/` reservados; atualização de instâncias é manual-first; geração de pacote manual-first aprovada.
+- Pendências/riscos: handoff não commitado; P0.2, P0.3 e P0.4 não executadas; painel é baixo-trust; documentos históricos devem ser lidos como evidência temporal.
 
 ## 4) Estrutura Project vs Runtime (resumo)
 
 - `vault-maui/project-memories/` = memória de gestação/projeto; pode congelar ao final da implementação.
-- `vault-maui/memorias/` = memória operacional de runtime; reservado e não usado antes do Maui operar.
+- `vault-maui/memorias/` = memória operacional de runtime; reservado — não usar antes do Maui operar.
 - `vault-maui/status-project/` = status vivo do projeto; usar para retomada e auditoria rápida.
-- `vault-maui/status/` = status operacional de runtime; reservado e não usado antes do Maui operar.
+- `vault-maui/status/` = status operacional de runtime; reservado — não usar antes do Maui operar.
 - Roadmap atual: `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`.
 - Painel: `vault-maui/panel/status.md` é apenas indexador baixo-trust; não deve declarar estado por si mesmo.
 
 ## 5) Próximo passo recomendado (sem executar)
 
-- Opção A: P0.2 (scripts/validations). Fazer agora se a prioridade for criar validação local e comandos de apoio após a configuração-base. Pré-requisitos: decisão humana explícita, leitura deste status, do context brief current e do roadmap. Risco: transformar documentação em automação antes de revisar limites de escrita.
-- Opção B: P0.3 (operator packs). Fazer agora se a prioridade for preparar instruções iniciais de uso por ferramenta. Pré-requisitos: decisão humana explícita, confirmação do escopo manual-first ou mudança deliberada para pacote por ferramenta. Risco: gerar instruções operacionais antes de estabilizar validações P0.2.
+- **Pendência imediata**: commitar o handoff pendente `vault-maui/handoffs/2026-05-10-handoff-saara-claude-pos-reorg-manual-first.md` junto com os artefatos desta sessão de retomada.
+- **Opção A**: P0.2 (scripts/validations). Pré-requisitos: decisão humana explícita, leitura deste status + context brief current + roadmap. Risco: transformar documentação em automação antes de revisar limites de escrita.
+- **Opção B**: P0.3 (operator packs). Pré-requisitos: decisão humana explícita, confirmação do escopo manual-first ou mudança deliberada para pacote por ferramenta. Risco: gerar instruções operacionais antes de estabilizar validações P0.2.
 
 ## 6) Referências lidas (paths)
 
-- `vault-maui/status-project/STATUS-UPDATE-maui.md` (versão anterior)
-- `vault-maui/context-packages/current/2026-05-06-context-brief-pos-configuracao-base-maui.md`
-- `vault-maui/handoffs/2026-05-06-handoff-pos-configuracao-base-maui.md`
+- `vault-maui/status-project/STATUS-UPDATE-maui.md` (versão de 03:54 de 2026-05-10)
+- `vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui.md`
+- `vault-maui/handoffs/2026-05-10-handoff-sessao-pacote-status-context.md`
+- `vault-maui/handoffs/2026-05-10-handoff-saara-claude-pos-reorg-manual-first.md` (não commitado)
+- `vault-maui/exec-reports/submitted/2026-05-10-p0-x-pacote-manual-first-status-context-handoff.md`
 - `vault-maui/exec-reports/submitted/2026-05-10-p0-x-alinha-roadmap-e-core-apos-separacao-project-runtime.md`
 - `vault-maui/exec-reports/submitted/2026-05-10-p0-x-atualiza-procedure-context-brief-e-status-project.md`
 - `vault-maui/exec-reports/submitted/2026-05-06-p0-1-32-revisao-integrada-configuracao-base.md`

@@ -153,6 +153,7 @@ P2   — Plugins, automations, MCP guarded-write, REST/Action e UI
 | --- | --- | --- | --- |
 | H0.x — Separação Project vs Runtime | concluída | commits `f8b5120` e `9c76d62`; exec-reports de 2026-05-10 | `project-memories/` para memória de projeto; `status-project/` para status vivo do projeto; `memorias/` e `status/` reservados para runtime; roadmap movido para `project/roadmap/`. |
 | H0.y — Pacote manual-first de status/retomada | concluída | `vault-maui/exec-reports/submitted/2026-05-10-p0-x-pacote-manual-first-status-context-handoff.md` | Atualiza `vault-maui/status-project/STATUS-UPDATE-maui.md`, `vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui.md`, `vault-maui/handoffs/2026-05-10-handoff-sessao-pacote-status-context.md` e `vault-maui/status-project/RELATORIO-ATUALIZAR-INSTANCIAS-MANUAL-FIRST-2026-05-10.md`. |
+| H0.z — Retomada Cowork: atualiza STATUS-UPDATE e context-brief para HEAD `143a3d9` | concluída | `vault-maui/exec-reports/submitted/2026-05-10-p0-x-retomada-cowork-atualiza-status-context.md` | Corrige referência de HEAD em `STATUS-UPDATE-maui.md` (v→`143a3d9`) e `context-brief` (v1.0→v1.1); commita handoff pendente `2026-05-10-handoff-saara-claude-pos-reorg-manual-first.md`; gera handoff de sessão `2026-05-10-handoff-sessao-retomada-cowork.md`. |
 
 Esta etapa é housekeeping estrutural e não executa P0.2, P0.3, P0.4 nem qualquer lote do roadmap.
 
