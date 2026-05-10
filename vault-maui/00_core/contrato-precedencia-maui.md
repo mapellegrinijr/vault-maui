@@ -61,7 +61,7 @@ Ausência de artefato futuro não autoriza criação por inferência. Cada artef
 
 O roadmap é mapa de destino, critérios e referência estrutural. Ele não é fonte única de status executado.
 
-Em conflito entre roadmap e evidência operacional, prevalecem Git/filesystem verificável, exec-reports, inventários, planos e memórias canônicas mais recentes.
+Em conflito entre roadmap e evidência operacional, prevalecem Git/filesystem verificável, status-project, exec-reports, inventários, planos e project-memories mais recentes.
 
 ### Status `proposta`
 
@@ -113,12 +113,13 @@ Saara e Maui são projetos/corpus separados. Saara pode servir como referência 
 Para retomada e reconciliação de status, a ordem prática recomendada é:
 
 1. Git e filesystem local verificável.
-2. Exec-reports em `vault-maui/exec-reports/submitted/`.
-3. Inventários e planos em `vault-maui/inventarios/` e `vault-maui/planos/`.
-4. Memórias em `vault-maui/project-memories/` com `deve_ser_considerado_em_context_brief: true`.
+2. `vault-maui/status-project/STATUS-UPDATE-maui.md`.
+3. Exec-reports em `vault-maui/exec-reports/submitted/`.
+4. Handoffs verificáveis.
 5. Context briefs e readiness em `vault-maui/context-packages/`.
-6. Handoffs verificáveis.
-7. Roadmap core como mapa de destino.
+6. Project-memories em `vault-maui/project-memories/` com `deve_ser_considerado_em_context_brief: true`.
+7. Inventários e planos em `vault-maui/inventarios/` e `vault-maui/planos/`.
+8. Roadmap Project como mapa de destino.
 
 ## Limites do contrato
 
@@ -135,8 +136,8 @@ Para retomada e reconciliação de status, a ordem prática recomendada é:
 
 - P0.1.25 propôs P0.1.26 como primeiro lote de implementação da Configuração-base.
 - P0.1.26 recebeu Human Gate explícito para princípios e contrato de precedência.
-- A Configuração-base Maui ainda está incompleta.
-- O roadmap core permanece `status: proposta`.
+- A Configuração-base Maui foi concluída por evidência posterior; verificar status corrente em `vault-maui/status-project/STATUS-UPDATE-maui.md`.
+- O roadmap Project permanece `status: proposta`.
 
 ### Inferências
 

@@ -100,7 +100,7 @@
       {
         "id": "selective_canonical_memory",
         "name": "Memória seletiva, sanitizada e canônica",
-        "summary": "vault-maui/project-memories/ é canônico; captura seletiva, sanitizada e rastreável"
+        "summary": "project-memories/ guarda memória de projeto; memorias/ é reservado para memória operacional runtime"
       }
     ]
   },
@@ -373,7 +373,8 @@
   "memory_store": {
     "enabled": true,
     "spec_file": "vault-maui/00_core/spec-memory-store-maui.md",
-    "canonical_directory": "vault-maui/project-memories/",
+    "canonical_directory": "vault-maui/memorias/",
+    "project_memory_directory": "vault-maui/project-memories/",
     "source_of_truth": "markdown_files",
     "index_sqlite_status": "planejado_P0_3",
     "context_brief_priority_flag": "deve_ser_considerado_em_context_brief"
@@ -449,7 +450,7 @@
   "metadata": {
     "created_at": "2026-05-06",
     "phase": "P0.1.31",
-    "notes": "v1.0 cria parametrização executável Maui. Status proposta; revisão integrada em P0.1.32. Context Engineering é nomenclatura intencional (escopo mais amplo que context-injection). Prompt Engineering Elite é PKA obrigatória de primeira classe. SAFe proposta_condicional — não ativar no Domain Router sem owner, T1-T8 e Human Gate.",
+    "notes": "v1.0 cria parametrização executável Maui. Status proposta; revisão integrada concluída em P0.1.32 por evidência posterior. Context Engineering é nomenclatura intencional (escopo mais amplo que context-injection). Prompt Engineering Elite é PKA obrigatória de primeira classe. SAFe proposta_condicional — não ativar no Domain Router sem owner, T1-T8 e Human Gate.",
     "p0_3_p0_4_dependencies": [
       "JSON Schema de validação desta parametrização",
       "Tool Instance Registry (SQLite) em .maui/instances.db",

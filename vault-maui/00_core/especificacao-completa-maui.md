@@ -160,7 +160,7 @@ Resumo operacional:
 9. Prompt Engineering como competência obrigatória.
 10. Agent Engineering como competência de integração/orquestração.
 11. Context Engineering/Context Brief como mecanismo de retomada.
-12. Memória seletiva, sanitizada e canônica em `vault-maui/project-memories/`.
+12. Memória seletiva, sanitizada e canônica: `vault-maui/project-memories/` para histórico de projeto/gestação e `vault-maui/memorias/` reservado para runtime.
 
 ## 4. Lifecycle da Configuração-base Maui
 
@@ -174,7 +174,7 @@ A Configuração-base Maui deve ser materializada em lotes, conforme plano P0.1.
 | P0.1.29 | PKAs Maui | concluído |
 | P0.1.30 | Specs subsidiárias Maui | concluído |
 | P0.1.31 | Parametrização e índice Maui | concluído |
-| P0.1.32 | Revisão integrada | em execução |
+| P0.1.32 | Revisão integrada | concluído por evidência |
 
 Cada lote futuro exige tarefa própria e Human Gate quando criar ou alterar documento normativo.
 
@@ -294,16 +294,17 @@ Context Briefs são mecanismo de retomada. Eles não substituem exec-reports, in
 Ordem recomendada para retomada:
 
 1. Git/filesystem local verificável.
-2. Exec-reports.
-3. Inventários e planos.
-4. Memórias com `deve_ser_considerado_em_context_brief: true`.
+2. `vault-maui/status-project/STATUS-UPDATE-maui.md`.
+3. Exec-reports.
+4. Handoffs verificáveis.
 5. Context briefs e readiness.
-6. Handoffs verificáveis.
-7. Roadmap como mapa de destino.
+6. Project-memories com `deve_ser_considerado_em_context_brief: true`.
+7. Inventários e planos.
+8. Roadmap como mapa de destino.
 
 ## 10. Memória e Capture Layer
 
-Memórias Maui vivem canonicamente em `vault-maui/project-memories/`.
+Memórias de projeto/gestação vivem em `vault-maui/project-memories/`. Memória operacional de runtime fica reservada em `vault-maui/memorias/` enquanto o Maui não opera.
 
 Captura deve ser:
 
@@ -400,17 +401,16 @@ Validações mínimas esperadas para documentos normativos:
 - Não cria parametrização ou índice Maui.
 - Não cria operator packs.
 - Não cria bootstrap/context packages finais.
-- Não executa P0.1.11, P0.1.28 ou instanciação manual.
+- Não executa P0.1.11, P0.2, P0.3, P0.4 ou instanciação manual.
 - Não promove `status: proposta`.
 - Não copia Saara integralmente.
 
 ## 19. Próximos passos
 
-1. Executar P0.1.28 em tarefa separada, com Human Gate, para criar `vault-maui/00_core/system-prompt-maui.md`.
-2. Executar P0.1.29 para materializar PKAs Maui, incluindo Prompt Engineering Elite como obrigatório.
-3. Executar P0.1.30 para specs subsidiárias.
-4. Executar P0.1.31 para parametrização e índice.
-5. Executar P0.1.32 para revisão integrada antes de liberar P0.3/P0.4.
+1. Consultar `vault-maui/status-project/STATUS-UPDATE-maui.md` para status corrente.
+2. Manter `status: proposta` dos normativos até Human Gate explícito.
+3. Não executar P0.2/P0.3/P0.4 por inferência; aguardar tarefa própria.
+4. Preservar separação Project vs Runtime: `project-memories/` e `status-project/` para projeto; `memorias/` e `status/` para runtime.
 
 ## F/I/H
 
@@ -426,9 +426,9 @@ Validações mínimas esperadas para documentos normativos:
 
 - A especificação completa deve preceder system prompt para reduzir risco de contrato runtime incompleto.
 - A estrutura Saara v7.1.1 é útil como modelo de governança, mas precisa ser adaptada porque Maui tem corpus, roadmap e estado operacional próprios.
-- Operator packs e bootstrap devem aguardar revisão integrada da Configuração-base.
+- Operator packs e bootstrap dependem de tarefa própria e Human Gate, mesmo após revisão integrada da Configuração-base.
 
 ### Hipóteses
 
-- A ordem P0.1.28 a P0.1.32 poderá ser mantida sem grande replanejamento se não surgirem lacunas novas.
+- A sequência pós-Configuração-base poderá seguir P0.2 ou P0.3, conforme decisão humana explícita.
 - Algumas PKAs Saara serão adaptáveis para Maui, mas a materialização pode exigir ajustes de escopo, status e linguagem.

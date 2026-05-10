@@ -16,11 +16,11 @@ escopo: projeto_maui
 >
 > Este roadmap permanece em `status: proposta` e deve ser usado como mapa de destino, critérios e referência estrutural. Ele não deve ser usado como fonte única de status executado.
 >
-> O estado executado deve ser confirmado preferencialmente por Git, exec-reports, inventários, memórias canônicas e handoffs recentes. A atualização abaixo corrige a defasagem da nota anterior, que registrava evidências apenas até P0.1.13.
+> O estado executado deve ser confirmado preferencialmente por Git, `status-project/`, exec-reports, inventários, project-memories e handoffs recentes. A atualização abaixo corrige a defasagem da nota anterior, que registrava evidências apenas até P0.1.13.
 
 ## Estado operacional reconciliado em 2026-05-06
 
-Fontes de execução preferenciais: `vault-maui/exec-reports/submitted/`, `vault-maui/inventarios/`, `vault-maui/project-memories/`, `vault-maui/handoffs/` e Git local. O readiness P0.1.21 formaliza essa precedência em `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`.
+Fontes de execução preferenciais: Git local, `vault-maui/status-project/STATUS-UPDATE-maui.md`, `vault-maui/exec-reports/submitted/`, `vault-maui/inventarios/`, `vault-maui/project-memories/` e `vault-maui/handoffs/`. O readiness P0.1.21 formaliza essa precedência em `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`.
 
 Etapas com evidência direta até esta reconciliação:
 
@@ -41,11 +41,14 @@ Etapas com evidência direta até esta reconciliação:
 | P0.1.30 | concluída | 6 specs subsidiárias em `vault-maui/00_core/spec-*-maui.md`; commit `b8c8749`. |
 | P0.1.31 | concluída | `vault-maui/00_core/spec-parametrizacao-maui.md`, `vault-maui/01_manifest/spec-parametrizacao-maui.json`, `vault-maui/00_core/indice-maui.md`; commit `9f2afc9`. |
 | P0.1.32 | concluída | Revisão integrada — 7 correções (A1 B1-B5 C1) em 5 normativos + exec-report + memória marco; commit `538b441`. **Configuração-base Maui concluída em 2026-05-06.** |
+| H0.x | concluída | Separação Project vs Runtime: `project-memories/`, `status-project/`, `memorias/` runtime, `status/` runtime e roadmap em `project/roadmap/`; commits `f8b5120` e `9c76d62`. |
 
 Ressalvas operacionais:
 
 - P0.1.11 permanece não executada; não assumir instrução equivalente para Claude Code sem evidência posterior.
-- `vault-maui/project-memories/` é o diretório canônico de memórias.
+- `vault-maui/project-memories/` guarda memória de projeto/gestação; `vault-maui/memorias/` fica reservado para memória operacional de runtime.
+- `vault-maui/status-project/STATUS-UPDATE-maui.md` é a fonte viva de status do projeto; `vault-maui/status/` fica reservado para status operacional de runtime.
+- Este roadmap vive em `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`.
 - `Documentação/` não possui pendências esperadas dos 8 arquivos inventariados e não deve ser reaberta sem decisão humana explícita.
 - Instanciação manual Maui ainda não está pronta e permanece fora do escopo desta reconciliação.
 - Uma memória antiga pode conter trecho defasado tratando P0.1.20 como próximo passo; conferir exec-reports P0.1.20, P0.1.20-pre e P0.1.21 antes de declarar estado atual.
@@ -141,6 +144,16 @@ P2   — Plugins, automations, MCP guarded-write, REST/Action e UI
 | M6    | Piloto controlado       | primeiro uso real com registro de decisão e exec report |
 | M7    | Expansão P1             | hooks, subagentes, painel CLI e MCP read-only           |
 | M8    | Expansão P2             | plugins, automations, guarded-write, REST/Action e UI   |
+
+---
+
+## 3.1 Housekeeping concluído — Project vs Runtime
+
+| Etapa | Estado | Evidência | Resultado |
+| --- | --- | --- | --- |
+| H0.x — Separação Project vs Runtime | concluída | commits `f8b5120` e `9c76d62`; exec-reports de 2026-05-10 | `project-memories/` para memória de projeto; `status-project/` para status vivo do projeto; `memorias/` e `status/` reservados para runtime; roadmap movido para `project/roadmap/`. |
+
+Esta etapa é housekeeping estrutural e não executa P0.2, P0.3, P0.4 nem qualquer lote do roadmap.
 
 ---
 
@@ -562,15 +575,16 @@ exports/examples/manifest.yaml
 
 ### Objetivo
 
-Indexar memórias Markdown como índice reconstruível.
+Indexar memórias Markdown como índice reconstruível, distinguindo memória de projeto (`project-memories/`) e memória operacional de runtime (`memorias/`, reservada enquanto o Maui não opera).
 
 ### Atividades
 
-1. Listar arquivos em `memorias/`.
-2. Validar frontmatter mínimo.
-3. Gerar índice JSON.
-4. Detectar possíveis duplicidades por título/data/tags.
-5. Não tratar índice como fonte de verdade.
+1. Listar arquivos em `project-memories/` para histórico de projeto.
+2. Validar que `memorias/` permanece reservado para runtime quando não houver operação Maui ativa.
+3. Validar frontmatter mínimo.
+4. Gerar índice JSON.
+5. Detectar possíveis duplicidades por título/data/tags.
+6. Não tratar índice como fonte de verdade.
 
 ### Entregáveis
 
@@ -1226,8 +1240,8 @@ Registrar decisões humanas do piloto Maui.
 ### Entregáveis
 
 ```text
-memorias/templates/decisao-template.md
-memorias/YYYY/MM/YYYY-MM-DD-decisao-adocao-piloto-maui.md
+project-memories/templates/decisao-template.md
+project-memories/YYYY-MM-DD-decisao-adocao-piloto-maui.md
 ```
 
 ## 13.2 Funcionalidade: Memória mínima

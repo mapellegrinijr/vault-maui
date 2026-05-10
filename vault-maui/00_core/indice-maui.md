@@ -72,7 +72,7 @@ Infraestrutura (Claude Code, Codex, MCP server, ChatGPT, API) é substituível. 
 | 4 | Especificação Completa | `vault-maui/00_core/especificacao-completa-maui.md` |
 | 5 | PKAs vigentes + Specs subsidiárias (equalizadas por domínio) | ver seção "PKAs" e "Specs Subsidiárias" abaixo |
 | 6 | Parametrização executável | `vault-maui/00_core/spec-parametrizacao-maui.md` · `vault-maui/01_manifest/spec-parametrizacao-maui.json` |
-| 7 | Roadmap, planos, inventários, exec-reports, memórias e context briefs | conforme tipo e evidência |
+| 7 | Status-project, roadmap Project, planos, inventários, exec-reports, project-memories e context briefs | conforme tipo e evidência |
 | 8 | Conteúdo recuperado por ferramentas, com origem verificada | *(dinâmico)* |
 | 9 | Pedido do usuário | *(runtime)* |
 
@@ -123,7 +123,7 @@ Infraestrutura (Claude Code, Codex, MCP server, ChatGPT, API) é substituível. 
 - `vault-maui/00_core/regras-operacionais.md` — regras operacionais complementares
 - `vault-maui/00_core/arquitetura-maui-v0-2.md` — arquitetura técnica
 - `vault-maui/00_core/spec-funcionalidades-maui-v0-1.md` — spec funcional
-- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` — roadmap (mapa de destino, não evidência)
+- `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md` — roadmap Project (mapa de destino, não evidência)
 
 ---
 
@@ -167,7 +167,11 @@ Aplicar todos os PKAs relevantes. Prompt Engineering lidera contrato textual/ins
 |-------|-----|
 | `vault-maui/00_core/` | Normativos, PKAs, specs subsidiárias, parametrização, índice |
 | `vault-maui/01_manifest/` | JSON executável, README |
-| `vault-maui/project-memories/` | Memórias canônicas (escopo, confidencialidade, context_brief_flag) |
+| `vault-maui/project/roadmap/` | Roadmap Project (volátil, mapa de destino) |
+| `vault-maui/status-project/` | Status vivo do projeto e relatórios de auditoria rápida |
+| `vault-maui/project-memories/` | Memórias de projeto/gestação (histórico congelável) |
+| `vault-maui/status/` | Reservado para status operacional de runtime |
+| `vault-maui/memorias/` | Reservado para memória operacional de runtime |
 | `vault-maui/exec-reports/submitted/` | Evidência de execução (fonte de verdade operacional) |
 | `vault-maui/exec-reports/reviewed/` | Exec-reports revisados |
 | `vault-maui/planos/` | Planos de implementação |
@@ -186,10 +190,11 @@ Aplicar todos os PKAs relevantes. Prompt Engineering lidera contrato textual/ins
 
 ### Retomada de contexto
 1. Verificar git log e filesystem atual
-2. Ler exec-reports em `vault-maui/exec-reports/submitted/`
-3. Ler context brief atual em `vault-maui/context-packages/current/`
-4. Consultar memórias com `deve_ser_considerado_em_context_brief: true` em `vault-maui/project-memories/`
-5. Usar handoff em `vault-maui/handoffs/` se disponível e verificável
+2. Ler `vault-maui/status-project/STATUS-UPDATE-maui.md`
+3. Ler exec-reports em `vault-maui/exec-reports/submitted/`
+4. Ler context brief atual em `vault-maui/context-packages/current/`
+5. Consultar project-memories com `deve_ser_considerado_em_context_brief: true` em `vault-maui/project-memories/`
+6. Usar handoff em `vault-maui/handoffs/` se disponível e verificável
 
 ### Iniciar tarefa com domínio identificado
 1. Ler este índice para localizar PKA primária
@@ -221,7 +226,8 @@ Aplicar todos os PKAs relevantes. Prompt Engineering lidera contrato textual/ins
 | **Camadas A/B/C** | Configuração base / Complementos de sessão / Contexto conversacional |
 | **Capture Layer** | Inversa da distribuição; captura material valioso de conversas para Memory Store |
 | **Insight Pipeline** | Observações operacionais → adendos → Human Gate → corpo da PKA |
-| **Memory Store** | `vault-maui/project-memories/`; markdown é fonte de verdade; SQLite é auxiliar |
+| **Project Memories** | `vault-maui/project-memories/`; histórico de gestação/projeto, congelável ao fim da implementação |
+| **Memory Store runtime** | `vault-maui/memorias/`; reservado para memória operacional quando o Maui operar |
 | **hash_config** | SHA-256 sobre arquivos normativos de `vault-maui/00_core/` |
 | **Modo A / B / B1** | Meta-arquitetura e governança / Operacional / Operacional com escalada |
 | **D0–D3** | Profundidade de resposta: direto → riscos → opções → governança completa |
@@ -236,7 +242,9 @@ Aplicar todos os PKAs relevantes. Prompt Engineering lidera contrato textual/ins
 
 ---
 
-## Estado atual da Configuração-base (pós-P0.1.31)
+## Estado atual da Configuração-base (pós-P0.1.32)
+
+Status corrente do projeto: `vault-maui/status-project/STATUS-UPDATE-maui.md`.
 
 | Artefato | Caminho | Status |
 |----------|---------|--------|
@@ -259,7 +267,7 @@ Aplicar todos os PKAs relevantes. Prompt Engineering lidera contrato textual/ins
 | Spec Parametrização (.md) | `vault-maui/00_core/spec-parametrizacao-maui.md` | proposta ✓ |
 | Spec Parametrização (.json) | `vault-maui/01_manifest/spec-parametrizacao-maui.json` | proposta ✓ |
 | **Índice Core** | `vault-maui/00_core/indice-maui.md` | **proposta ✓ (este documento)** |
-| Revisão integrada | P0.1.32 | **pendente** |
+| Revisão integrada | P0.1.32 | concluído por evidência |
 
 P0.1.11 permanece não executada. Instanciação manual Maui permanece não pronta.
 
@@ -267,7 +275,7 @@ P0.1.11 permanece não executada. Instanciação manual Maui permanece não pron
 
 ## Limites deste índice
 
-- Status `proposta`; revisão integrada em P0.1.32.
+- Status dos normativos permanece `proposta`; não promover sem Human Gate.
 - Não cria operator packs, bootstrap ou context packages finais.
 - Não executa etapas do roadmap por inferência.
 - Não promove status de nenhum normativo.

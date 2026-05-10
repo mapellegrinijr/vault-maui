@@ -93,7 +93,7 @@ Context Engineering organiza Write, Select, Compress e Isolate. Context Briefs s
 
 ### 12. Memória seletiva, sanitizada e canônica
 
-Memórias operacionais devem ser seletivas, sanitizadas, rastreáveis e canônicas em `vault-maui/project-memories/`. Memórias com `deve_ser_considerado_em_context_brief: true` devem ser priorizadas em retomadas.
+Memórias de projeto/gestação vivem em `vault-maui/project-memories/`. Memórias operacionais de runtime devem ser seletivas, sanitizadas, rastreáveis e canônicas em `vault-maui/memorias/` quando o Maui operar. Memórias com `deve_ser_considerado_em_context_brief: true` devem ser priorizadas em retomadas.
 
 ## Limites do documento
 
