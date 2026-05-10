@@ -16,6 +16,10 @@ Este painel é apenas um indexador de baixa confiança. Não usar como fonte dec
 ## Fonte de status corrente
 
 - Status do projeto: `vault-maui/status-project/STATUS-UPDATE-maui.md`
+- Context Brief current: `vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui.md`
+- Handoff da sessão: `vault-maui/handoffs/2026-05-10-handoff-sessao-pacote-status-context.md`
+- Exec-report do pacote: `vault-maui/exec-reports/submitted/2026-05-10-p0-x-pacote-manual-first-status-context-handoff.md`
+- Guia manual de atualização: `vault-maui/status-project/RELATORIO-ATUALIZAR-INSTANCIAS-MANUAL-FIRST-2026-05-10.md`
 - Relatório da migração estrutural: `vault-maui/status-project/MIGRACAO-ESTRUTURA-2026-05-10.md`
 - Roadmap Project: `vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md`
 
