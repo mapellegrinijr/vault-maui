@@ -80,7 +80,7 @@ def parse_frontmatter(text: str) -> tuple[dict[str, Any], str]:
     if end == -1:
         return {}, text
     raw = text[4:end].strip()
-    body = text[end + 4 :].lstrip("\n")
+    body = text[end + 4:].lstrip("\n")
     data: dict[str, Any] = {}
     current_key: str | None = None
     for line in raw.splitlines():
@@ -239,4 +239,3 @@ def print_markdown(title: str, report: dict[str, Any]) -> None:
 
 def exit_code(report: dict[str, Any]) -> int:
     return 0 if report.get("ok") else 1
-
