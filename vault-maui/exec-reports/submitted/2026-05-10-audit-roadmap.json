@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-10",
+  "head": {
+    "short": "2134f58",
+    "full": "2134f58cebffe67438495d1d261608a858180b62",
+    "message": "docs(roadmap): reflect P0.2 completion + spec links",
+    "commit_date": "2026-05-10 16:02:35 -0300"
+  },
+  "latest_tag": "p0.2-complete",
+  "working_tree": "clean",
+  "roadmap_source": "vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md",
+  "completed": [
+    {
+      "item": "P0.2",
+      "status": "Concluido",
+      "date": "2026-05-10",
+      "evidence": [
+        "6c5c2c7 (tag p0.2-complete)",
+        "vault-maui/exec-reports/submitted/2026-05-10-p0-2-lote-bootstrap-scripts.md",
+        "2134f58 docs(roadmap): reflect P0.2 completion + spec links"
+      ]
+    },
+    {
+      "item": "P0.1.32",
+      "status": "Concluido",
+      "date": "2026-05-06",
+      "evidence": [
+        "538b441",
+        "vault-maui/exec-reports/submitted/2026-05-06-p0-1-32-revisao-integrada-configuracao-base.md"
+      ]
+    },
+    {
+      "item": "H0.x/H0.y/H0.z",
+      "status": "Concluido",
+      "date": "2026-05-10",
+      "evidence": [
+        "f8b5120",
+        "9c76d62",
+        "1d875e3",
+        "143a3d9",
+        "10a37c0"
+      ]
+    }
+  ],
+  "pending": [
+    "P0.1.11 permanece sem evidencia de execucao",
+    "P0.3 Operator packs iniciais",
+    "P0.4 Context package inicial e protocolo de handoff",
+    "P0.5 Update Protocol minimo",
+    "P0.6 Skills P0 para agentes de codificacao",
+    "P0.7 Procedures P0 e reflexes criticos",
+    "P0.8 Evals/smoke tests minimos",
+    "P0.9 Registro de decisao, memoria minima e curadoria file-based",
+    "P1 Hooks, subagentes, painel CLI completo, MCP read-only",
+    "P2 Plugins, automations, MCP guarded-write, REST/Action e UI"
+  ],
+  "source_comparison": [
+    {
+      "source": "vault-maui/status-project/STATUS-UPDATE-maui.md",
+      "observed_state": "Defasado: registra HEAD 63530a8 e afirma que P0.2 nao foi executada.",
+      "current_reality": "HEAD atual 2134f58; P0.2 foi mergeada em 6c5c2c7 e reconciliada no roadmap."
+    },
+    {
+      "source": "vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui-v2.md",
+      "observed_state": "Defasado: registra HEAD 63530a8 e orienta nao assumir P0.2.",
+      "current_reality": "Git, tag p0.2-complete e exec-reports P0.2 comprovam execucao posterior."
+    },
+    {
+      "source": "vault-maui/handoffs/2026-05-10-handoff-sessao-prepare-handoff-v2.md",
+      "observed_state": "Fotografia valida do pacote prepare-handoff v2 pre-P0.2, com HEAD 63530a8.",
+      "current_reality": "Usar como historico; para estado corrente, prevalecem Git, exec-reports P0.2 e este handoff de auditoria."
+    }
+  ],
+  "protected_paths_touched": false,
+  "files_created": [
+    "vault-maui/exec-reports/submitted/2026-05-10-audit-roadmap.json",
+    "vault-maui/handoffs/2026-05-10-handoff-status-implementacao.md"
+  ]
+}
