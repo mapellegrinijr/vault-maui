@@ -1,0 +1,19 @@
+{
+  "script": "maui_validate_frontmatter.py",
+  "ts": "2026-05-10T13:33:40-03:00",
+  "ok": true,
+  "scope": "vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui-v2.md",
+  "flags": {
+    "dry_run": false,
+    "write_report": true,
+    "scope": "vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui-v2.md"
+  },
+  "critical": [],
+  "warnings": [
+    "sem confidencialidade explícita: vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui-v2.md"
+  ],
+  "info": [
+    "arquivos Markdown verificados: 1"
+  ],
+  "artifacts": []
+}

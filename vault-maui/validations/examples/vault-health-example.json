@@ -1,0 +1,8 @@
+{
+  "script": "maui_vault_health.py",
+  "ok": true,
+  "critical": [],
+  "warnings": [],
+  "info": ["exemplo estático de saída JSON"]
+}
+

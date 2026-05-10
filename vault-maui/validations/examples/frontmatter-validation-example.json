@@ -1,0 +1,8 @@
+{
+  "script": "maui_validate_frontmatter.py",
+  "ok": true,
+  "critical": [],
+  "warnings": ["exemplo de alerta"],
+  "info": ["exemplo estático de saída JSON"]
+}
+

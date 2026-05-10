@@ -1,0 +1,8 @@
+{
+  "script": "maui_validate_links.py",
+  "ok": true,
+  "critical": [],
+  "warnings": [],
+  "info": ["exemplo estático de saída JSON"]
+}
+

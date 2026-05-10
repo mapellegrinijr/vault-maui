@@ -1,0 +1,22 @@
+{
+  "script": "maui_context_export.py",
+  "ts": "2026-05-10T13:33:40-03:00",
+  "ok": true,
+  "scope": "project",
+  "flags": {
+    "dry_run": false,
+    "write_report": true,
+    "target": "codex",
+    "limit_tokens": 1200,
+    "scope": "project"
+  },
+  "critical": [],
+  "warnings": [],
+  "info": [
+    "fontes incluídas: 7"
+  ],
+  "artifacts": [
+    "vault-maui/validations/context-packages/codex-bootstrap-2026-05-10.md",
+    "vault-maui/validations/context-packages/codex-bootstrap-2026-05-10.json"
+  ]
+}

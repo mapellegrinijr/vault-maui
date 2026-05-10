@@ -1,0 +1,97 @@
+{
+  "generated_at": "2026-05-10T13:33:48-03:00",
+  "scope": "all",
+  "items": [
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-05-marco-decisao-normalizacao-estrutural.md",
+      "titulo": "Marco de memória — Decisão de normalização estrutural do vault Maui",
+      "data_criacao": "2026-05-05",
+      "tipo": "memoria_decisao"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-05-marco-diagnostico-estrutural-p0-1-17.md",
+      "titulo": "Marco de memória — Diagnóstico estrutural P0.1.17",
+      "data_criacao": "2026-05-05",
+      "tipo": "memoria_marco"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-05-marco-fechamento-tarefa-2-documentacao.md",
+      "titulo": "Marco de memória — Fechamento da Tarefa 2 Documentação/",
+      "data_criacao": "2026-05-05",
+      "tipo": "memoria_marco"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-05-marco-plano-normalizacao-estrutural-estado-atual.md",
+      "titulo": "Marco de memória — Plano de normalização estrutural Maui e estado atual",
+      "data_criacao": "2026-05-05",
+      "tipo": "memoria_marco"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-06-decisao-claude-code-gerar-context-brief.md",
+      "titulo": "Decisão — Claude Code instrução para gerar Context Brief Maui",
+      "data_criacao": "2026-05-06",
+      "tipo": "memoria_decisao"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-06-decisao-configuracao-base-maui-prompt-engineering.md",
+      "titulo": "Memória de decisão — Configuração-base Maui e Prompt Engineering Elite",
+      "data_criacao": "2026-05-06",
+      "tipo": "memoria_decisao"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-06-marco-encerramento-sessao-configuracao-base-maui.md",
+      "titulo": "Marco — Encerramento de Sessão: Configuração-base Maui Completa",
+      "data_criacao": "unknown",
+      "tipo": "marco_sessao"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-06-marco-handoff-saara-7-1-1-pe-claude-maui.md",
+      "titulo": "Marco — Handoff Saara 7.1.1 + PE para Claude continuar Maui",
+      "data_criacao": "2026-05-06",
+      "tipo": "memoria_marco"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-06-marco-p0-1-26-principios-precedencia-maui.md",
+      "titulo": "Marco P0.1.26 — Princípios e precedência Maui",
+      "data_criacao": "2026-05-06",
+      "tipo": "memoria_marco"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-06-marco-p0-1-27-especificacao-completa-maui.md",
+      "titulo": "Marco P0.1.27 — Especificação completa Maui",
+      "data_criacao": "2026-05-06",
+      "tipo": "memoria_marco"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-06-marco-p0-1-28-system-prompt-maui.md",
+      "titulo": "Marco P0.1.28 — System prompt Maui",
+      "data_criacao": "2026-05-06",
+      "tipo": "memoria_marco"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-06-marco-p0-1-32-revisao-integrada-maui.md",
+      "titulo": "Marco P0.1.32 — Revisão integrada Configuração-base Maui concluída",
+      "data_criacao": "2026-05-06",
+      "tipo": "marco"
+    },
+    {
+      "kind": "project",
+      "path": "project-memories/2026-05-06-marco-pos-p0-1-25-configuracao-base-maui.md",
+      "titulo": "Marco pós-P0.1.25 — Configuração-base Maui",
+      "data_criacao": "2026-05-06",
+      "tipo": "memoria_marco"
+    }
+  ]
+}
