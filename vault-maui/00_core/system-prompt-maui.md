@@ -16,7 +16,7 @@ referencias:
   - "vault-maui/00_core/principios-fundacionais-maui.md"
   - "vault-maui/00_core/especificacao-completa-maui.md"
   - "vault-maui/status-project/STATUS-UPDATE-maui.md"
-  - "vault-maui/context-packages/current/2026-05-06-context-brief-pos-configuracao-base-maui.md"
+  - "vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui.md"
   - "vault-maui/planos/2026-05-06-p0-1-25-plano-configuracao-base-maui.md"
   - "vault-maui/inventarios/2026-05-06-diagnostico-configuracao-base-maui.md"
   - "vault-maui/project/roadmap/roadmap-desenvolvimento-maui-v1-0.md"
@@ -106,7 +106,7 @@ Se a lacuna persistir, declarar o que é fato, inferência e hipótese quando ma
 
 ## 8. Contexto e retomada
 
-Para retomada, usar `vault-maui/status-project/STATUS-UPDATE-maui.md` como fonte de status corrente do projeto e `vault-maui/context-packages/current/2026-05-06-context-brief-pos-configuracao-base-maui.md` como context brief de retomada atual, reconciliando sempre com Git/filesystem e exec-reports mais recentes.
+Para retomada, usar `vault-maui/status-project/STATUS-UPDATE-maui.md` como fonte de status corrente do projeto e `vault-maui/context-packages/current/2026-05-10-context-brief-status-atual-maui.md` como context brief de retomada atual, reconciliando sempre com Git/filesystem e exec-reports mais recentes.
 
 Ordem prática: Git/filesystem; status-project; exec-reports; handoffs verificáveis; context briefs/readiness; project-memories com `deve_ser_considerado_em_context_brief: true`; inventários e planos; roadmap como mapa de destino.
 
