@@ -167,6 +167,32 @@ Conteúdo obrigatório: resumo do que foi feito na sessão, lista de artefatos
 gerados/atualizados (A/B/C/D/...), checklist de retomada rápida (ordem de
 leitura), ações proibidas por inferência, F/I/H quando material.
 
+#### Conteúdo obrigatório do handoff principal do dia
+
+O handoff gerado neste item **deve incluir** a seção "Protocolo Prepare Handoff
+(manual-first)". Esta seção serve como âncora anti-drift para a próxima
+instância: confirma que o pacote foi gerado via este pipeline canônico, registra
+o HEAD verificado e indica o executor responsável.
+
+Template obrigatório (inserir após a seção de Artefatos ou antes de F/I/H):
+
+```markdown
+## Protocolo Prepare Handoff (manual-first)
+
+- Pipeline executado: `vault-maui/procedures/procedimento-preparar-handoff.md`
+- HEAD verificado no início do pipeline: `<hash completo>`
+- Data/hora de geração: <ISO local>
+- Executor: <saara_cowork_local | saara_codex | saara_claude_code>
+- Todos os 8 itens do pipeline foram executados: sim / não (listar omissões)
+- Context briefs arquivados nesta execução: <lista ou "nenhum">
+- Memória marco gerada: sim (`vault-maui/project-memories/<arquivo>`) / não (justificativa)
+- Commit do pacote: <hash pós-commit ou "pendente — aguardando Human Gate">
+
+> Anti-drift: esta seção confirma que o pacote foi gerado via pipeline canônico.
+> Instâncias sem filesystem devem declarar conformidade `unknown`.
+> Nunca assumir estado sem verificar HEAD via Git.
+```
+
 ### Item 5 — Criar exec-report em `exec-reports/submitted/`
 
 Arquivo: `vault-maui/exec-reports/submitted/YYYY-MM-DD-p0-x-pacote-handoff-<descricao>.md`
