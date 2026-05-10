@@ -108,4 +108,3 @@ if __name__ == "__main__":
     except Exception as exc:
         print(f"Erro crítico: {exc}", file=sys.stderr)
         raise SystemExit(1)
-
