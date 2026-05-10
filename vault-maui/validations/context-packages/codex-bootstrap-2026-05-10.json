@@ -1,0 +1,14 @@
+{
+  "target": "codex",
+  "limit_tokens": 1200,
+  "sources": [
+    "context-packages/current/2026-05-10-context-brief-status-atual-maui-v2.md",
+    "status-project/STATUS-UPDATE-maui.md",
+    "00_core/contrato-precedencia-maui.md",
+    "00_core/principios-fundacionais-maui.md",
+    "00_core/system-prompt-maui.md",
+    "00_core/indice-maui.md",
+    "01_manifest/spec-parametrizacao-maui.json"
+  ],
+  "unknown_without_filesystem": true
+}

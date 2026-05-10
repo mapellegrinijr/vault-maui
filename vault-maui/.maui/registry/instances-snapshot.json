@@ -1,0 +1,11 @@
+{
+  "instances": [
+    {
+      "id": "codex-local",
+      "target": "codex",
+      "status": "unknown",
+      "head": "2294c00",
+      "notes": "P0.2 smoke registration"
+    }
+  ]
+}
