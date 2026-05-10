@@ -12,13 +12,13 @@ escopo: projeto_maui
 
 ## Nota de reconciliação de status
 
-> Reconciliação atualizada em 2026-05-06, após P0.1.21.
+> Reconciliação atualizada em 2026-05-10, após P0.2.
 >
 > Este roadmap permanece em `status: proposta` e deve ser usado como mapa de destino, critérios e referência estrutural. Ele não deve ser usado como fonte única de status executado.
 >
 > O estado executado deve ser confirmado preferencialmente por Git, `status-project/`, exec-reports, inventários, project-memories e handoffs recentes. A atualização abaixo corrige a defasagem da nota anterior, que registrava evidências apenas até P0.1.13.
 
-## Estado operacional reconciliado em 2026-05-06
+## Estado operacional reconciliado em 2026-05-10
 
 Fontes de execução preferenciais: Git local, `vault-maui/status-project/STATUS-UPDATE-maui.md`, `vault-maui/exec-reports/submitted/`, `vault-maui/inventarios/`, `vault-maui/project-memories/` e `vault-maui/handoffs/`. O readiness P0.1.21 formaliza essa precedência em `vault-maui/context-packages/readiness/2026-05-06-p0-1-21-context-brief-readiness.md`.
 
@@ -42,6 +42,7 @@ Etapas com evidência direta até esta reconciliação:
 | P0.1.31 | concluída | `vault-maui/00_core/spec-parametrizacao-maui.md`, `vault-maui/01_manifest/spec-parametrizacao-maui.json`, `vault-maui/00_core/indice-maui.md`; commit `9f2afc9`. |
 | P0.1.32 | concluída | Revisão integrada — 7 correções (A1 B1-B5 C1) em 5 normativos + exec-report + memória marco; commit `538b441`. **Configuração-base Maui concluída em 2026-05-06.** |
 | H0.x | concluída | Separação Project vs Runtime: `project-memories/`, `status-project/`, `memorias/` runtime, `status/` runtime e roadmap em `project/roadmap/`; commits `f8b5120` e `9c76d62`. |
+| P0.2 | Concluído ✔ | Scripts P0 de bootstrap, validação e contexto entregues em 2026-05-10; merge `6c5c2c7` · tag `p0.2-complete`; evidência principal em `vault-maui/exec-reports/submitted/2026-05-10-p0-2-lote-bootstrap-scripts.md`. |
 
 Ressalvas operacionais:
 
@@ -108,7 +109,7 @@ Este roadmap segue a priorização definida para o **mínimo Maui utilizável co
 ```text
 P0.0 — Formalização do corpus e estrutura mínima
 P0.1 — Schemas mínimos e validação local
-P0.2 — Scripts P0 de bootstrap, validação e contexto
+✔ P0.2 — Scripts P0 de bootstrap, validação e contexto — Concluído em 2026-05-10 (`6c5c2c7` · `p0.2-complete`)
 P0.3 — Operator packs iniciais: Claude Code, Codex e ChatGPT Handoff
 P0.4 — Context package inicial e protocolo de handoff
 P0.5 — Update Protocol mínimo
@@ -391,6 +392,8 @@ schemas/fixtures/operator-pack.valid.yaml
 ---
 
 # 6. P0.2 — Scripts P0 de bootstrap, validação e contexto
+
+**Status:** Concluído ✔ em 2026-05-10 (`6c5c2c7` · `p0.2-complete`).
 
 ## 6.1 Funcionalidade: `maui_vault_health.py`
 

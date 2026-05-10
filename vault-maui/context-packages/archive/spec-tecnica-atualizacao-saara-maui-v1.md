@@ -1171,12 +1171,14 @@ Decisões que esta spec **deliberadamente não fecha**, preservadas para deliber
 
 Detalhamento completo no Handoff Maui §14. Resumo:
 
+Nota pós-P0.2: os scripts P0 de bootstrap, validação e contexto foram **Implementados** em 2026-05-10, com referência final `6c5c2c7` · `p0.2-complete`.
+
 | Marco | Objetivo | Status |
 |---|---|---|
 | M0 | Decisão e baseline Maui (memória de decisão Saara→Maui, atualização de context package) | Próximo |
 | M1 | Manifesto e estrutura do Maui Corpus (`01_manifest/`) | Aguarda M0 |
 | M2 | Schemas mínimos (12 schemas) | Aguarda M1 |
-| M3 | Scripts de condicionamento P0 (9 scripts) | Aguarda M2 |
+| M3 | Scripts de condicionamento P0 (9 scripts) | Implementado em 2026-05-10 (`p0.2-complete`) |
 | M4 | Skills P0 (10 skills) | Aguarda M3 |
 | M5 | Procedures e reflexos (8 procedimentos + 4 reflexos) | Aguarda M3 |
 | M6 | Operator Packs (Claude Code, Codex, ChatGPT, Gemini, Antigravity) | Aguarda M5 |

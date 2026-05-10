@@ -979,6 +979,8 @@ Criar contratos verificáveis antes da implementação.
 
 Criar primeira camada executável local-first.
 
+**Status pós-P0.2:** Implementado em 2026-05-10 (`6c5c2c7` · `p0.2-complete`).
+
 ### Atividades
 
 | ID      | Atividade                                  | Executor recomendado | Reviewer       | Entregável                 |
